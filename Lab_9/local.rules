@@ -1,0 +1,16 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+alert icmp any any -> $HOME_NET any (msg:"Local - ICMP Echo Request Detected"; itype:8; icode:0; sid:100010; rev:1; classtype:attempted-recon;)
+alert tcp any any -> $HOME_NET any (msg:"Local - FIN Scan Detected"; flags:F; sid:100011; rev:1;)
+alert tcp any any -> $HOME_NET any (msg:"Local - NULL Scan Detected"; flags:0; sid:100013; rev:1;)
+alert tcp any any -> $HOME_NET any (msg:"Local - Xmas Scan Detected"; flags:FPU; sid:100012; rev:1;)
+alert tcp any any -> $HOME_NET 21 (msg:"Local - FTP connection attempt"; flow:to_server; flags:S; sid:100014; rev:1; classtype:attempted-recon;)
+alert tcp $HOME_NET 21 -> any any (msg:"Local - FTP Failed Login Detected"; flow:from_server,established; content:"530 "; sid:100015; rev:1; classtype:unsuccessful-user;)
+alert tcp $HOME_NET 21 -> any any (msg:"Local - FTP Brute Force Attempt"; flow:from_server,established; content:"530 "; detection_filter:track by_src, count 3, seconds 60; sid:100016; rev:1; classtype:unsuccessful-user;)
+alert tcp any any -> any any (msg:"Local - SSN Leak Detected"; flow:to_client, established; pcre:"/\\d{3}-\\d{2}-\\d{4}/"; sid:100017; rev:3; classtype:policy-violation;)
+alert tcp any any -> $HOME_NET 80 (msg:"Local - Potential SYN Flood Detected"; flags:S; flow:to_server; detection_filter:track by_dst, count 100, seconds 1; sid:100018; rev:1; classtype:attempted-dos;)
+

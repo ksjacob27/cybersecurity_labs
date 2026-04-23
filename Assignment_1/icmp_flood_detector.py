@@ -1,0 +1,129 @@
+import socket
+import struct
+import argparse
+import time
+import csv
+import os
+from datetime import datetime, timedelta
+
+ipStats = {}
+
+
+def ethernetDissect(ethernetData):
+    destMac, srcMac, l2Protocol = struct.unpack('!6s6sH', ethernetData[:14])
+    return {
+        "L2_Protocol": l2Protocol,
+        "Data": ethernetData[14:],
+    }
+
+
+def ipv4Dissect(ipData):
+    versionIhl, tos, totalLength, identification, flagsOffset, ttl, l3Protocol, checksum, src, dest = struct.unpack(
+        '!BBHHHBBH4s4s', ipData[:20])
+    ihl = versionIhl & 0x0F
+    headerLen = ihl * 4
+    return {
+        'Source IP': socket.inet_ntoa(src),
+        'L3_Protocol': l3Protocol,
+        'Data': ipData[headerLen:]
+    }
+
+
+def icmpDissect(icmpData):
+    if len(icmpData) < 4:
+        return None
+    icmpType, icmpCode, checksum = struct.unpack('!BBH', icmpData[:4])
+    return {'Type': icmpType}
+
+
+def checkCsvHistory(targetIp):
+    if os.path.exists("traffic_log.csv") == False:
+        return False
+
+    file = open("traffic_log.csv", "r")
+    reader = csv.DictReader(file)
+    thirtyMinsAgo = datetime.now() - timedelta(minutes=30)
+
+    historyStats = {}
+
+    for row in reader:
+        if row['src_ip'] == targetIp and row['protocol'] == "ICMP" and row['tcp_flags'] == "ECHO_REQUEST":
+            rowTime = datetime.strptime(row['timestamp'], '%Y-%m-%d %H:%M:%S')
+            if rowTime >= thirtyMinsAgo:
+                timeStr = row['timestamp']
+                if timeStr in historyStats:
+                    historyStats[timeStr] += 1
+                else:
+                    historyStats[timeStr] = 1
+
+    file.close()
+
+    for t in historyStats:
+        if historyStats[t] > 50:
+            return True
+
+    return False
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", "--interface", required=True)
+    args = parser.parse_args()
+
+    print("Starting ICMP Flood Detector on " + args.interface + "...")
+
+    try:
+        conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons(0x0003))
+        conn.bind((args.interface, 0))
+    except:
+        print("Error: run with sudo")
+        return
+
+    try:
+        while True:
+            rawData, addr = conn.recvfrom(65536)
+            ethInfo = ethernetDissect(rawData)
+
+            if ethInfo['L2_Protocol'] == 0x0800:
+                ipInfo = ipv4Dissect(ethInfo['Data'])
+                srcIp = ipInfo['Source IP']
+
+                if ipInfo['L3_Protocol'] == 1:
+                    icmpInfo = icmpDissect(ipInfo['Data'])
+                    if icmpInfo != None and icmpInfo['Type'] == 8:
+
+                        currentSec = int(time.time())
+
+                        if srcIp not in ipStats:
+                            ipStats[srcIp] = {"lastSec": currentSec, "count": 1, "consecSecs": 0}
+                        else:
+                            if ipStats[srcIp]["lastSec"] == currentSec:
+                                ipStats[srcIp]["count"] += 1
+                            else:
+                                if ipStats[srcIp]["count"] > 50:
+                                    ipStats[srcIp]["consecSecs"] += 1
+                                else:
+                                    ipStats[srcIp]["consecSecs"] = 0
+
+                                ipStats[srcIp]["count"] = 1
+                                ipStats[srcIp]["lastSec"] = currentSec
+
+                            if ipStats[srcIp]["consecSecs"] >= 3:
+                                hasHistory = checkCsvHistory(srcIp)
+                                if hasHistory == True:
+                                    historyStr = "YES"
+                                else:
+                                    historyStr = "NO"
+
+                                print("\nALERT: ICMP Flood Detected! ")
+                                print("Source: " + str(srcIp) + " | Rate: >50 requests/sec | Duration: 3 sec")
+                                print("Previous flood detected in last 30 minutes: " + historyStr + "\n")
+
+                                ipStats[srcIp]["consecSecs"] = 0
+
+    except KeyboardInterrupt:
+        print("\nStopping detector.")
+
+
+if __name__ == "__main__":
+    main()
