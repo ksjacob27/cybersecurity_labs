@@ -1,0 +1,15 @@
+  alert tcp any any -> $HOME_NET 80 (msg:"WEB-ATTACK SQL Injection
+  Attempt"; flow:to_server,established; content:"' OR 1=1"; sid:200001;    
+  rev:1; classtype:web-application-attack;)
+                                                                           
+  alert tcp any any -> $HOME_NET 80 (msg:"WEB-ATTACK XSS Detected";        
+  flow:to_server,established; content:"<script>"; sid:200002; rev:1;
+  classtype:web-application-attack;)                                       
+                  
+  alert tcp any any -> $HOME_NET 80 (msg:"WEB-ATTACK LFI Detected";        
+  flow:to_server,established; content:"../"; sid:200003; rev:1;
+  classtype:web-application-attack;)                                       
+                  
+  alert tcp any any -> $HOME_NET 80 (msg:"WEB-ATTACK CSRF Suspicious       
+  Request"; flow:to_server,established; http_uri; content:"Change=Change";
+  sid:200004; rev:1; classtype:web-application-attack;)   

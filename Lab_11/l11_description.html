@@ -1,0 +1,871 @@
+<!DOCTYPE html><html><head>
+      <title>l11_description</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\jafariha\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.24\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="-lab-11-bash-scripting-for-security-administration">📌 Lab 11: Bash Scripting for Security Administration </h1>
+<p>📖 <strong>Course:</strong> CSCI 5742 – Cybersecurity Programming and Analytics<br>
+🎯 <strong>Total Points:</strong> 100</p>
+<hr>
+<h2 id="-overview-and-learning-objectives">📢 <strong>Overview and Learning Objectives</strong> </h2>
+<p>In this lab, students will develop and apply <strong>Bash scripting skills</strong> to automate essential <strong>security administration tasks</strong> in a Linux environment. These tasks simulate real-world responsibilities of a system or network administrator tasked with monitoring infrastructure integrity and detecting potential misconfigurations or attacks.</p>
+<p>Students will build a modular script that supports:</p>
+<ul>
+<li>Automated <strong>ping-based host availability checks</strong></li>
+<li><strong>MAC address validation</strong> to detect <strong>ARP spoofing</strong></li>
+<li><strong>Port scanning</strong> for compliance verification using <code>nmap</code></li>
+<li><strong>Centralized logging</strong> of results with timestamps</li>
+<li><strong>Automated scheduling</strong> using <code>cron</code> for continuous monitoring</li>
+<li><strong>Batch compliance checks</strong> from structured input files</li>
+</ul>
+<h3 id="-by-the-end-of-this-lab-students-will-be-able-to">✅ By the end of this lab, students will be able to: </h3>
+<ul>
+<li>Write Bash scripts to automate <strong>host health and availability monitoring</strong></li>
+<li>Implement MAC address verification to detect <strong>network spoofing</strong></li>
+<li>Use <code>nmap</code> and Bash to perform <strong>service-level port compliance checks</strong></li>
+<li>Configure <code>cron</code> to run monitoring scripts at scheduled intervals</li>
+<li>Design and execute <strong>batch compliance audits</strong> across multiple hosts using file input</li>
+<li>Log and interpret results for <strong>operational security awareness and incident readiness</strong></li>
+</ul>
+<hr>
+<h2 id="-rubric">📈 <strong>Rubric</strong> </h2>
+<table>
+<thead>
+<tr>
+<th><strong>Task</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Task 1: Basic Ping Automation</strong></td>
+<td>Script successfully pings a host, interprets response (normal, loss, delay), and explains results.</td>
+<td>15 pts</td>
+</tr>
+<tr>
+<td><strong>Task 2: Modularization with Parameters</strong></td>
+<td>Refactors ping logic into a function with arguments; demonstrates reusability and input handling.</td>
+<td>10 pts</td>
+</tr>
+<tr>
+<td><strong>Task 3: Logging with Timestamps</strong></td>
+<td>Correct logging of results with accurate timestamps and consistent file output.</td>
+<td>10 pts</td>
+</tr>
+<tr>
+<td><strong>Task 4: Cron-Based Automation</strong></td>
+<td>Script is scheduled with <code>cron</code> to run periodically and once per week; output confirms automation.</td>
+<td>10 pts</td>
+</tr>
+<tr>
+<td><strong>Task 5: MAC Address Validation</strong></td>
+<td>Adds MAC verification logic; logs mismatches; includes clear explanation of security relevance.</td>
+<td>15 pts</td>
+</tr>
+<tr>
+<td><strong>Task 6: Simple Port Check</strong></td>
+<td>Function scans port, identifies open services, and logs appropriately; includes interpretation.</td>
+<td>10 pts</td>
+</tr>
+<tr>
+<td><strong>Task 7: Port Compliance Verification</strong></td>
+<td>Checks for missing and unexpected ports; handles lists correctly; logs results with clear logic.</td>
+<td>15 pts</td>
+</tr>
+<tr>
+<td><strong>Task 8: Full Compliance Check via File</strong></td>
+<td>Reads structured input file; performs ping, MAC, and port checks; output confirms batch compliance logic.</td>
+<td>15 pts</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>100 pts</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="️-lab-environment">🖥️ Lab Environment </h2>
+<p>Use the same <strong>three-VM architecture</strong> as Lab 9. We only need two VMs for this lab.</p>
+<ul>
+<li><strong>VM-T:</strong> Metasploitable 2 (target)</li>
+<li><strong>VM-D:</strong> Kali Linux (security administrator)</li>
+</ul>
+<p>✅ All VMs must use the same host-only network (e.g., 192.168.10.0/24).</p>
+<hr>
+<h2 id="-task-1-network-connectivity-check-with-bash-script">📝 <strong>Task 1: Network Connectivity Check with Bash Script</strong> </h2>
+<p>This task guides you through building a Bash script (<code>autopinger.sh</code>) to evaluate the status of the <strong>Metasploitable (VM-T)</strong> machine using <code>ping</code>. You will incrementally construct the script, explain each component, and analyze connectivity and latency results.</p>
+<hr>
+<h3 id="-step-1-find-vm-t-ip-address">🔹 <strong>Step 1: Find VM-T IP Address</strong> </h3>
+<p>Log into the Metasploitable VM (VM-T) and run the following:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">ifconfig</span>
+</code></pre><p>Locate the IP address assigned to the <code>eth0</code> interface (e.g., <code>192.168.10.6</code>). You'll use this as the <strong>target IP</strong>.</p>
+<hr>
+<h3 id="-step-2-create-your-script">🔹 <strong>Step 2: Create Your Script</strong> </h3>
+<p>On the Kali (VM-D), create and open a script file:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>mousepad autopinger.sh
+</code></pre><p>Now start building the script step-by-step.</p>
+<hr>
+<h3 id="-step-3-start-the-script-and-define-the-target">🔹 <strong>Step 3: Start the Script and Define the Target</strong> </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token assign-left variable">VM_T_IP</span><span class="token operator">=</span><span class="token string">"192.168.10.6"</span>
+</code></pre><p>This defines the IP address of the Metasploitable VM (update it with the actual value you found earlier). The <code>#!/bin/bash</code> line tells the OS to run this script using Bash.</p>
+<hr>
+<h3 id="-step-4-capture-ping-output">🔹 <strong>Step 4: Capture Ping Output</strong> </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">ping_output</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">ping</span> <span class="token parameter variable">-c3</span> $VM_T_IP <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-2</span><span class="token variable">)</span></span>
+<span class="token assign-left variable">ping_summary</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$ping_output</span>"</span> <span class="token operator">|</span> <span class="token function">head</span> <span class="token parameter variable">-n1</span><span class="token variable">)</span></span>
+<span class="token assign-left variable">ping_rtt</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$ping_output</span>"</span> <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-n1</span><span class="token variable">)</span></span>
+
+</code></pre><ul>
+<li>Sends 3 ICMP Echo requests to <code>VM_T_IP</code>.</li>
+<li>Uses <code>tail -2</code> to extract the final two summary lines from the ping output.</li>
+<li><code>ping_output</code> now contains:
+<ul>
+<li>Line 1 → packet transmission/loss summary</li>
+<li>Line 2 → round-trip time (RTT) statistics</li>
+</ul>
+</li>
+<li><code>ping_summary</code> stores the first line (packet loss).</li>
+<li><code>ping_rtt</code> stores the second line (rtt min/avg/max/mdev).</li>
+</ul>
+<hr>
+<h3 id="-step-5-extract-packet-loss">🔹 <strong>Step 5: Extract Packet Loss</strong> </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">has_errors</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$ping_summary</span>"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-o</span> errors<span class="token variable">)</span></span>
+
+<span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$has_errors</span>"</span> <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+    <span class="token assign-left variable">loss</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$ping_summary</span>"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">","</span> <span class="token parameter variable">-f4</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">" "</span> <span class="token parameter variable">-f2</span><span class="token variable">)</span></span>
+<span class="token keyword keyword-else">else</span>
+    <span class="token assign-left variable">loss</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$ping_summary</span>"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">","</span> <span class="token parameter variable">-f3</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">" "</span> <span class="token parameter variable">-f2</span><span class="token variable">)</span></span>
+<span class="token keyword keyword-fi">fi</span>
+</code></pre><p>This handles two scenarios:</p>
+<ul>
+<li>If the ping reports errors (host unreachable), the script extracts packet loss from a different column.</li>
+<li><code>cut</code> is used to isolate the correct field.</li>
+</ul>
+<hr>
+<h3 id="-step-6-extract-minimum-delay">🔹 <strong>Step 6: Extract Minimum Delay</strong> </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">delay</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$ping_rtt</span>"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">"="</span> <span class="token parameter variable">-f2</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">"/"</span> <span class="token parameter variable">-f1</span><span class="token variable">)</span></span>
+</code></pre><p>This extracts the minimum round-trip time (RTT) from the delay line. Example format:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>rtt min/avg/max/mdev = 0.423/0.436/0.451/0.012 ms
+</code></pre><hr>
+<h3 id="-step-7-evaluate-the-results">🔹 <strong>Step 7: Evaluate the Results</strong> </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$loss</span>"</span> <span class="token operator">=</span> <span class="token string">"100%"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Server is not responding at all."</span>
+<span class="token keyword keyword-elif">elif</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$loss</span>"</span> <span class="token operator">!=</span> <span class="token string">"0%"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Server is responding with packet loss."</span>
+<span class="token keyword keyword-else">else</span>
+    <span class="token assign-left variable">delay_sec_part</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$delay</span>"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">"."</span> <span class="token parameter variable">-f1</span><span class="token variable">)</span></span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$delay_sec_part</span>"</span> <span class="token parameter variable">-lt</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"Server is responding normally."</span>
+    <span class="token keyword keyword-else">else</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"Server is responding slowly."</span>
+    <span class="token keyword keyword-fi">fi</span>
+<span class="token keyword keyword-fi">fi</span>
+</code></pre><p>This block interprets the results:</p>
+<ul>
+<li><strong>100% loss</strong> → No response</li>
+<li><strong>Partial loss</strong> → Network issue</li>
+<li><strong>High delay</strong> → Network is slow</li>
+</ul>
+<hr>
+<h3 id="-step-8-make-and-run-the-script">🔹 <strong>Step 8: Make and Run the Script</strong> </h3>
+<p>In the terminal:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">chmod</span> +x autopinger.sh
+./autopinger.sh
+</code></pre><hr>
+<h2 id="-deliverables">✅ <strong>Deliverables</strong> </h2>
+<h3 id="-screenshots">📷 <strong>Screenshots</strong> </h3>
+<ol>
+<li>The <strong>full script code</strong> in your editor (<code>autopinger.sh</code>).</li>
+<li><strong>Output of your script</strong> showing one of the three connectivity cases:
+<ul>
+<li>Not responding</li>
+<li>Responding with packet loss</li>
+<li>Responding slowly or normally</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-questions">🧠 <strong>Questions</strong> </h3>
+<ol>
+<li>
+<p><strong>Interpretation of Results</strong></p>
+<ul>
+<li>What does packet loss indicate compared to high delay? Which is more critical for availability?</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Handling</strong></p>
+<ul>
+<li>Why is the script checking for the word <code>errors</code> in the ping output? What scenarios might generate this?</li>
+</ul>
+</li>
+<li>
+<p><strong>Alternative Connectivity Tools</strong></p>
+<ul>
+<li>List two tools or commands besides <code>ping</code> that could help determine network availability and briefly explain how each works.</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Reflection</strong></p>
+<ul>
+<li>How could a security defender use a similar script to gather reconnaissance data about their own network?</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-task-2-creating-a-reusable-ping-function-with-parameters">📝 <strong>Task 2: Creating a Reusable Ping Function with Parameters</strong> </h2>
+<p>In this task, you’ll refactor your previous script to make it modular and reusable by defining a function called <code>pingtest</code>. This function will take the IP address of a target as input and perform all ping checks and result interpretations.</p>
+<hr>
+<h3 id="-step-1-refactor-the-script-with-a-function">🔹 <strong>Step 1: Refactor the Script with a Function</strong> </h3>
+<p>Create a new version of <code>autopinger.sh</code>, or continue editing the previous one.</p>
+<p>At the top, define the shell and begin with the function declaration:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token function-name function">pingtest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">target_ip</span><span class="token operator">=</span><span class="token variable">$1</span>
+</code></pre><p>This defines a new function <code>pingtest</code> that receives one parameter: the IP address of the host to check.</p>
+<hr>
+<h3 id="-step-2-insert-ping-and-evaluation-logic">🔹 <strong>Step 2: Insert Ping and Evaluation Logic</strong> </h3>
+<p>Now include the logic from Task 1 inside the function, replacing static variables with the parameter:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>    <span class="token assign-left variable">ping_output</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">ping</span> <span class="token parameter variable">-c3</span> $target_ip <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-2</span><span class="token variable">)</span></span>
+    <span class="token punctuation">..</span>.
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="-step-3-call-the-function-with-command-line-input">🔹 <strong>Step 3: Call the Function with Command-Line Input</strong> </h3>
+<p>Add this line at the end of the script:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token string">"Usage: <span class="token variable">$0</span> &lt;target_ip&gt;"</span>
+    <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+<span class="token keyword keyword-fi">fi</span>
+pingtest <span class="token string">"<span class="token variable">$1</span>"</span>
+</code></pre><p>This will call the <code>pingtest</code> function and pass the IP address provided as the first argument to the script.</p>
+<hr>
+<h3 id="-step-4-run-the-script-with-an-argument">🔹 <strong>Step 4: Run the Script with an Argument</strong> </h3>
+<p>Make the script executable (if not already):</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">chmod</span> +x autopinger.sh
+</code></pre><p>Run it with:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./autopinger.sh <span class="token number">192.168</span>.10.6
+</code></pre><p>(Replace <code>192.168.10.6</code> with your actual <strong>VM-T IP</strong> and then also test with some non-active IPs)</p>
+<hr>
+<h2 id="-deliverables-1">✅ <strong>Deliverables</strong> </h2>
+<h3 id="-screenshots-1">📷 <strong>Screenshots</strong> </h3>
+<ol>
+<li>The <strong>updated script content</strong>, clearly showing the <code>pingtest</code> function and the call at the bottom.</li>
+<li>The <strong>terminal output</strong> from executing the script with the target IP address as input.</li>
+</ol>
+<hr>
+<h3 id="-questions-1">🧠 <strong>Questions</strong> </h3>
+<ol>
+<li>
+<p><strong>Code Reusability</strong></p>
+<ul>
+<li>What is the advantage of turning this script into a function instead of repeating the logic each time?</li>
+</ul>
+</li>
+<li>
+<p><strong>Parameterization</strong></p>
+<ul>
+<li>Why is it more flexible to pass the IP address as an argument instead of hardcoding it? Give a real-world use case.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scripting Practice</strong></p>
+<ul>
+<li>What would happen if you ran the script without any arguments? Modify the script to check for this case and show a helpful message if no IP is provided.</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Insight</strong></p>
+<ul>
+<li>How might a security admin use a parameterized script to automate pinging process across multiple subnets?</li>
+<li>How might an attacker use this to automate scanning?</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-task-3-logging-ping-results-with-timestamps">📝 <strong>Task 3: Logging Ping Results with Timestamps</strong> </h2>
+<p>In this task, you'll extend your <code>pingtest</code> function to write all status messages to a log file, including a timestamp for each entry. This allows long-term tracking of server availability.</p>
+<hr>
+<h3 id="-step-1-define-the-log-file">🔹 <strong>Step 1: Define the Log File</strong> </h3>
+<p>At the top of your <code>autopinger.sh</code> script, add the following line (modify the path as needed):</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">logfile</span><span class="token operator">=</span><span class="token string">"/home/kali/Documents/lab11/report.log"</span>
+</code></pre><p>Make sure the directory exists:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /home/kali/Documents/lab11
+</code></pre><hr>
+<h3 id="-step-2-add-logging-to-the-pingtest-function">🔹 <strong>Step 2: Add Logging to the <code>pingtest</code> Function</strong> </h3>
+<p>Update your <code>pingtest</code> function to log <strong>every output</strong> with a timestamp using <code>date</code>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function-name function">pingtest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">target_ip</span><span class="token operator">=</span><span class="token variable">$1</span>
+    <span class="token assign-left variable">ping_output</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">ping</span> <span class="token parameter variable">-c3</span> $target_ip <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-2</span><span class="token variable">)</span></span>
+    <span class="token punctuation">..</span>.
+
+    <span class="token assign-left variable">timestamp</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span>
+
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$loss</span>"</span> <span class="token operator">=</span> <span class="token string">"100%"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is not responding at all."</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is not responding at all."</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+    <span class="token keyword keyword-elif">elif</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$loss</span>"</span> <span class="token operator">!=</span> <span class="token string">"0%"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is responding with packet loss."</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is responding with packet loss."</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+    <span class="token keyword keyword-else">else</span>
+        <span class="token assign-left variable">delay_sec_part</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$delay</span>"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">"."</span> <span class="token parameter variable">-f1</span><span class="token variable">)</span></span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$delay_sec_part</span>"</span> <span class="token parameter variable">-lt</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is responding normally."</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is responding normally."</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+        <span class="token keyword keyword-else">else</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is responding slowly."</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> is responding slowly."</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+        <span class="token keyword keyword-fi">fi</span>
+    <span class="token keyword keyword-fi">fi</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="-step-3-run-the-script-multiple-times">🔹 <strong>Step 3: Run the Script Multiple Times</strong> </h3>
+<p>You can run it with:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./autopinger.sh <span class="token number">192.168</span>.10.6
+</code></pre><p>Run the script <strong>at least twice</strong>, with enough delay between runs to verify that multiple entries are recorded in the log file.</p>
+<hr>
+<h2 id="-deliverables-2">✅ <strong>Deliverables</strong> </h2>
+<h3 id="-log-file-contents">📂 <strong>Log File Contents</strong> </h3>
+<p>Open your log file and copy its contents here:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">cat</span> /home/kali/Documents/lab11/report.log
+</code></pre><hr>
+<h3 id="-screenshots-2">📷 <strong>Screenshots</strong> </h3>
+<ol>
+<li>
+<p>Updated script code showing:</p>
+<ul>
+<li><code>logfile=...</code> definition</li>
+<li>Logging lines added in each conditional block</li>
+</ul>
+</li>
+<li>
+<p>Terminal output showing:</p>
+<ul>
+<li>Script execution with timestamped output</li>
+</ul>
+</li>
+<li>
+<p>Log file contents showing:</p>
+<ul>
+<li>Multiple timestamped results</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-questions-2">🧠 <strong>Questions</strong> </h3>
+<ol>
+<li>
+<p><strong>Purpose of Logging</strong></p>
+<ul>
+<li>Why is timestamped logging useful in network monitoring and incident response?</li>
+</ul>
+</li>
+<li>
+<p><strong>Scripting Best Practices</strong></p>
+<ul>
+<li>What are the risks of hardcoding the log file path? Suggest a way to make the script more portable.</li>
+</ul>
+</li>
+<li>
+<p><strong>Automation and Forensics</strong></p>
+<ul>
+<li>If you were a security analyst reviewing this log after a real incident, what patterns would you look for?</li>
+</ul>
+</li>
+<li>
+<p><strong>Improvements</strong></p>
+<ul>
+<li>How could you improve the log format for easier parsing or automation? Suggest one change.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-task-4-automating-ping-monitoring-with-cron">📝 <strong>Task 4: Automating Ping Monitoring with <code>cron</code></strong> </h2>
+<p>In this task, you’ll schedule your <code>autopinger.sh</code> script to run automatically at regular intervals using <code>cron</code>, a time-based job scheduler in Linux. This enables persistent and unattended health monitoring of remote systems.</p>
+<hr>
+<h3 id="-step-1-modify-your-script-to-include-the-ip">🔹 <strong>Step 1: Modify Your Script to Include the IP</strong> </h3>
+<p>At the bottom of your <code>autopinger.sh</code>, add a direct call to the <code>pingtest</code> function with your VM-T IP:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>pingtest <span class="token number">192.168</span>.10.6
+</code></pre><p>This ensures the script works autonomously when called by the system without needing a command-line argument.</p>
+<blockquote>
+<p>🔧 <strong>Note</strong>: Replace <code>192.168.10.6</code> with your actual Metasploitable IP.</p>
+</blockquote>
+<hr>
+<h3 id="-step-2-make-sure-all-paths-are-absolute">🔹 <strong>Step 2: Make Sure All Paths Are Absolute</strong> </h3>
+<p>Update your script to define the log file with a full absolute path:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">logfile</span><span class="token operator">=</span><span class="token string">"/home/kali/Documents/lab11/report.log"</span>
+</code></pre><p>Ensure the directory exists:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /home/kali/Documents/lab11
+</code></pre><hr>
+<h3 id="-step-3-set-up-cron-job-to-run-every-minute">🔹 <strong>Step 3: Set Up Cron Job to Run Every Minute</strong> </h3>
+<p>Edit the crontab using:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">crontab</span> <span class="token parameter variable">-e</span>
+</code></pre><p>Choose <code>nano</code> as the editor if prompted.</p>
+<p>At the end of the file, add this line:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>* * * * * /home/kali/Documents/lab11/autopinger.sh
+</code></pre><p>This will execute your script <strong>every minute</strong>, logging connectivity results.</p>
+<p>Save and exit (<code>Ctrl+O</code>, then <code>Enter</code>, then <code>Ctrl+X</code> in nano).</p>
+<p>✅ You can confirm that your job was saved by running:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">crontab</span> <span class="token parameter variable">-l</span>
+</code></pre><hr>
+<h3 id="-step-4-run-and-collect-logs">🔹 <strong>Step 4: Run and Collect Logs</strong> </h3>
+<p>Wait a few minutes and then view your updated log:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">cat</span> /home/kali/Documents/lab11/report.log
+</code></pre><p>Verify that new entries are appended once per minute with timestamps.</p>
+<hr>
+<h3 id="-step-5-one-time-weekly-scheduling">🔹 <strong>Step 5: One-Time Weekly Scheduling</strong> </h3>
+<p>To run the script <strong>only once at 7:00 AM every Monday</strong>, add this line to crontab:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token number">0</span> <span class="token number">7</span> * * <span class="token number">1</span> /home/kali/Documents/lab11/autopinger.sh
+</code></pre><p>This ensures a weekly health check every Monday morning.</p>
+<hr>
+<h2 id="-deliverables-3">✅ <strong>Deliverables</strong> </h2>
+<h3 id="-log-file-contents-1">📂 <strong>Log File Contents</strong> </h3>
+<p>Paste a few entries from your <code>/home/kali/Documents/lab11/report.log</code> file showing:</p>
+<ul>
+<li>Multiple timestamped results</li>
+<li>Confirmed periodic execution</li>
+</ul>
+<h3 id="-screenshots-3">📷 <strong>Screenshots</strong> </h3>
+<ol>
+<li>Crontab entry: <code>* * * * * ...</code> and <code>0 7 * * 1 ...</code></li>
+<li>Log file (<code>report.log</code>) with multiple automatic entries</li>
+<li>Updated script with hardcoded IP in <code>pingtest</code> call</li>
+</ol>
+<hr>
+<h3 id="-questions-3">🧠 <strong>Questions</strong> </h3>
+<ol>
+<li>
+<p><strong>Automation Insight</strong></p>
+<ul>
+<li>What advantages does scheduling monitoring tasks with <code>cron</code> provide over manual execution?</li>
+</ul>
+</li>
+<li>
+<p><strong>Timing and Frequency</strong></p>
+<ul>
+<li>What are the trade-offs of running this script every minute vs. every hour?</li>
+</ul>
+</li>
+<li>
+<p><strong>Resilience</strong></p>
+<ul>
+<li>If the system reboots, what happens to your cron job? How could you ensure it resumes?</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Perspective</strong></p>
+<ul>
+<li>Why might logging and automation like this be valuable in detecting early signs of attack or system failure?</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-task-5-verifying-mac-address-integrity-using-arp">📝 <strong>Task 5: Verifying MAC Address Integrity Using ARP</strong> </h2>
+<p>In this task, you will extend your <code>autopinger.sh</code> script to check that the MAC address of a target host matches its expected hardware address. This helps detect <strong>ARP spoofing attacks</strong>, where a malicious host impersonates another on the local network.</p>
+<hr>
+<h3 id="-step-1-add-the-arpcheck-function">🔹 <strong>Step 1: Add the <code>arpcheck</code> Function</strong> </h3>
+<p>Append the following function to your script:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function-name function">arpcheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">target_ip</span><span class="token operator">=</span><span class="token variable">$1</span>
+    <span class="token assign-left variable">expected_mac</span><span class="token operator">=</span><span class="token variable">$2</span>
+
+    <span class="token comment"># Ensure ARP cache is populated</span>
+    <span class="token function">ping</span> <span class="token parameter variable">-c1</span> <span class="token variable">$target_ip</span> <span class="token operator">&gt;</span> /dev/null <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span> 
+
+    <span class="token assign-left variable">actual_mac</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>arp $target_ip <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-1</span> <span class="token operator">|</span> <span class="token function">cut</span> -c34-50<span class="token variable">)</span></span>
+
+    <span class="token assign-left variable">timestamp</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span>
+
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$actual_mac</span>"</span> <span class="token operator">!=</span> <span class="token string">"<span class="token variable">$expected_mac</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - WARNING: Server with IP <span class="token variable">$target_ip</span> is responding with wrong MAC <span class="token variable">$actual_mac</span>"</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - WARNING: Server with IP <span class="token variable">$target_ip</span> is responding with wrong MAC <span class="token variable">$actual_mac</span>"</span>
+    <span class="token keyword keyword-else">else</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> has valid MAC address <span class="token variable">$actual_mac</span>"</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$timestamp</span> - Server <span class="token variable">$target_ip</span> has valid MAC address <span class="token variable">$actual_mac</span>"</span>
+    <span class="token keyword keyword-fi">fi</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="-step-2-explanation-of-the-command">🔍 <strong>Step 2: Explanation of the Command</strong> </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">actual_mac</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>arp $target_ip <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-1</span> <span class="token operator">|</span> <span class="token function">cut</span> -c34-50<span class="token variable">)</span></span>
+</code></pre><p>Breakdown:</p>
+<ul>
+<li><code>arp $target_ip</code>: Displays the ARP table entry for the given IP.</li>
+<li><code>tail -1</code>: Ensures the last line is taken, in case there are multiple entries.</li>
+<li><code>cut -c34-50</code>: Extracts character positions 34 to 50, which typically contain the MAC address (format may vary by system/font).</li>
+</ul>
+<blockquote>
+<p>✅ Consider testing <code>arp</code> manually first to verify the cut positions are correct for your setup. If needed, use a field-based cut:</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>arp <span class="token parameter variable">-n</span> <span class="token variable">$target_ip</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $3}'</span>
+</code></pre><hr>
+<h3 id="-step-3-update-your-main-script-call">🔹 <strong>Step 3: Update Your Main Script Call</strong> </h3>
+<p>Now call the <code>arpcheck</code> function inside your script with both the IP and the expected MAC:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>pingtest <span class="token number">192.168</span>.10.6
+arpcheck <span class="token number">192.168</span>.10.6 00:0c:29:bc:e8:3b
+</code></pre><p>Replace both the IP and MAC address with correct values from your environment.</p>
+<hr>
+<h3 id="-step-4-test-your-script">🔹 <strong>Step 4: Test Your Script</strong> </h3>
+<p>Run the script normally:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./autopinger.sh
+</code></pre><p>Then check the output and confirm messages for valid or mismatched MAC addresses are both printed to terminal and logged.</p>
+<hr>
+<h2 id="-deliverables-4">✅ <strong>Deliverables</strong> </h2>
+<h3 id="-log-file-contents-2">📂 <strong>Log File Contents</strong> </h3>
+<p>Paste the relevant section of your <code>/home/kali/Documents/lab11/report.log</code> showing:</p>
+<ul>
+<li>One log for a <strong>matching MAC</strong></li>
+<li>One log for a <strong>mismatched MAC</strong> (you may simulate this by altering the expected MAC)</li>
+</ul>
+<h3 id="-screenshots-4">📷 <strong>Screenshots</strong> </h3>
+<ol>
+<li><code>arpcheck()</code> function in your script</li>
+<li>Terminal output of a correct MAC match and a simulated mismatch</li>
+<li>Updated <code>report.log</code> with both messages</li>
+</ol>
+<hr>
+<h3 id="-questions-4">🧠 <strong>Questions</strong> </h3>
+<ol>
+<li>
+<p><strong>Command Understanding</strong></p>
+<ul>
+<li>Explain what each part of the following command does:<br>
+<code>arp $1 | tail -1 | cut -c34-50</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Security Relevance</strong></p>
+<ul>
+<li>Why is it important to validate the MAC address of a host? What attacks does this help detect?</li>
+</ul>
+</li>
+<li>
+<p><strong>Limitations</strong></p>
+<ul>
+<li>How could an attacker still bypass this check? (Consider spoofing or poisoning scenarios.)</li>
+</ul>
+</li>
+<li>
+<p><strong>Improvement</strong></p>
+<ul>
+<li>What are two ways to make this MAC verification more robust in production systems?</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-task-6-port-availability-compliance-check">🧩 <strong>Task 6: Port Availability Compliance Check</strong> </h2>
+<p>In this task, you will create a function to check whether a specific port is open on a given machine using <code>nmap</code>, and log a warning if it is. This is useful for basic compliance auditing in security automation scripts.</p>
+<hr>
+<h3 id="-step-1-add-the-function-to-your-script">🔹 <strong>Step 1: Add the Function to Your Script</strong> </h3>
+<p>In your <code>autopinger.sh</code>, define the following:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function-name function">portcheckSimple</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">nmaplog</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>nmap $1 <span class="token operator">|</span> <span class="token function">grep</span> $2<span class="token variable">)</span></span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token string">"<span class="token variable">$nmaplog</span>"</span> <span class="token operator">!=</span> <span class="token string">""</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> WARNING: Port <span class="token variable">$2</span> is open on <span class="token variable">$1</span>"</span> 
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> WARNING: Port <span class="token variable">$2</span> is open on <span class="token variable">$1</span>"</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+    <span class="token keyword keyword-fi">fi</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><code>$1</code>: Target IP address (e.g., MS-T VM)</li>
+<li><code>$2</code>: Port to verify (e.g., 139, 100)</li>
+<li>Logs a warning only if the port is found open.</li>
+</ul>
+<hr>
+<h3 id="-step-2-run-tests">🔹 <strong>Step 2: Run Tests</strong> </h3>
+<p>Use the IP of the <strong>MS-T VM</strong> and test two ports:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>portcheckSimple <span class="token operator">&lt;</span>MS-T-IP<span class="token operator">&gt;</span> <span class="token number">139</span>
+portcheckSimple <span class="token operator">&lt;</span>MS-T-IP<span class="token operator">&gt;</span> <span class="token number">100</span>
+</code></pre><blockquote>
+<p>Replace <code>&lt;MS-T-IP&gt;</code> with the actual IP address of your MS-T target (e.g., <code>192.168.10.6</code>).</p>
+</blockquote>
+<hr>
+<h3 id="-deliverables-for-task-6">✅ <strong>Deliverables for Task 6</strong> </h3>
+<h4 id="-required-screenshots">📷 Required Screenshots </h4>
+<ul>
+<li>Screenshot of the updated <code>autopinger.sh</code> with the <code>portcheckSimple</code> function.</li>
+<li>Screenshot showing the terminal output after running the function on ports 139 and 100.</li>
+<li>Screenshot of the log file (<code>$logfile</code>) contents showing any warnings.</li>
+</ul>
+<h4 id="-critical-thinking-questions">🧠 Critical Thinking Questions </h4>
+<ol>
+<li><strong>Why might port 139 be open on the MS-T machine but not on other modern systems?</strong></li>
+<li><strong>What are the security implications of exposing legacy ports like 139 on a network?</strong></li>
+<li><strong>How might this function be extended to support checking a list of ports or multiple IPs automatically?</strong></li>
+</ol>
+<hr>
+<h2 id="-task-7-advanced-port-compliance-verification">📝 <strong>Task 7: Advanced Port Compliance Verification</strong> </h2>
+<p>In this task, you will enhance your script with a new version of the <code>portcheck</code> function. It will now receive a <strong>semicolon-separated list of expected open TCP ports</strong>, check if each is open, and verify that <strong>no other unexpected ports</strong> are accessible. This simulates a basic compliance audit to detect unauthorized services.</p>
+<hr>
+<h3 id="-step-1-define-the-enhanced-portcheck-function">🔹 <strong>Step 1: Define the Enhanced <code>portcheck</code> Function</strong> </h3>
+<p>Add or update the following function in your script:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function-name function">portcheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">target_ip</span><span class="token operator">=</span><span class="token variable">$1</span>
+    <span class="token assign-left variable">expected_ports</span><span class="token operator">=</span><span class="token variable">$2</span>
+    <span class="token assign-left variable"><span class="token environment constant">IFS</span></span><span class="token operator">=</span><span class="token string">';'</span> <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token parameter variable">-a</span> arrayports <span class="token operator">&lt;&lt;&lt;</span> <span class="token string">"<span class="token variable">$expected_ports</span>"</span>
+
+    <span class="token comment"># Scan all ports with nmap and store results</span>
+    <span class="token assign-left variable">nmaplog</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span>nmap $target_ip<span class="token variable">)</span></span>
+
+    <span class="token comment"># Check each expected port is open</span>
+    <span class="token keyword keyword-for">for</span> <span class="token for-or-select variable">port</span> <span class="token keyword keyword-in">in</span> <span class="token string">"<span class="token variable">${arrayports<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>"</span>
+    <span class="token keyword keyword-do">do</span>
+        <span class="token assign-left variable">match</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$nmaplog</span>"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"<span class="token variable">$port</span>/tcp"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">open</span><span class="token variable">)</span></span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token string">"<span class="token variable">$match</span>"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> - Port <span class="token variable">$port</span> on server <span class="token variable">$target_ip</span> is EXPECTED to be open, but it is CLOSED or FILTERED."</span> <span class="token operator">&gt;&gt;</span> <span class="token string">"<span class="token variable">$logfile</span>"</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> - Port <span class="token variable">$port</span> on server <span class="token variable">$target_ip</span> is EXPECTED to be open, but it is CLOSED or FILTERED."</span>
+        <span class="token keyword keyword-fi">fi</span>
+    <span class="token keyword keyword-done">done</span>
+
+    <span class="token comment"># Extract all actual open TCP ports from the scan</span>
+    <span class="token assign-left variable">allOpenPorts</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$nmaplog</span>"</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">open</span> <span class="token operator">|</span> <span class="token function">grep</span> tcp <span class="token operator">|</span> <span class="token function">cut</span> -d<span class="token string">'/'</span> <span class="token parameter variable">-f1</span><span class="token variable">)</span></span>
+
+    <span class="token comment"># Check for any unexpected open ports</span>
+    <span class="token keyword keyword-for">for</span> <span class="token for-or-select variable">port</span> <span class="token keyword keyword-in">in</span> <span class="token variable">$allOpenPorts</span><span class="token punctuation">;</span> <span class="token keyword keyword-do">do</span>
+        <span class="token keyword keyword-if">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token string">" <span class="token variable">${arrayports<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span> "</span> <span class="token operator">=~</span> <span class="token string">" <span class="token variable">${port}</span> "</span> <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword keyword-then">then</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> - UNEXPECTED open port <span class="token variable">$port</span> found on server <span class="token variable">$target_ip</span>"</span> <span class="token operator">&gt;&gt;</span> <span class="token string">"<span class="token variable">$logfile</span>"</span>
+            <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> - UNEXPECTED open port <span class="token variable">$port</span> found on server <span class="token variable">$target_ip</span>"</span>
+        <span class="token keyword keyword-fi">fi</span>
+    <span class="token keyword keyword-done">done</span>
+
+    <span class="token assign-left variable"><span class="token environment constant">IFS</span></span><span class="token operator">=</span><span class="token string">$' <span class="token entity" title="\t">\t</span><span class="token entity" title="\n">\n</span>'</span>  <span class="token comment"># Reset IFS</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="-step-2-call-the-function-with-a-port-list">🔹 <strong>Step 2: Call the Function with a Port List</strong> </h3>
+<p>At the bottom of your script, call the function with the target IP and a list of expected ports:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>portcheck <span class="token number">192.168</span>.10.6 <span class="token string">"139;80;81"</span>
+</code></pre><blockquote>
+<p>Replace the IP and port list with values that match your VM-T setup. Use open and closed ports to test both cases.</p>
+</blockquote>
+<hr>
+<h3 id="-step-3-test-your-script">🔹 <strong>Step 3: Test Your Script</strong> </h3>
+<p>Run the script and observe:</p>
+<ul>
+<li>Log entries for missing expected ports</li>
+<li>Warnings for unexpected open ports</li>
+</ul>
+<p>Then check:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">cat</span> /home/kali/Documents/lab11/report.log
+</code></pre><hr>
+<h2 id="-deliverables-5">✅ <strong>Deliverables</strong> </h2>
+<h3 id="-log-file-output">📂 <strong>Log File Output</strong> </h3>
+<p>Paste the section of your <code>report.log</code> showing:</p>
+<ul>
+<li>A port listed as expected but closed</li>
+<li>A port that was open but not in the expected list</li>
+</ul>
+<h3 id="-screenshots-5">📷 <strong>Screenshots</strong> </h3>
+<ol>
+<li><code>portcheck()</code> function as written in your script</li>
+<li>Terminal output of function execution</li>
+<li>Updated <code>report.log</code> reflecting both types of port compliance issues</li>
+</ol>
+<hr>
+<h3 id="-questions-5">🧠 <strong>Questions</strong> </h3>
+<ol>
+<li>
+<p><strong>Pattern Matching</strong></p>
+<ul>
+<li>Why do we use <code>grep "$port/tcp" | grep open</code> to confirm port status instead of just searching for the port number?</li>
+</ul>
+</li>
+<li>
+<p><strong>Unexpected Ports</strong></p>
+<ul>
+<li>What types of misconfigurations or attacks might result in an unexpected port being open on a system?</li>
+</ul>
+</li>
+<li>
+<p><strong>Scalability</strong></p>
+<ul>
+<li>How would you adapt this script to check multiple hosts (e.g., from a file)?</li>
+</ul>
+</li>
+<li>
+<p><strong>Security Implication</strong></p>
+<ul>
+<li>What should a system administrator do if unexpected ports are detected in production?</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-task-8-comprehensive-network-compliance-check-from-file-input">📝 <strong>Task 8: Comprehensive Network Compliance Check from File Input</strong> </h2>
+<p>In this final task, you will implement the <code>comprehensivecheck</code> function. It reads an input file containing host IPs, expected MAC addresses, and allowed TCP ports. For each entry, it will:</p>
+<ol>
+<li>Check network availability (<code>pingtest</code>)</li>
+<li>Verify the MAC address (<code>arpcheck</code>)</li>
+<li>Audit port compliance (<code>portcheck</code>)</li>
+</ol>
+<p>This provides a basic but realistic foundation for building automated compliance or asset verification tools.</p>
+<hr>
+<h3 id="-step-1-create-the-input-file">🔹 <strong>Step 1: Create the Input File</strong> </h3>
+<p>In your project directory, create a file named <code>input.txt</code> with the following format:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>192.168.10.6,00:0c:29:bc:e8:3b,139;445;21
+192.168.10.7,00:0c:29:aa:bb:cc,80;22
+</code></pre><p>Each line has:</p>
+<ul>
+<li>IP address of a host</li>
+<li>Its expected MAC address</li>
+<li>A semicolon-separated list of ports that are allowed to be open</li>
+</ul>
+<hr>
+<h3 id="-step-2-define-the-comprehensivecheck-function">🔹 <strong>Step 2: Define the <code>comprehensivecheck</code> Function</strong> </h3>
+<p>Add the following function to your <code>autopinger.sh</code>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function-name function">comprehensivecheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token assign-left variable">input_file</span><span class="token operator">=</span><span class="token variable">$1</span>
+
+    <span class="token keyword keyword-while">while</span> <span class="token assign-left variable"><span class="token environment constant">IFS</span></span><span class="token operator">=</span><span class="token string">','</span> <span class="token builtin class-name">read</span> <span class="token parameter variable">-r</span> <span class="token function">ip</span> mac ports
+    <span class="token keyword keyword-do">do</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> - Starting compliance check for <span class="token variable">$ip</span>"</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span><span class="token variable">)</span></span> - Starting compliance check for <span class="token variable">$ip</span>"</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+
+        pingtest <span class="token string">"<span class="token variable">$ip</span>"</span>
+        arpcheck <span class="token string">"<span class="token variable">$ip</span>"</span> <span class="token string">"<span class="token variable">$mac</span>"</span>
+        portcheck <span class="token string">"<span class="token variable">$ip</span>"</span> <span class="token string">"<span class="token variable">$ports</span>"</span>
+
+        <span class="token builtin class-name">echo</span> <span class="token string">"---------------------------------------------------"</span> <span class="token operator">&gt;&gt;</span> <span class="token variable">$logfile</span>
+    <span class="token keyword keyword-done">done</span> <span class="token operator">&lt;</span> <span class="token string">"<span class="token variable">$input_file</span>"</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h3 id="-step-3-call-the-function">🔹 <strong>Step 3: Call the Function</strong> </h3>
+<p>At the bottom of your script, add:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>comprehensivecheck input.txt
+</code></pre><p>Make sure <code>input.txt</code> is in the same directory as your script or adjust the path accordingly.</p>
+<hr>
+<h3 id="-step-4-run-and-verify">🔹 <strong>Step 4: Run and Verify</strong> </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>./autopinger.sh
+</code></pre><p>Check the console and <code>report.log</code> for output confirming:</p>
+<ul>
+<li>Ping status</li>
+<li>MAC address validation</li>
+<li>Open port compliance</li>
+</ul>
+<hr>
+<h2 id="-deliverables-6">✅ <strong>Deliverables</strong> </h2>
+<h3 id="-log-file-output-1">📂 <strong>Log File Output</strong> </h3>
+<p>Paste at least one full block from your <code>report.log</code> showing:</p>
+<ul>
+<li>Ping results</li>
+<li>MAC verification</li>
+<li>Port compliance (including one unexpected port warning if applicable)</li>
+</ul>
+<h3 id="-screenshots-6">📷 <strong>Screenshots</strong> </h3>
+<ol>
+<li><code>comprehensivecheck()</code> function in your script</li>
+<li>Terminal output showing it processing multiple IPs</li>
+<li>Your <code>input.txt</code> content</li>
+<li>Relevant section of <code>report.log</code></li>
+</ol>
+<hr>
+<h3 id="-questions-6">🧠 <strong>Questions</strong> </h3>
+<ol>
+<li>
+<p><strong>Automation Advantage</strong></p>
+<ul>
+<li>Why is it useful to perform batch compliance checks from a file?</li>
+</ul>
+</li>
+<li>
+<p><strong>Input Validation</strong></p>
+<ul>
+<li>What risks arise if the <code>input.txt</code> file is malformed? How would you add validation to the script?</li>
+</ul>
+</li>
+<li>
+<p><strong>Scalability</strong></p>
+<ul>
+<li>How would you scale this script to support hundreds of servers in a real organization?</li>
+</ul>
+</li>
+<li>
+<p><strong>Extensibility</strong></p>
+<ul>
+<li>Suggest one more compliance check you could add to this framework (e.g., OS fingerprinting, certificate validation, etc.)</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-submission-guidelines">📌 <strong>Submission Guidelines</strong> </h2>
+<ol>
+<li>
+<p><strong>Report</strong>:</p>
+<ul>
+<li>
+<p>Download and complete the provided <a href="lab11_report.md"><em>Lab 11 report template</em></a>.</p>
+</li>
+<li>
+<p>Include <strong>all deliverables for each task</strong>, clearly labeled with:</p>
+<ul>
+<li><strong>Script content</strong> (copy/paste or screenshots)</li>
+<li><strong>Log outputs</strong> and <strong>terminal screenshots</strong></li>
+<li><strong>Answers to all critical thinking questions</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>PDF Option</strong> (Optional):</p>
+<ul>
+<li>You may convert the Markdown file to PDF if preferred.</li>
+<li>Ensure screenshots, formatting, and headings are properly preserved.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Submission Format</strong>:</p>
+<ul>
+<li>Submit a single <strong>compressed <code>.zip</code> file</strong> to <strong>Canvas</strong>.</li>
+<li>Your <code>.zip</code> file must contain:
+<ul>
+<li>✅ <code>lab11_report.md</code> and converted PDF <code>lab11_report.pdf</code></li>
+<li>✅ Final <code>autopinger.sh</code> script</li>
+<li>✅ <code>input.txt</code> file used in Task 8</li>
+<li>✅ <code>report.log</code> file (showing evidence from Tasks 3–8)</li>
+<li>✅ <code>screenshots/</code> folder with labeled evidence (e.g., <code>task4_cron_entry.png</code>, <code>task6_port139.png</code>, <code>task8_compliance.png</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Labeling and Organization</strong>:</p>
+<ul>
+<li>Name files and screenshots to reflect the task and content.</li>
+<li>Organize the screenshots folder for easy review.</li>
+</ul>
+</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

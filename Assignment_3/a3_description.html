@@ -1,0 +1,981 @@
+<!DOCTYPE html><html><head>
+      <title>a3_description</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\jafariha\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.22\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="assignment-3-network-monitoring-intrusion-detection-and-defense"><strong>Assignment 3: Network Monitoring, Intrusion Detection and Defense</strong> </h1>
+<h4 id="csci-5742--cybersecurity-programming-and-analytics-spring-2026">CSCI 5742 — Cybersecurity Programming and Analytics, Spring 2026 </h4>
+<h4 id="total-points-200">Total Points: 200 </h4>
+<hr>
+<h2 id="-assignment-overview">🧠 <strong>Assignment Overview</strong> </h2>
+<p><strong>Assignment 3: Network Monitoring, Attack Detection, and Defense</strong> brings together key defensive techniques across three layers of cybersecurity: host/network monitoring, firewall configuration, and intrusion detection. You will use a three-VM virtual environment to simulate attacker-defender interactions and implement active security measures. This assignment emphasizes automation, real-time detection, and the design of practical rule-based defenses.</p>
+<p>You will:</p>
+<ul>
+<li>Write a Bash script to monitor network host and port changes.</li>
+<li>Automate the script using cron to simulate passive, continuous monitoring.</li>
+<li>Harden a server using <code>iptables</code> firewall rules with access control, rate limiting, and logging.</li>
+<li>Detect common web-based attacks using Snort and design custom rules.</li>
+</ul>
+<h3 id="-learning-objectives">🎯 <strong>Learning Objectives</strong> </h3>
+<p>By completing this assignment, students will be able to:</p>
+<ul>
+<li>✅ Implement automated network change detection scripts in Bash.</li>
+<li>✅ Apply cron scheduling for periodic execution of security tasks.</li>
+<li>✅ Analyze host/service behavior to identify attacker activity (e.g., port opening, backdoors).</li>
+<li>✅ Design and apply <code>iptables</code> firewall policies, including default-deny, filtering, logging, and spoofing protection.</li>
+<li>✅ Understand and enforce rate-limiting techniques to mitigate flooding attacks.</li>
+<li>✅ Develop custom Snort IDS rules to detect SQL Injection, XSS, LFI, and CSRF attacks.</li>
+<li>✅ Interpret IDS alerts and logs to distinguish malicious from benign traffic.</li>
+</ul>
+<hr>
+<h2 id="-rubric-total-200-points">🧾 <strong>Rubric (Total: 200 Points)</strong> </h2>
+<table>
+<thead>
+<tr>
+<th><strong>Part</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Part 1: Network Monitoring</strong></td>
+<td>Bash scripting for host/port change detection, cron job setup, and scenario-based logging of new services (e.g., web, backdoor).</td>
+<td>70</td>
+</tr>
+<tr>
+<td><strong>Part 2: Firewall Defense</strong></td>
+<td>iptables configuration to block unauthorized access, port-specific filtering, and validation using test attacks from VM-A.</td>
+<td>70</td>
+</tr>
+<tr>
+<td><strong>Part 3: Snort-Based Detection</strong></td>
+<td>Custom Snort rules for detecting web-based attacks (SQLi, XSS, LFI, CSRF), proper triggering, and rule design justification.</td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="submission-requirement"><strong>Submission Requirement</strong> </h2>
+<h3 id="a-report"><strong>A. Report</strong> </h3>
+<ul>
+<li>Submit a <strong>complete report</strong> named <code>a3_report.md</code> (or <code>.pdf</code> if converted).</li>
+<li>Your report must include:
+<ul>
+<li><strong>Part 1</strong>: Bash script explanation, scan sample outputs, scenario summary</li>
+<li><strong>Part 2</strong>: iptables rules with commentary, testing screenshots and observations</li>
+<li><strong>Part 3</strong>: Snort rule logic, detection screenshots, answers to Snort questions</li>
+</ul>
+</li>
+<li>Organize clearly by <strong>part and task</strong>, referencing all screenshots, logs, and scripts as needed.</li>
+</ul>
+<h3 id="b-code-and-configuration"><strong>B. Code and Configuration</strong> </h3>
+<ul>
+<li>Submit all scripts and configuration files:
+<ul>
+<li><code>network_monitor.sh</code> and example cron entry</li>
+<li><code>rules.txt</code> (iptables saved rules)</li>
+<li><code>local.rules</code> (custom Snort rules)</li>
+<li>Any helper scripts used for attack simulation or log processing</li>
+</ul>
+</li>
+</ul>
+<h3 id="c-screenshots-and-logs"><strong>C. Screenshots and Logs</strong> </h3>
+<ul>
+<li>Include a <code>screenshots/</code> folder with labeled images (e.g., <code>sql_alert.png</code>, <code>iptables_block.png</code>, <code>delta_output.png</code>).</li>
+<li>Include relevant scan or Snort log output files, if applicable.</li>
+</ul>
+<h3 id="d-optional-demo"><strong>D. Optional Demo</strong> </h3>
+<ul>
+<li>Optionally submit a short (3–5 minute) <strong>demo video</strong> showcasing:
+<ul>
+<li>Port/host detection in Part 1</li>
+<li>iptables filtering in action in Part 2</li>
+<li>Real-time Snort alerting in Part 3</li>
+</ul>
+</li>
+</ul>
+<h3 id="e-packaging"><strong>E. Packaging</strong> </h3>
+<ul>
+<li>Submit everything as a single <strong>ZIP archive</strong> with the structure:</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Assignment3_Submission.zip
+│
+├── a3_report.md / a3_report.pdf
+├── network_monitor.sh
+├── rules.txt
+├── local.rules
+├── screenshots/
+│   ├── delta_output.png
+│   ├── iptables_test.png
+│   ├── sql_alert.png
+│   └── ...
+└── optional_demo.mp4
+</code></pre><hr>
+<h2 id="-part-1-network-change-monitoring-with-bash-70-pts">🔍 <strong>Part 1: Network Change Monitoring with Bash (70 pts)</strong> </h2>
+<h3 id="-objective">🎯 <strong>Objective</strong> </h3>
+<p>This part focuses on scripting for network reconnaissance, detection, and behavioral analysis. By completing this assignment, you will:</p>
+<ol>
+<li>Develop a <strong>network monitoring tool</strong> using Bash.</li>
+<li>Detect <strong>host and port changes</strong> over time in a dynamic environment.</li>
+<li>Understand how changes in <strong>network topology and service exposure</strong> can indicate attacker behavior.</li>
+<li>Integrate your monitoring logic with <strong>attack activity</strong> from Lab 4 (e.g., VSFTPD exploit).</li>
+<li>Automate detection using <strong>cron</strong>, supporting periodic scanning and persistent logging.</li>
+</ol>
+<hr>
+<h3 id="-testbed">🧪 <strong>Testbed</strong> </h3>
+<p>You will deploy our <strong>three-VM architecture</strong> on the <code>192.168.10.0/24</code> islated network. The monitoring script will run on the <strong>defender</strong> node and observe changes as services are added, removed, or exploited.</p>
+<table>
+<thead>
+<tr>
+<th>VM</th>
+<th>Role</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VM-D</td>
+<td>Defender</td>
+<td>Runs the monitoring script every 10 minutes</td>
+</tr>
+<tr>
+<td>VM-A</td>
+<td>Attacker</td>
+<td>Launches a web server and exploits vulnerable services</td>
+</tr>
+<tr>
+<td>VM-T</td>
+<td>Target (M2)</td>
+<td>Metasploitable-2 running vulnerable FTP (VSFTPD)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="-task-1-script-setup--bash-based-network-change-monitor">✅ <strong>Task 1: Script Setup – Bash-Based Network Change Monitor</strong> </h3>
+<p>In this task, you will write a Bash script that monitors network changes across the <code>192.168.10.0/24</code> subnet. The script will be used to identify hosts and ports that appear, disappear, or change over time. You will implement it modularly, using functions, and design it to support <strong>comparison-based change detection</strong>.</p>
+<hr>
+<h4 id="️-instructions">🛠️ <strong>Instructions</strong> </h4>
+<p>Create a file called:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>network_monitor.sh
+</code></pre><p>Implement the following components in your script:</p>
+<hr>
+<h4 id="-step-1-initialization--setup">🔹 <strong>Step 1: Initialization &amp; Setup</strong> </h4>
+<ul>
+<li>Create or define the following directories:</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /home/kali/Documents/assignment3/scans
+</code></pre><ul>
+<li>Define variables in your Bash script:</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token assign-left variable">subnet</span><span class="token operator">=</span><span class="token string">"192.168.10.0/24"</span>
+<span class="token assign-left variable">output_dir</span><span class="token operator">=</span><span class="token string">"/home/kali/Documents/assignment3/scans"</span>
+<span class="token assign-left variable">log_file</span><span class="token operator">=</span><span class="token string">"/home/kali/Documents/assignment3/log.txt"</span>
+<span class="token assign-left variable">timestamp</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +<span class="token string">"%Y-%m-%d_%H-%M"</span><span class="token variable">)</span></span>
+<span class="token assign-left variable">scan_file</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$output_dir</span>/scan_<span class="token variable">$timestamp</span>.txt"</span>
+<span class="token assign-left variable">current_state</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$output_dir</span>/current_state.txt"</span>
+<span class="token assign-left variable">previous_state</span><span class="token operator">=</span><span class="token string">"<span class="token variable">$output_dir</span>/previous_state.txt"</span>
+</code></pre><hr>
+<h4 id="-step-2-host--port-scanning">🔹 <strong>Step 2: Host &amp; Port Scanning</strong> </h4>
+<p>Use <code>nmap</code> to identify all <strong>active hosts</strong> and their <strong>open TCP ports</strong>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmap <span class="token parameter variable">-sS</span> -p- <span class="token string">"<span class="token variable">$subnet</span>"</span> <span class="token parameter variable">--open</span> <span class="token parameter variable">-oG</span> <span class="token string">"<span class="token variable">$scan_file</span>"</span>
+</code></pre><ul>
+<li><code>-sS</code>: SYN scan (stealthy, fast)</li>
+<li><code>-p-</code>: Scans all 65535 TCP ports</li>
+<li><code>--open</code>: Only show hosts with open ports</li>
+<li><code>-oG</code>: Grepable output for easier parsing</li>
+</ul>
+<p>Ensure you handle errors if the scan fails or returns empty.</p>
+<hr>
+<h4 id="-step-3-parse-and-format-current-scan">🔹 <strong>Step 3: Parse and Format Current Scan</strong> </h4>
+<p>After the <code>scan_file</code> is created, extract host IPs and open ports and copy them into <code>current_state.txt</code>:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">awk</span> <span class="token string">'/Up$/{ip=$2} /Ports:/{split($0,a,"Ports: "); print ip " → " a[2]}'</span> <span class="token string">"<span class="token variable">$scan_file</span>"</span> <span class="token operator">|</span> <span class="token punctuation">\</span>
+<span class="token function">sed</span> <span class="token string">'s/\/open\/tcp//g'</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/, /\n    Port: /g'</span> <span class="token operator">&gt;</span> <span class="token string">"<span class="token variable">$current_state</span>"</span>
+</code></pre><p>The output will resemble:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token number">192.168</span>.10.6 → <span class="token number">21</span>, <span class="token number">23</span>, <span class="token number">80</span>
+<span class="token number">192.168</span>.10.7 → <span class="token number">22</span>
+</code></pre><p>This file will serve as the latest snapshot of the network state.</p>
+<hr>
+<h4 id="-step-4-compare-with-previous-scan-if-exists">🔹 <strong>Step 4: Compare with Previous Scan (If Exists)</strong> </h4>
+<p>If <code>previous_state.txt</code> exists, compare it with <code>current_state.txt</code> and extract changes:</p>
+<ul>
+<li><strong>New hosts</strong>: Appear in current but not in previous</li>
+<li><strong>Missing hosts</strong>: Appear in previous but not in current</li>
+<li><strong>Port changes</strong>: For same host, compare port lists</li>
+</ul>
+<p>You may use <code>grep</code>, <code>comm</code>, <code>diff</code>, or structured <code>awk</code> blocks.</p>
+<p>After detection is complete, update the baseline:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">cp</span> <span class="token string">"<span class="token variable">$current_state</span>"</span> <span class="token string">"<span class="token variable">$previous_state</span>"</span>
+</code></pre><p>On first run (when no previous state exists), treat it as the baseline.</p>
+<hr>
+<h4 id="-step-5-log-output">🔹 <strong>Step 5: Log Output</strong> </h4>
+<p>Write structured messages to the log file with timestamps:</p>
+<ul>
+<li>On first run:</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"[<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> <span class="token string">'+%Y-%m-%d %H:%M'</span><span class="token variable">)</span></span>] Initial scan:"</span> <span class="token operator">&gt;&gt;</span> <span class="token string">"<span class="token variable">$log_file</span>"</span>
+<span class="token function">cat</span> <span class="token string">"<span class="token variable">$current_state</span>"</span> <span class="token operator">&gt;&gt;</span> <span class="token string">"<span class="token variable">$log_file</span>"</span>
+</code></pre><ul>
+<li>On subsequent runs (if differences are found):</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"[<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> <span class="token string">'+%Y-%m-%d %H:%M'</span><span class="token variable">)</span></span>] Change detected:"</span> <span class="token operator">&gt;&gt;</span> <span class="token string">"<span class="token variable">$log_file</span>"</span>
+<span class="token comment"># Example additions to follow:</span>
+<span class="token comment"># + New host: 192.168.10.8</span>
+<span class="token comment">#     Open ports: 22, 8080</span>
+<span class="token comment"># + 192.168.10.4: Port 6200 opened</span>
+<span class="token comment"># - 192.168.10.6: Port 139 closed</span>
+</code></pre><p>Each entry should be easy to trace and audit. Avoid duplicating unchanged state.</p>
+<h4 id="-expected-output-format">🔍 <strong>Expected Output Format</strong> </h4>
+<p>On first run:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 <span class="token number">14</span>:30<span class="token punctuation">]</span> Initial scan:
+<span class="token number">192.168</span>.10.4 → <span class="token number">22</span>, <span class="token number">80</span>
+<span class="token number">192.168</span>.10.6 → <span class="token number">21</span>, <span class="token number">23</span>, <span class="token number">139</span>, <span class="token number">445</span>
+</code></pre><p>On later runs with detected changes:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 <span class="token number">14</span>:40<span class="token punctuation">]</span> Change detected:
++ New host: <span class="token number">192.168</span>.10.7
+    Open ports: <span class="token number">22</span>
++ <span class="token number">192.168</span>.10.4: Port <span class="token number">6200</span> opened
+- <span class="token number">192.168</span>.10.6: Port <span class="token number">139</span> closed
+</code></pre><hr>
+<h4 id="-step-6-make-your-script-executable">🔹 <strong>Step 6: Make your script executable:</strong> </h4>
+<ul>
+<li>Ensure your script is <strong>executable</strong>:</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">chmod</span> +x /home/kali/Documents/assignment3/network_monitor.sh
+</code></pre><ul>
+<li>Test the script manually and verify its output before proceeding to cron automation.</li>
+</ul>
+<hr>
+<h4 id="-requirements">🔹 <strong>Requirements</strong> </h4>
+<ul>
+<li>Write a modular code to ensure readability and maintainability:</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function-name function">scan_network</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">parse_scan_results</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">detect_changes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">log_changes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment"># Print to log file as described in Step 5</span>
+    <span class="token builtin class-name">:</span>
+<span class="token punctuation">}</span>
+
+<span class="token function-name function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    scan_network
+    parse_scan_results
+    detect_changes
+    log_changes
+<span class="token punctuation">}</span>
+
+main
+</code></pre><ul>
+<li>Each function should use <strong>full paths</strong> to avoid issues under <code>cron</code>.</li>
+</ul>
+<hr>
+<h3 id="-task-2-automation-with-cron--periodic-execution">✅ <strong>Task 2: Automation with Cron – Periodic Execution</strong> </h3>
+<p>In this task, you will automate the periodic execution of your <code>network_monitor.sh</code> script to ensure that <strong>network scanning and change detection occurs every 10 minutes</strong>. This models the behavior of background reconnaissance tools and passive detection agents in real-world systems.</p>
+<hr>
+<h4 id="-step-1-ensure-script-permissions">🔹 <strong>Step 1: Ensure Script Permissions</strong> </h4>
+<p>Make sure your script is executable:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">chmod</span> +x /home/kali/Documents/assignment3/network_monitor.sh
+</code></pre><blockquote>
+<p>⚠️ Use the full path of your script to avoid failures under cron.</p>
+</blockquote>
+<hr>
+<h4 id="-step-2-open-crontab">🔹 <strong>Step 2: Open Crontab</strong> </h4>
+<p>Edit the crontab configuration for your current user:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">crontab</span> <span class="token parameter variable">-e</span>
+</code></pre><p>If prompted for an editor, choose <code>nano</code> for simplicity (or your preferred editor).</p>
+<hr>
+<h4 id="-step-3-add-cron-job-entry">🔹 <strong>Step 3: Add Cron Job Entry</strong> </h4>
+<p>At the bottom of the file, add the following line:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>*/10 * * * * /home/kali/Documents/assignment3/network_monitor.sh
+</code></pre><ul>
+<li>This instructs the system to run your script <strong>every 10 minutes</strong>.</li>
+<li>Do <strong>not</strong> use <code>relative paths</code> inside your script; always use full absolute paths to tools like <code>nmap</code>, <code>awk</code>, <code>cp</code>, and files like <code>log.txt</code>.</li>
+</ul>
+<hr>
+<h4 id="-step-4-verify-it-works">🔹 <strong>Step 4: Verify It Works</strong> </h4>
+<p>You can check whether the cron job is scheduled by running:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">crontab</span> <span class="token parameter variable">-l</span>
+</code></pre><p>After 10–15 minutes, verify that:</p>
+<ul>
+<li>New <code>scan_*.txt</code> files are appearing in <code>/home/kali/Documents/assignment3/scans/</code></li>
+<li><code>log.txt</code> is being updated with new entries</li>
+</ul>
+<p>You may also inspect the system’s cron logs:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">grep</span> CRON /var/log/syslog <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-20</span>
+</code></pre><hr>
+<h4 id="-troubleshooting-tips">📝 <strong>Troubleshooting Tips</strong> </h4>
+<p>If your script fails to execute under cron:</p>
+<ul>
+<li>Make sure you use <strong>absolute paths</strong> in all commands and files</li>
+<li>Add debugging lines inside your script (e.g., <code>echo "Script ran at $(date)" &gt;&gt; debug.txt</code>)</li>
+<li>Redirect errors to a log:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>*/10 * * * * /home/kali/Documents/assignment3/network_monitor.sh <span class="token operator">&gt;&gt;</span> /home/kali/Documents/assignment3/debug.log <span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token file-descriptor important">&amp;1</span>
+</code></pre></li>
+</ul>
+<hr>
+<h4 id="-expected-behavior">📌 <strong>Expected Behavior</strong> </h4>
+<p>Once automation is active, the script will:</p>
+<ul>
+<li>Run automatically every 10 minutes</li>
+<li>Capture any new network changes into the log</li>
+<li>Save each scan with a timestamped filename</li>
+<li>Maintain an up-to-date view of open ports and active hosts</li>
+</ul>
+<hr>
+<h3 id="-task-3-detecting-new-changes-and-backdoors--timed-network-events">✅ <strong>Task 3: Detecting New Changes and Backdoors – Timed Network Events</strong> </h3>
+<p>Your goal in this task is to run your Bash-based monitoring script continuously on <strong>VM-D</strong> and observe how the network changes over time as new hosts and services appear. These staged activities simulate both benign changes (e.g., web server launch) and adversarial actions (e.g., backdoor opened via the VSFTPD exploit from <strong>Lab 4</strong>).</p>
+<hr>
+<h4 id="-step-1--initialize-monitoring-minute-0">🧩 <strong>Step 1 – Initialize Monitoring (Minute 0)</strong> </h4>
+<ul>
+<li>Start your <code>network_monitor.sh</code> script using <code>cron</code> or run manually to ensure logging starts.</li>
+<li>The script should run and log the <strong>initial scan</strong> of the network (likely empty or no open ports if VM-D is the only host).</li>
+</ul>
+<p>📌 <strong>Expected log output:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 00:00<span class="token punctuation">]</span> Initial scan:
+<span class="token number">192.168</span>.10.5 → <span class="token number">22</span>
+</code></pre><hr>
+<h4 id="-step-2--introduce-target-host-before-minute-10">🧩 <strong>Step 2 – Introduce Target Host (Before Minute 10)</strong> </h4>
+<ul>
+<li>Power on <strong>VM-T</strong> (Metasploitable-2).</li>
+<li>Allow time for the next cron-based scan (~10 minutes from last execution).</li>
+<li>The script should detect and log a <strong>new host</strong> (VM-T) and its <strong>open ports</strong>, including services like FTP (21), SSH (22), Telnet (23), and others.</li>
+</ul>
+<p>📌 <strong>Expected log output:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 00:10<span class="token punctuation">]</span> Change detected:
++ New host: <span class="token number">192.168</span>.10.6
+    Open ports: <span class="token number">21</span>, <span class="token number">22</span>, <span class="token number">23</span>, <span class="token number">80</span>
+</code></pre><hr>
+<h4 id="-step-3--introduce-attacker-host-before-minute-20">🧩 <strong>Step 3 – Introduce Attacker Host (Before Minute 20)</strong> </h4>
+<ul>
+<li>Power on <strong>VM-A</strong> (Kali Attacker).</li>
+<li>Wait for the next scheduled run of the monitoring script (~20 minutes from start).</li>
+<li>The script should log another <strong>new host</strong>, corresponding to VM-A. If SSH (22) or any other services are open on this VM, it should also log those.</li>
+</ul>
+<p>📌 <strong>Expected log output:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 00:20<span class="token punctuation">]</span> Change detected:
++ New host: <span class="token number">192.168</span>.10.7
+    Open ports: <span class="token number">22</span>
+</code></pre><hr>
+<h4 id="-step-4--launch-web-server-before-minute-30">🧩 <strong>Step 4 – Launch Web Server (Before Minute 30)</strong> </h4>
+<ul>
+<li>On <strong>VM-A</strong>, start a web server on port <strong>8080</strong> using Python:</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python3 <span class="token parameter variable">-m</span> http.server <span class="token number">8080</span>
+</code></pre><ul>
+<li>Allow the scan to run (around the 30-minute mark).</li>
+<li>The script must detect that <strong>port 8080 has opened</strong> on VM-A.</li>
+</ul>
+<p>📌 <strong>Expected log output:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 00:30<span class="token punctuation">]</span> Change detected:
++ <span class="token number">192.168</span>.10.7: Port <span class="token number">8080</span> opened
+</code></pre><hr>
+<h4 id="-step-5--exploit-vsftpd-234-before-minute-40">🧩 <strong>Step 5 – Exploit VSFTPD 2.3.4 (Before Minute 40)</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, run your Metasploit-based or Python-based <strong>VSFTPD 2.3.4 exploit</strong> (from <strong>Lab 4</strong>) targeting <strong>VM-T</strong>.</li>
+<li>This exploit triggers a <strong>backdoor</strong> on VM-T that listens on <strong>port 6200</strong>.</li>
+<li>By the 40-minute mark, your monitoring script should detect <strong>port 6200 opened</strong> on VM-T.</li>
+</ul>
+<p>📌 <strong>Expected log output:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 00:40<span class="token punctuation">]</span> Change detected:
++ <span class="token number">192.168</span>.10.6: Port <span class="token number">6200</span> opened
+</code></pre><hr>
+<h4 id="-step-6--stop-the-web-server-before-minute-50">🧩 <strong>Step 6 – Stop the Web Server (Before Minute 50)</strong> </h4>
+<ul>
+<li>On <strong>VM-A</strong>, stop the Python web server (<code>Ctrl+C</code>).</li>
+<li>The script should detect that <strong>port 8080 has closed</strong> on VM-A.</li>
+</ul>
+<p>📌 <strong>Expected log output:</strong></p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token punctuation">[</span><span class="token number">2025</span>-04-10 00:50<span class="token punctuation">]</span> Change detected:
+- <span class="token number">192.168</span>.10.7: Port <span class="token number">8080</span> closed
+</code></pre><hr>
+<h3 id="deliverables-for-part-1"><strong>Deliverables for Part 1</strong> </h3>
+<ol>
+<li>
+<p><strong>Script File</strong></p>
+<ul>
+<li>Submit your complete Bash script used for scanning, comparison, and logging (e.g., <code>network_monitor.sh</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Cron Setup</strong></p>
+<ul>
+<li>Screenshot or copy of your cron job entry (e.g., from <code>crontab -l</code>) showing correct scheduling and absolute paths.</li>
+</ul>
+</li>
+<li>
+<p><strong>Scan Output Logs</strong></p>
+<ul>
+<li>A folder containing at least three sequential scan output files (e.g., <code>scan_01.txt</code>, <code>scan_02.txt</code>, <code>scan_03.txt</code>) and one or more corresponding delta output(s) (e.g., <code>delta_02.txt</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Scenario Results</strong></p>
+<ul>
+<li>Logs and screenshots showing detection of:
+<ul>
+<li>New host (e.g., when VM-T appears)</li>
+<li>Port 8080 opening/closing</li>
+<li>Backdoor port 6200 opening</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="rubric-for-part-1-70-pts">Rubric for Part 1 (70 pts) </h3>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Criteria Summary</strong></th>
+<th><strong>Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Task 1: Script Setup</strong></td>
+<td>Subnet scan, delta comparison logic, clear output formatting, modular Bash scripting</td>
+<td>40</td>
+</tr>
+<tr>
+<td><strong>Task 2: Cron Automation</strong></td>
+<td>Correct cron scheduling, file naming, and regular execution every 10 minutes</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Task 3: Scenario Detection</strong></td>
+<td>Accurate detection of events (host changes, open/closed ports, backdoor detection on port 6200)</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>Report &amp; Documentation</strong></td>
+<td>Clear design explanation, summary of findings, discussion of false positives or limitations</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-part-2-network-defense-using-iptables-on-vm-d-70-pts">🔒 <strong>Part 2: Network Defense Using IPTables on VM-D (70 pts)</strong> </h2>
+<h3 id="-objective-1">🎯 <strong>Objective</strong> </h3>
+<p>You are the administrator of <strong>VM-D</strong>, a Linux web server running on port 80 (HTTP). Your task is to secure this host by implementing a stateful firewall using <code>iptables</code>. You must restrict all traffic except explicitly allowed service connections and harden the system against known attacks and misconfigurations.</p>
+<hr>
+<h3 id="-testbed-1">🧱 <strong>Testbed</strong> </h3>
+<p>This part requires all <strong>three VMs</strong> on the <code>192.168.10.0/24</code> isolated network:</p>
+<table>
+<thead>
+<tr>
+<th>VM</th>
+<th>OS</th>
+<th>Role</th>
+<th>Services/Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VM-A</td>
+<td>Kali Linux</td>
+<td>Attacker</td>
+<td>hping3, curl, nmap, spoofed packet tools</td>
+</tr>
+<tr>
+<td>VM-D</td>
+<td>Kali Linux</td>
+<td>Defender (Firewall)</td>
+<td>iptables, SSH server, Python web server</td>
+</tr>
+<tr>
+<td>VM-T</td>
+<td>Target (M2)</td>
+<td>Metasploitable-2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="-firewall-policy-requirements-for-vm-d">🔧 <strong>Firewall Policy Requirements for VM-D</strong> </h3>
+<p>The main goal of this part is to implement the following access control policy on VM-D using <code>iptables</code>:</p>
+<h4 id="default-policy"><strong>Default Policy</strong> </h4>
+<ul>
+<li>Set all default policies to <code>DROP</code>:
+<ul>
+<li><code>INPUT</code></li>
+<li><code>OUTPUT</code></li>
+<li><code>FORWARD</code></li>
+</ul>
+</li>
+<li>This ensures that all traffic is denied unless explicitly allowed by a rule.</li>
+</ul>
+<h4 id="allow-legitimate-traffic"><strong>Allow Legitimate Traffic</strong> </h4>
+<ul>
+<li>
+<p>Allow the following <strong>outgoing connections</strong> from VM-D and their corresponding replies:</p>
+<ul>
+<li><strong>DNS queries</strong>: UDP packets to port 53, and their corresponding replies.</li>
+<li><strong>ICMP echo-requests</strong> and the corresponding <strong>incoming echo-replies</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Allow legitimate <strong>incoming connections</strong> and their corresponding replies:</p>
+<ul>
+<li><strong>HTTP (TCP port 80)</strong> connections from any internal source (belonging to <code>192.168.10.0/24</code> but not from any other source).</li>
+<li><strong>SSH (TCP port 22)</strong> connections only from <strong>VM-T</strong> (assumed to be the trusted admin IP).</li>
+</ul>
+</li>
+</ul>
+<h4 id="block-illegitimate-traffic"><strong>Block Illegitimate Traffic</strong> </h4>
+<p>Drop the following:</p>
+<ul>
+<li>All illegitimate <strong>TCP</strong>, <strong>UDP</strong> and <strong>ICMP</strong> packets (not explicitly authorized above).</li>
+<li>Packets from <strong>spoofed or reserved IP ranges</strong>:
+<ul>
+<li>Packets coming from any range other than our internal network range.</li>
+<li>Packets with <code>srcIP = VM-D’s IP</code></li>
+<li>Packets in the <strong>INVALID connection state</strong> (as determined by the conntrack module).</li>
+<li>Any traffic <strong>not arriving via <code>lo</code></strong> but claiming a <strong>source IP in <code>127.0.0.0/8</code></strong>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="rate-limiting-policies"><strong>Rate-Limiting Policies</strong> </h4>
+<ul>
+<li>Apply <strong>rate-limiting on HTTP (port 80)</strong>:
+<ul>
+<li>Allow max <strong>10 new connections/second</strong>, with a <strong>burst of 20</strong>.</li>
+<li>Restrict <strong>concurrent HTTP sessions per IP</strong> (e.g., to <strong>20 simultaneous connections</strong>).</li>
+</ul>
+</li>
+<li>Limit <strong>SSH login attempts</strong>:
+<ul>
+<li>e.g., allow max <strong>3 new SSH connections/minute per IP</strong>.</li>
+</ul>
+</li>
+<li><strong>Rate-limit SYN packets</strong> to mitigate SYN scans: <strong>allow 5 new SYN packets per second</strong>, with a <strong>burst of 10</strong>.</li>
+</ul>
+<h4 id="logging-policy"><strong>Logging Policy</strong> </h4>
+<ul>
+<li>
+<p>Maintain clear and categorized logs to support traffic analysis and incident response.</p>
+</li>
+<li>
+<p>Use <strong>specific logging prefixes</strong> to tag and differentiate types of suspicious or unauthorized activity:</p>
+<ul>
+<li><code>SCAN-TCP</code>: for detected TCP scan patterns (e.g., NULL, Xmas, SYN-FIN, ACK scans).</li>
+<li><code>ILLEGAL-IP/PORT</code>: for access attempts to restricted or unauthorized ports (e.g., SSH from untrusted IPs, external IPs (e.g. due to IP spoofing)).</li>
+<li><code>DOS-RATE-LIMIT</code>: for traffic exceeding defined rate limits (e.g., SYN floods, excessive HTTP or SSH attempts).</li>
+<li><code>MALFORMED</code>: for malformed or spoofed packets (e.g., invalid source IPs, source = destination IP).</li>
+</ul>
+</li>
+<li>
+<p>Add a <strong>final generic logging rule</strong>:</p>
+<ul>
+<li>Prefix: <code>DROP-GENERIC</code></li>
+<li>Purpose: capture and log <strong>all other unmatched and dropped packets</strong> for auditing or future policy refinement.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-task-1-launch-services-on-vm-d">🚀 <strong>Task 1. Launch Services on VM-D</strong> </h3>
+<ol>
+<li>
+<p>Create an <code>index.html</code> in a new directory, navgitate to that directory and run the following command to launch a simple web server on port 80:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> python3 <span class="token parameter variable">-m</span> http.server <span class="token number">80</span>
+</code></pre></li>
+<li>
+<p>Run and ensure the <strong>SSH service is active</strong> on VM-D:</p>
+<ul>
+<li>Check status:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> systemctl status <span class="token function">ssh</span>
+</code></pre></li>
+<li>If not active, enable and start it:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> <span class="token function">ssh</span>
+<span class="token function">sudo</span> systemctl start <span class="token function">ssh</span>
+</code></pre></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="-task-2-firewall-ruleset-creation">🔸 <strong>Task 2: Firewall Ruleset Creation</strong> </h3>
+<ol>
+<li>
+<p>Implement the <strong>Access Control Policy</strong> described above on <strong>VM-D</strong> using <code>iptables</code>.</p>
+</li>
+<li>
+<p>Save your ruleset to a file for submission:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> iptables-save <span class="token operator">&gt;</span> rules.txt
+</code></pre></li>
+</ol>
+<hr>
+<h3 id="-task-3-firewall-testing-and-validation">🔸 <strong>Task 3: Firewall Testing and Validation</strong> </h3>
+<p>You will now <strong>test</strong> your firewall ruleset by simulating a variety of benign and malicious activities. Perform each test from <strong>VM-A</strong> or <strong>VM-T</strong>, as instructed. Each test is designed to confirm the correct functioning of one or more rules in your policy.</p>
+<hr>
+<h4 id="-test-a-icmp-behavior">🔹 <strong>Test A: ICMP Behavior</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, run a <strong>ping flood</strong> to VM-D.</li>
+<li>From <strong>VM-T</strong>, run a <strong>normal ping</strong> to <strong>VM-D</strong>.</li>
+<li>From <strong>VM-D</strong>, run a <strong>normal ping</strong> to VM-A and VM-T.</li>
+</ul>
+<hr>
+<h4 id="-test-b-tcp-syn-flood-detection">🔹 <strong>Test B: TCP SYN Flood Detection</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, run a <strong>SYN flood</strong> targeting VM-D on port 80:
+<ul>
+<li>First with <strong>its real IP (no spoofing)</strong>, then using <strong>spoofed IPs</strong> (using <code>hping3</code> or similar).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="-test-c-port-scan-resistance">🔹 <strong>Test C: Port Scan Resistance</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, scan all 65,535 ports of VM-D using <code>nmap</code>.
+<ul>
+<li>Scan types to include:
+<ul>
+<li>TCP Connect Scan (<code>-sT</code>)</li>
+<li>SYN Scan (<code>-sS</code>)</li>
+<li>FIN Scan (<code>-sF</code>)</li>
+<li>Xmas Scan (<code>-sX</code>)</li>
+<li>NULL Scan (<code>-sN</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="-test-d-spoofed-packet-rejection">🔹 <strong>Test D: Spoofed Packet Rejection</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, craft packets with spoofed source IPs:
+<ul>
+<li>Reserved/private ranges (e.g., <code>10.0.0.2</code>, <code>127.0.0.1</code>, <code>0.0.0.0</code>)</li>
+<li>Source IP = VM-D’s own IP</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="-test-e-invalid-state-packet-handling">🔹 <strong>Test E: Invalid State Packet Handling</strong> </h4>
+<ul>
+<li>Using <code>hping3</code> or a custom tool, send TCP packets in:
+<ul>
+<li>ACK-only state (no prior SYN)</li>
+<li>RST without session</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="-test-f-loopback-enforcement">🔹 <strong>Test F: Loopback Enforcement</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, attempt to send a packet to VM-D <strong>claiming to be from <code>127.0.0.1</code></strong>.</li>
+</ul>
+<hr>
+<h4 id="-test-g-udp-behavior">🔹 <strong>Test G: UDP Behavior</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, send various UDP packets to VM-D (NTP, SNMP, custom ports).</li>
+</ul>
+<hr>
+<h4 id="-test-h-ssh-access-control">🔹 <strong>Test H: SSH Access Control</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong> (untrusted), attempt SSH access to VM-D.</li>
+<li>From <strong>VM-T</strong> (trusted), SSH into VM-D.</li>
+<li>From <strong>VM-T</strong>, access SSH service with three quick failed logins.</li>
+</ul>
+<hr>
+<h4 id="-test-i-http-access-and-flood-protection">🔹 <strong>Test I: HTTP Access and Flood Protection</strong> </h4>
+<ul>
+<li>From <strong>VM-A</strong>, access VM-D via:
+<ul>
+<li><code>curl http://&lt;VM-D-IP&gt;:80/</code> or browser.</li>
+</ul>
+</li>
+<li>Next, simulate an <strong>HTTP flood</strong> (e.g., using <code>ab</code>, <code>siege</code>, or <code>hping3</code> with TCP port 80):</li>
+</ul>
+<hr>
+<h3 id="-deliverables-for-part-2">📸 <strong>Deliverables for Part 2</strong> </h3>
+<h4 id="1-screenshots"><strong>1. Screenshots</strong> </h4>
+<ul>
+<li>Each test above (success or failure) must be documented:
+<ul>
+<li>Terminal outputs showing successful or blocked attempt.</li>
+<li>Related logs observed via <code>dmesg</code> (including timestamps and log prefixes)</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-rule-file"><strong>2. Rule File</strong> </h4>
+<ul>
+<li>Your <code>iptables</code> Rule file (<code>rules.txt</code>)</li>
+</ul>
+<hr>
+<h3 id="rubric-for-part-2-70-pts">Rubric for Part 2 (70 pts) </h3>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Points</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ruleset Correctness</strong></td>
+<td>IPTables rules correctly implement all specified access control, drops, logging, and rate-limiting policies</td>
+<td>30 pts</td>
+</tr>
+<tr>
+<td><strong>Testing &amp; Screenshots</strong></td>
+<td>All required tests executed with screenshots and logs showing correct enforcement</td>
+<td>20 pts</td>
+</tr>
+<tr>
+<td><strong>Documentation Quality</strong></td>
+<td>Clear <code>rules.txt</code>, log analysis, and explanation of policy decisions</td>
+<td>20 pts</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-part-3-web-application-intrusion-detection-with-snort-60-pts">🔐 <strong>Part 3: Web Application Intrusion Detection with Snort (60 pts)</strong> </h2>
+<h3 id="-objective-2">🎯 <strong>Objective</strong> </h3>
+<p>Use Snort on VM-D to detect web-based attacks (SQLi, XSS, LFI, CSRF) launched by VM-A against the vulnerable web apps hosted on VM-T (Metasploitable 2).</p>
+<hr>
+<h3 id="-testbed-2">🧱 <strong>Testbed</strong> </h3>
+<table>
+<thead>
+<tr>
+<th>VM</th>
+<th>OS</th>
+<th>Role</th>
+<th>Services/Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VM-A</td>
+<td>Kali Linux</td>
+<td>Attacker</td>
+<td>curl, sqlmap, browsers, hping3</td>
+</tr>
+<tr>
+<td>VM-T</td>
+<td>MS-2</td>
+<td>Web Target Server</td>
+<td>DVWA, Mutillidae</td>
+</tr>
+<tr>
+<td>VM-D</td>
+<td>Kali Linux</td>
+<td>IDS</td>
+<td>Snort (promiscuous mode), Wireshark</td>
+</tr>
+</tbody>
+</table>
+<p>🔧 Ensure:</p>
+<ul>
+<li>VM-D is in <strong>promiscuous mode</strong> (<code>eth0</code>).</li>
+<li>Snort’s <code>HOME_NET</code> is set to <code>192.168.10.0/24</code>.</li>
+<li>HTTP traffic between VM-A and VM-T passes through VM-D (via switch or shared virtual network).</li>
+</ul>
+<hr>
+<h3 id="-task-1-configure-snort-for-web-attack-detection-20-pts">🧪 <strong>Task 1: Configure Snort for Web Attack Detection (20 pts)</strong> </h3>
+<h4 id="-step-1-verify-snort-installation-and-version-2-pts">🔹 <strong>Step 1: Verify Snort Installation and Version (2 pts)</strong> </h4>
+<ul>
+<li>Run the following to confirm installation:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>snort <span class="token parameter variable">-V</span>
+</code></pre></li>
+<li>✅ <strong>Expected Output</strong>: Version string (e.g., Snort 3.1.x)</li>
+<li>📸 <strong>Deliverable</strong>: Screenshot of Snort version</li>
+</ul>
+<hr>
+<h4 id="-step-2-set-network-environment-variables-3-pts">🔹 <strong>Step 2: Set Network Environment Variables (3 pts)</strong> </h4>
+<ul>
+<li>Open <code>snort.lua</code>:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> <span class="token function">nano</span> /etc/snort/snort.lua
+</code></pre></li>
+<li>Change:<pre data-role="codeBlock" data-info="lua" class="language-lua lua"><code>HOME_NET <span class="token operator">=</span> <span class="token string">'192.168.10.0/24'</span>
+EXTERNAL_NET <span class="token operator">=</span> <span class="token string">'any'</span>
+</code></pre></li>
+<li>✅ Ensure correct subnet matching your VM configuration</li>
+<li>📸 <strong>Deliverable</strong>: Snippet showing modified <code>HOME_NET</code></li>
+</ul>
+<hr>
+<h4 id="-step-3-enable-local-rules-5-pts">🔹 <strong>Step 3: Enable Local Rules (5 pts)</strong> </h4>
+<ul>
+<li>In the <code>ips</code> block of <code>snort.lua</code>, ensure:<pre data-role="codeBlock" data-info="lua" class="language-lua lua"><code>ips <span class="token operator">=</span> <span class="token punctuation">{</span>
+    variables <span class="token operator">=</span> default_variables<span class="token punctuation">,</span>
+    rules <span class="token operator">=</span> <span class="token string">[[
+        include /etc/snort/rules/local.rules
+    ]]</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>Comment out <code>enable_builtin_rules</code> if focusing on custom rules only:<pre data-role="codeBlock" data-info="lua" class="language-lua lua"><code><span class="token comment">-- enable_builtin_rules = true,</span>
+</code></pre></li>
+<li>📸 <strong>Deliverable</strong>: Snippet of updated <code>ips</code> block</li>
+</ul>
+<hr>
+<h4 id="-step-4-write-detection-rules-in-localrules">📜 Step 4: Write Detection Rules in <code>local.rules</code> </h4>
+<p>Create detection rules for common web attacks:</p>
+<h5 id="-sql-injection">🔹 SQL Injection </h5>
+<pre data-role="codeBlock" data-info="snort" class="language-snort snort"><code>alert tcp any any -&gt; $HOME_NET 80 (msg:"WEB-ATTACK SQL Injection Attempt"; flow:to_server,established; content:"' OR 1=1"; nocase; sid:200001; rev:1; classtype:web-application-attack;)
+</code></pre><h5 id="-xss-reflected-or-stored">🔹 XSS (Reflected or Stored) </h5>
+<pre data-role="codeBlock" data-info="snort" class="language-snort snort"><code>alert tcp any any -&gt; $HOME_NET 80 (msg:"WEB-ATTACK XSS Detected"; flow:to_server,established; content:"&lt;script&gt;"; nocase; sid:200002; rev:1; classtype:web-application-attack;)
+</code></pre><h5 id="-local-file-inclusion-lfi">🔹 Local File Inclusion (LFI) </h5>
+<pre data-role="codeBlock" data-info="snort" class="language-snort snort"><code>alert tcp any any -&gt; $HOME_NET 80 (msg:"WEB-ATTACK LFI Detected"; flow:to_server,established; content:"../"; nocase; sid:200003; rev:1; classtype:web-application-attack;)
+</code></pre><h5 id="-csrf-attempt-get-based">🔹 CSRF Attempt (GET-based) </h5>
+<pre data-role="codeBlock" data-info="snort" class="language-snort snort"><code>alert tcp any any -&gt; $HOME_NET 80 (msg:"WEB-ATTACK CSRF Suspicious Request"; flow:to_server,established; content:"Change=Change"; http_uri; sid:200004; rev:1; classtype:web-application-attack;)
+</code></pre><hr>
+<h4 id="-step-5-launch-snort-in-monitoring-mode">🔹 <strong>Step 5: Launch Snort in Monitoring Mode</strong> </h4>
+<ul>
+<li>Run:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> snort <span class="token parameter variable">-c</span> /etc/snort/snort.lua <span class="token parameter variable">-i</span> eth0 <span class="token parameter variable">-A</span> alert_fast
+</code></pre></li>
+<li>Confirm output includes:
+<ul>
+<li>Rule loading summary</li>
+<li>Configuration validation success</li>
+<li>Listening on <code>eth0</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-task-2-generate-and-detect-attacks">🚨 <strong>Task 2: Generate and Detect Attacks</strong> </h3>
+<p>In this task, you will simulate common web application attacks from <strong>VM-A</strong> (attacker) targeting vulnerable services on <strong>VM-T</strong>, and verify their detection using <strong>Snort</strong> running on <strong>VM-D</strong> in promiscuous mode.</p>
+<hr>
+<h4 id="-no-attack-baseline-alert-check">🔹 <strong>No Attack: Baseline Alert Check</strong> </h4>
+<p><strong>Objective:</strong> Ensure Snort is not producing false positives under normal traffic.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>From <strong>VM-A</strong>, run:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">curl</span> http://<span class="token operator">&lt;</span>VM-T-IP<span class="token operator">&gt;</span>/
+</code></pre></li>
+<li>Observe Snort console on <strong>VM-D</strong>.</li>
+<li>Confirm that Snort produces no alerts for normal HTTP GET requests.</li>
+<li>Reflect on the importance of establishing a clean baseline before simulating attacks.</li>
+</ol>
+<hr>
+<h4 id="-attack-1-sql-injection-detection">🔹 <strong>Attack 1: SQL Injection Detection</strong> </h4>
+<p><strong>Objective:</strong> Trigger an alert for SQLi (<code>sid:200001</code>) by injecting SQL statements into vulnerable input fields in <strong>DVWA</strong> or <strong>Mutillidae</strong>.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>Open DVWA or Mutillidae in a browser on <strong>VM-A</strong>.</li>
+<li>Navigate to the <strong>SQL Injection</strong> page.</li>
+<li>Inject:<pre data-role="codeBlock" data-info="" class="language-text"><code>' OR '1'='1
+</code></pre>into a vulnerable field and submit the form.</li>
+<li>Optionally, use SQLmap:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>sqlmap <span class="token parameter variable">-u</span> <span class="token string">"http://&lt;VM-T-IP&gt;/dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit"</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">--cookie</span><span class="token operator">=</span><span class="token string">"security=low; PHPSESSID=&lt;your-session&gt;"</span> <span class="token parameter variable">--batch</span>
+</code></pre></li>
+<li>Monitor Snort on <strong>VM-D</strong> for alerts indicating SQLi detection.</li>
+</ul>
+<hr>
+<h4 id="-attack-2-cross-site-scripting-xss-detection">🔹 <strong>Attack 2: Cross-Site Scripting (XSS) Detection</strong> </h4>
+<p><strong>Objective:</strong> Trigger an alert for XSS (<code>sid:200002</code>) via reflected or stored script injection.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>In DVWA or Mutillidae, navigate to a page that accepts user input (e.g., comments or form fields).</li>
+<li>Inject:<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'xss'</span><span class="token punctuation">)</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+<li>Submit and verify execution in the browser.</li>
+<li>Monitor Snort on <strong>VM-D</strong> for detection of script tags in the HTTP payload.</li>
+</ul>
+<hr>
+<h4 id="-attack-3-directory-traversal--local-file-inclusion-lfi">🔹 <strong>Attack 3: Directory Traversal / Local File Inclusion (LFI)</strong> </h4>
+<p><strong>Objective:</strong> Trigger LFI alert (<code>sid:200003</code>) by requesting system files via path traversal.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>Navigate to:<pre data-role="codeBlock" data-info="" class="language-text"><code>http://&lt;VM-T-IP&gt;/dvwa/vulnerabilities/fi/?page=../../../../etc/passwd
+</code></pre></li>
+<li>Adjust the number of <code>../</code> sequences if necessary to reach the file system root.</li>
+<li>Confirm the contents of the <code>/etc/passwd</code> file are returned.</li>
+<li>Observe Snort on <strong>VM-D</strong> for alerts containing traversal patterns.</li>
+</ul>
+<hr>
+<h4 id="-attack-4-cross-site-request-forgery-csrf-detection">🔹 <strong>Attack 4: Cross-Site Request Forgery (CSRF) Detection</strong> </h4>
+<p><strong>Objective:</strong> Trigger a CSRF alert (<code>sid:200004</code>) by simulating a GET-based password change without user consent.</p>
+<p><strong>Steps:</strong></p>
+<ul>
+<li>Create an HTML file (<code>csrf_attack.html</code>) on <strong>VM-A</strong>:<pre data-role="codeBlock" data-info="html" class="language-html html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://&lt;VM-T-IP&gt;/dvwa/vulnerabilities/csrf/?password_new=hacked&amp;password_conf=hacked&amp;Change=Change<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Click Me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre></li>
+<li>Serve the file via:<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">sudo</span> python3 <span class="token parameter variable">-m</span> http.server <span class="token number">8080</span>
+</code></pre></li>
+<li>On the same VM or a different browser window, log in to DVWA as a user.</li>
+<li>Visit the malicious page and click the link.</li>
+<li>Confirm the password has changed in DVWA.</li>
+<li>Snort should detect the suspicious GET request pattern and log an alert.</li>
+</ul>
+<hr>
+<h3 id="-deliverables-for-part-3">📸 <strong>Deliverables for Part 3</strong> </h3>
+<h4 id="-1-screenshots">📷 1. Screenshots: </h4>
+<ul>
+<li>Snort console output (<code>alert_fast</code> format) showing alerts triggered by:
+<ul>
+<li>✅ <strong>Baseline traffic</strong> (showing no alerts)</li>
+<li>✅ <strong>SQL Injection</strong> (<code>sid:200001</code>)</li>
+<li>✅ <strong>Cross-Site Scripting (XSS)</strong> (<code>sid:200002</code>)</li>
+<li>✅ <strong>Local File Inclusion (LFI)</strong> (<code>sid:200003</code>)</li>
+<li>✅ <strong>Cross-Site Request Forgery (CSRF)</strong> (<code>sid:200004</code>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="-2-rule-file">📝 2. Rule File: </h4>
+<ul>
+<li><code>local.rules</code> showing all four custom rules with proper syntax and unique <code>sid</code>s</li>
+</ul>
+<hr>
+<h3 id="rubric-for-part-3-60-pts">Rubric for Part 3 (60 pts) </h3>
+<table>
+<thead>
+<tr>
+<th><strong>Criteria</strong></th>
+<th><strong>Points</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Snort Configuration &amp; Rules</strong></td>
+<td>20</td>
+<td>Snort <code>snort.lua</code> correctly updated, 4 custom rules implemented and valid.</td>
+</tr>
+<tr>
+<td><strong>Attack Execution &amp; Detection</strong></td>
+<td>30</td>
+<td>All 4 attacks executed from VM-A, alerts generated and verified on VM-D.</td>
+</tr>
+<tr>
+<td><strong>Clarity of Analysis &amp; Logs</strong></td>
+<td>10</td>
+<td>Clear screenshots of alerts with correct <code>sid</code>, good annotation if needed.</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

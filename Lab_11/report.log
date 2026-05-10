@@ -1,0 +1,91 @@
+Tue Apr 28 08:28:06 PM MDT 2026 - Server 192.168.10.13 is
+   responding with packet loss.
+Tue Apr 28 08:28:33 PM MDT 2026 - Server 192.168.10.13 is
+   responding with packet loss.
+Tue Apr 28 08:28:38 PM MDT 2026 - Server 192.168.10.13 is
+   responding with packet loss.
+Tue Apr 28 08:42:00 PM MDT 2026 - Server 192.168.10.13 is
+   responding with packet loss.
+Tue Apr 28 08:42:00 PM MDT 2026 - WARNING: Server with IP 192.168.10.13 is responding with wrong MAC ce:83:cf:61:c8:ba
+Tue Apr 28 08:43:25 PM MDT 2026 - Server 192.168.10.6 is
+   responding with packet loss.
+Tue Apr 28 08:43:28 PM MDT 2026 - WARNING: Server with
+   IP 192.168.10.6 is responding with wrong MAC    
+  
+Tue Apr 28 08:48:35 PM MDT 2026 - Server 192.168.10.13 is
+   responding with packet loss.
+Tue Apr 28 08:48:35 PM MDT 2026 - WARNING: Server with
+   IP 192.168.10.13 is responding with wrong MAC
+  
+Tue Apr 28 08:48:35 PM MDT 2026 WARNING: Port 139 is open 
+  on 192.168.10.13
+Tue Apr 28 08:48:58 PM MDT 2026 WARNING: Port 139 is open 
+  on 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - Port 139 on      
+  server 192.168.10.13 is EXPECTED to be open, but  
+  it is CLOSED or FILTERED.
+Tue Apr 28 08:53:32 PM MDT 2026 - Port 80 on      
+  server 192.168.10.13 is EXPECTED to be open, but  
+  it is CLOSED or FILTERED.
+Tue Apr 28 08:53:32 PM MDT 2026 - Port 81 on      
+  server 192.168.10.13 is EXPECTED to be open, but  
+  it is CLOSED or FILTERED.
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 21 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 22 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 23 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 25 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 53 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 80 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 111 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 139 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 445 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 512 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 513 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 514 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 1099 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 1524 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 2049 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 2121 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 3306 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 5432 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 5900 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 6000 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 6667 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 8009 found on server 192.168.10.13
+Tue Apr 28 08:53:32 PM MDT 2026 - UNEXPECTED open
+  port 8180 found on server 192.168.10.13
+Tue Apr 28 09:23:36 PM MDT 2026 - Starting compliance check for 192.168.10.6,00:0c:29:bc:e8:3b,139;445;21
+Tue Apr 28 09:23:36 PM MDT 2026 - Server 192.168.10.6,00:0c:29:bc:e8:3b,139;445;21 is responding with packet loss.
+Tue Apr 28 09:23:36 PM MDT 2026 - WARNING: Server with IP 192.168.10.6,00:0c:29:bc:e8:3b,139;445;21 is responding with wrong MAC 
+Tue Apr 28 09:23:36 PM MDT 2026 - Port 192.168.10.6,00:0c:29:bc:e8:3b,139 on server 192.168.10.6,00:0c:29:bc:e8:3b,139;445;21 is EXPECTED to be open, but it is CLOSED or FILTERED.
+Tue Apr 28 09:23:36 PM MDT 2026 - Port 445 on server 192.168.10.6,00:0c:29:bc:e8:3b,139;445;21 is EXPECTED to be open, but it is CLOSED or FILTERED.
+Tue Apr 28 09:23:36 PM MDT 2026 - Port 21 on server 192.168.10.6,00:0c:29:bc:e8:3b,139;445;21 is EXPECTED to be open, but it is CLOSED or FILTERED.
+Tue Apr 28 09:23:36 PM MDT 2026 - Compliance check complete for 192.168.10.6,00:0c:29:bc:e8:3b,139;445;21
+Tue Apr 28 09:23:36 PM MDT 2026 - Starting compliance check for 192.168.10.7,00:0c:29:aa:bb:cc,80;22
+Tue Apr 28 09:23:36 PM MDT 2026 - Server 192.168.10.7,00:0c:29:aa:bb:cc,80;22 is responding with packet loss.
+Tue Apr 28 09:23:36 PM MDT 2026 - WARNING: Server with IP 192.168.10.7,00:0c:29:aa:bb:cc,80;22 is responding with wrong MAC 
+Tue Apr 28 09:23:36 PM MDT 2026 - Port 192.168.10.7,00:0c:29:aa:bb:cc,80 on server 192.168.10.7,00:0c:29:aa:bb:cc,80;22 is EXPECTED to be open, but it is CLOSED or FILTERED.
+Tue Apr 28 09:23:36 PM MDT 2026 - Port 22 on server 192.168.10.7,00:0c:29:aa:bb:cc,80;22 is EXPECTED to be open, but it is CLOSED or FILTERED.
+Tue Apr 28 09:23:36 PM MDT 2026 - Compliance check complete for 192.168.10.7,00:0c:29:aa:bb:cc,80;22

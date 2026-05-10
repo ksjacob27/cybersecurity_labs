@@ -1,0 +1,121 @@
+#!/bin/bash
+
+# Update these to match your VM IPs before running
+VMD_IP="192.168.10.12"   # VM-D's own IP
+VMT_IP="192.168.10.13"   # VM-T's IP (trusted SSH source)
+INTERNAL="192.168.10.0/24"
+
+# Flush existing rules and counters
+iptables -F
+iptables -X
+iptables -Z
+
+# ── Default DROP policies ──────────────────────────────────────────────────────
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -P FORWARD DROP
+
+# ── Loopback ───────────────────────────────────────────────────────────────────
+iptables -A INPUT  -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+# ── Drop INVALID state packets ─────────────────────────────────────────────────
+iptables -A INPUT -m conntrack --ctstate INVALID \
+  -j LOG --log-prefix "MALFORMED: " --log-level 4
+iptables -A INPUT -m conntrack --ctstate INVALID -j DROP
+
+# ── Allow ESTABLISHED/RELATED ──────────────────────────────────────────────────
+# Must come before IP restriction rules so replies to outbound DNS work
+iptables -A INPUT  -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+# ── Anti-spoofing ──────────────────────────────────────────────────────────────
+# Drop loopback-claiming packets not arriving on lo
+iptables -A INPUT ! -i lo -s 127.0.0.0/8 \
+  -j LOG --log-prefix "MALFORMED: " --log-level 4
+iptables -A INPUT ! -i lo -s 127.0.0.0/8 -j DROP
+
+# Drop packets with VM-D's own IP as source
+iptables -A INPUT -s $VMD_IP \
+  -j LOG --log-prefix "MALFORMED: " --log-level 4
+iptables -A INPUT -s $VMD_IP -j DROP
+
+# Drop new connections from outside the internal network
+iptables -A INPUT -m conntrack --ctstate NEW ! -s $INTERNAL \
+  -j LOG --log-prefix "ILLEGAL-IP/PORT: " --log-level 4
+iptables -A INPUT -m conntrack --ctstate NEW ! -s $INTERNAL -j DROP
+
+# ── TCP Scan detection ─────────────────────────────────────────────────────────
+# NULL scan (no flags)
+iptables -A INPUT -p tcp --tcp-flags ALL NONE \
+  -j LOG --log-prefix "SCAN-TCP: " --log-level 4
+iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
+
+# Xmas scan (FIN+PSH+URG)
+iptables -A INPUT -p tcp --tcp-flags ALL FIN,PSH,URG \
+  -j LOG --log-prefix "SCAN-TCP: " --log-level 4
+iptables -A INPUT -p tcp --tcp-flags ALL FIN,PSH,URG -j DROP
+
+# SYN-FIN scan
+iptables -A INPUT -p tcp --tcp-flags SYN,FIN SYN,FIN \
+  -j LOG --log-prefix "SCAN-TCP: " --log-level 4
+iptables -A INPUT -p tcp --tcp-flags SYN,FIN SYN,FIN -j DROP
+
+# ACK scan (ACK-only on a new connection)
+iptables -A INPUT -p tcp --tcp-flags ACK ACK -m conntrack --ctstate NEW \
+  -j LOG --log-prefix "SCAN-TCP: " --log-level 4
+iptables -A INPUT -p tcp --tcp-flags ACK ACK -m conntrack --ctstate NEW -j DROP
+
+# ── Global SYN flood protection ────────────────────────────────────────────────
+# Uses a dedicated chain: packets within the rate limit RETURN to INPUT for
+# further evaluation by service rules; excess packets are logged and dropped.
+iptables -N SYN_FLOOD
+iptables -A SYN_FLOOD -m limit --limit 5/s --limit-burst 10 -j RETURN
+iptables -A SYN_FLOOD -j LOG --log-prefix "DOS-RATE-LIMIT: " --log-level 4
+iptables -A SYN_FLOOD -j DROP
+iptables -A INPUT -p tcp --syn -j SYN_FLOOD
+
+# ── SSH (port 22) — VM-T only, max 3 new connections per minute ───────────────
+# Drop if VM-T exceeds 3 connections in 60 seconds (hitcount 4 = 4th attempt)
+iptables -A INPUT -p tcp --dport 22 -s $VMT_IP -m conntrack --ctstate NEW \
+  -m recent --update --seconds 60 --hitcount 4 --name SSH_LIMIT \
+  -j LOG --log-prefix "DOS-RATE-LIMIT: " --log-level 4
+iptables -A INPUT -p tcp --dport 22 -s $VMT_IP -m conntrack --ctstate NEW \
+  -m recent --update --seconds 60 --hitcount 4 --name SSH_LIMIT -j DROP
+# Add to recent list and accept
+iptables -A INPUT -p tcp --dport 22 -s $VMT_IP -m conntrack --ctstate NEW \
+  -m recent --set --name SSH_LIMIT
+iptables -A INPUT -p tcp --dport 22 -s $VMT_IP -j ACCEPT
+# Log and drop SSH from any other source
+iptables -A INPUT -p tcp --dport 22 \
+  -j LOG --log-prefix "ILLEGAL-IP/PORT: " --log-level 4
+iptables -A INPUT -p tcp --dport 22 -j DROP
+
+# ── HTTP (port 80) — internal subnet only, rate limited ───────────────────────
+# Drop if a single IP exceeds 20 concurrent connections
+iptables -A INPUT -p tcp --dport 80 -s $INTERNAL \
+  -m connlimit --connlimit-above 20 \
+  -j LOG --log-prefix "DOS-RATE-LIMIT: " --log-level 4
+iptables -A INPUT -p tcp --dport 80 -s $INTERNAL \
+  -m connlimit --connlimit-above 20 -j DROP
+# Accept new connections up to 10/s with burst of 20
+iptables -A INPUT -p tcp --dport 80 -s $INTERNAL -m conntrack --ctstate NEW \
+  -m limit --limit 10/s --limit-burst 20 -j ACCEPT
+# Log and drop excess new HTTP connections
+iptables -A INPUT -p tcp --dport 80 -s $INTERNAL \
+  -j LOG --log-prefix "DOS-RATE-LIMIT: " --log-level 4
+iptables -A INPUT -p tcp --dport 80 -s $INTERNAL -j DROP
+
+# ── Outbound DNS (UDP port 53) ─────────────────────────────────────────────────
+iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+
+# ── Outbound ICMP echo-request ─────────────────────────────────────────────────
+iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
+
+# ── Final catch-all log ────────────────────────────────────────────────────────
+iptables -A INPUT  -j LOG --log-prefix "DROP-GENERIC: " --log-level 4
+iptables -A OUTPUT -j LOG --log-prefix "DROP-GENERIC: " --log-level 4
+
+# ── Save rules ─────────────────────────────────────────────────────────────────
+iptables-save > /home/kevin/Documents/assignment3/rules.txt
+echo "Firewall rules applied and saved to rules.txt"
